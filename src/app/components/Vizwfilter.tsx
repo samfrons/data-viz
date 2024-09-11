@@ -12,6 +12,10 @@ const COLORS: { [key: string]: number } = {
   Health: 0x76b7b2,
 };
 
+interface RssFeed {
+  url: string;
+  category: string;
+}
 
 interface Post {
   id: string;
@@ -34,8 +38,6 @@ interface Tooltip {
   x: number;
   y: number;
 }
-
-
 
 const SocialMediaVisualization: FC = () => {
   
@@ -81,7 +83,7 @@ const SocialMediaVisualization: FC = () => {
   const createParticleEffect = useCallback((position: THREE.Vector3) => {
     debug("Creating particle effect at position: " + JSON.stringify(position));
     const particleGeometry = new THREE.BufferGeometry();
-    const particleCount = 1;
+    const particleCount = 100;
     const posArray = new Float32Array(particleCount * 3);
     
     for (let i = 0; i < particleCount * 3; i++) {
@@ -111,7 +113,7 @@ const SocialMediaVisualization: FC = () => {
       return child.type !== 'Line';
     });
 
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0xcccccc, transparent: false, opacity: 0.7 });
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0xcccccc, transparent: true, opacity: 0.3 });
     spheresRef.current.forEach((sphere, index) => {
       const post = sphere.userData;
       const relatedSpheres = spheresRef.current.filter((s, i) => {

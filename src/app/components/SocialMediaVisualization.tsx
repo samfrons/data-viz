@@ -296,43 +296,47 @@ const fetchRSSFeed = (feed: RssFeed): Promise<Post[]> => {
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
 
-    const onMouseMove = (event: MouseEvent) => {
-      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-      mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+const onMouseMove = (event: MouseEvent) => {
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
-      raycaster.setFromCamera(mouse, camera);
-      const intersects = raycaster.intersectObjects(spheresRef.current);
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObjects(spheresRef.current);
 
-      if (intersects.length > 0) {
-        const post = intersects[0].object.userData;
-        setTooltip({
-          content: `
-            <strong>${post.title}</strong><br>
-            Category: ${post.category}<br>
-            Published: ${new Date(post.pubDate).toLocaleString()}<br>
-            Engagement: ${post.engagement}
-          `,
-          x: event.clientX,
-          y: event.clientY
-        });
-        document.body.style.cursor = 'pointer';
+  if (intersects.length > 0) {
+    const post = intersects[0].object.userData;
+    setTooltip({
+      content: `
+        <strong>${post.title}</strong><br>
+        Category: ${post.category}<br>
+        Published: ${new Date(post.pubDate).toLocaleString()}<br>
+        Engagement: ${post.engagement}
+      `,
+      x: event.clientX,
+      y: event.clientY
+    });
+    document.body.style.cursor = 'pointer';
 
-        spheresRef.current.forEach((sphere) => {
-          if (sphere.userData.category === post.category || 
-              new Date(sphere.userData.pubDate).toDateString() === new Date(post.pubDate).toDateString()) {
-            sphere.material.emissive.setHex(0x00ff00);
-          } else {
-            sphere.material.emissive.setHex(0x000000);
-          }
-        });
+    spheresRef.current.forEach((sphere) => {
+      const sphereMaterial = sphere.material as THREE.MeshBasicMaterial;
+      if (sphere.userData.category === post.category || 
+          new Date(sphere.userData.pubDate).toDateString() === new Date(post.pubDate).toDateString()) {
+        sphereMaterial.color.setHex(0x00ff00); // Highlight in green
       } else {
-        setTooltip(null);
-        document.body.style.cursor = 'default';
-        spheresRef.current.forEach((sphere) => {
-          sphere.material.emissive.setHex(0x000000);
-        });
+        // Reset to original color
+        sphereMaterial.color.setHex(COLORS[sphere.userData.category as keyof typeof COLORS]);
       }
-    }
+    });
+  } else {
+    setTooltip(null);
+    document.body.style.cursor = 'default';
+    spheresRef.current.forEach((sphere) => {
+      const sphereMaterial = sphere.material as THREE.MeshBasicMaterial;
+      // Reset to original color
+      sphereMaterial.color.setHex(COLORS[sphere.userData.category as keyof typeof COLORS]);
+    });
+  }
+};
 
     window.addEventListener('mousemove', onMouseMove);
 
@@ -431,7 +435,7 @@ const animate = () => {
         })}
 
 
-        <div class="counter" style={{  color: 'white', backgroundColor: 'rgba(0,0,0,0.7)', padding: '5px' }}>
+        <div className="counter" style={{  color: 'white', backgroundColor: 'rgba(0,0,0,0.7)', padding: '5px' }}>
         Posts: {posts.length} | Visible: {spheresRef.current.length}
       </div>
       </div>
@@ -466,7 +470,7 @@ const animate = () => {
 />
 
       {tooltip && (
-        <div class='tooltip'
+        <div className='tooltip'
           style={{ top: tooltip.y + 10,
             left: tooltip.x + 10,
             pointerEvents: 'none', 

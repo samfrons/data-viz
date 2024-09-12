@@ -26,7 +26,10 @@ interface SettingsPanelProps {
   onClose: () => void;
   autoRotate: boolean;
   setAutoRotate: (value: boolean) => void;
+  rssFeeds: RssFeed[];
+  setRssFeeds: React.Dispatch<React.SetStateAction<RssFeed[]>>;
   onPostsUpdate: (posts: Post[]) => void;
+  onFeedsUpdate: () => void;
 }
 
 const SettingsPanel: FC<SettingsPanelProps> = ({ 

@@ -13,6 +13,11 @@ const COLORS: { [key: string]: number } = {
   Health: 0x76b7b2,
 };
 
+interface RssFeed {
+  url: string;
+  category: string;
+}
+
 
 interface Post {
   id: string;
@@ -42,7 +47,7 @@ const SocialMediaVisualization: FC = () => {
   
   const [rssFeeds, setRssFeeds] = useState<RSSFeed[]>(RSS_FEEDS);
   const mountRef = useRef<HTMLDivElement | null>(null);
-  const [posts, setPosts] = useState<unknown[]>([]);
+  const [posts, setPosts] = useState<Post[]>([]);
   const [tooltip, setTooltip] = useState<Tooltip | null>(null);
   const [timeFilter, setTimeFilter] = useState<string>('all');
   const [searchTerm] = useState<string>('');

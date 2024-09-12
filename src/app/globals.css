@@ -25,3 +25,128 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow-y: auto;
+  mix-blend-mode: luminosity;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.sidebar h3, .sidebar h4 {
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #a0a0a0;
+}
+
+.sidebar button {
+  background-color: #2a2a2a;
+}
+
+.counter {
+      padding: 5px 10px;
+    width: fit-content;
+    margin: 5px;
+}
+button {
+
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #e0e0e0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+ button:hover {
+  background-color: #3a3a3a;
+}
+
+.sidebar input[type="text"], .sidebar input[type="checkbox"] {
+  width: 100%;
+  padding: 8px;
+
+  border: 1px solid #3a3a3a;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.sidebar label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sidebar input[type="checkbox"] {
+  margin-right: 8px;
+  width: auto;
+}
+
+.feed-item {
+  background-color: #2a2a2a;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  transition: background-color 0.2s;
+}
+
+.feed-item:hover {
+  background-color: #3a3a3a;
+}
+
+.feed-item div {
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #a0a0a0;
+  font-size: 16px;
+}
+
+.close-button:hover {
+  color: #ffffff;
+}
+
+.search-input {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px 8px 32px;
+  width: 100%;
+  color: #e0e0e0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23a0a0a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 8px center;
+}
+
+.feed-item {
+   padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;  /* Stack children vertically */
+  word-break: break-word;  /* Allow long words to break and wrap */
+}

@@ -4,6 +4,7 @@ import React, { useRef, useEffect, useState, useCallback, FC } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import SettingsPanel from './SettingsPanel.tsx';
+import { Input } from '@headlessui/react';
 
 const COLORS: { [key: string]: number } = {
   Technology: 0x4e79a7,
@@ -82,7 +83,7 @@ const SocialMediaVisualization: FC = () => {
     debug("Creating particle effect at position: " + JSON.stringify(position));
     const particleGeometry = new THREE.BufferGeometry();
     const particleCount = 1;
-    const posArray = new Float32Array(particleCount * 3);
+    const posArray = new Float32Array(particleCount * 0);
     
     for (let i = 0; i < particleCount * 3; i++) {
       posArray[i] = (Math.random() - 0.5) * 10;
@@ -385,12 +386,8 @@ const SocialMediaVisualization: FC = () => {
       </div>
 
       <div style={{ position: 'absolute', top: 50, right: 10 }}>
-        <input 
-          type="text" 
-          placeholder="Search posts..." 
-          value={searchTerm} 
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+       
+        <Input name="full_name" type="text" className="border data-[hover]:shadow data-[focus]:bg-blue-100"/>
       </div>
 
       <div style={{ position: 'absolute', bottom: 10, left: 10 }}>
@@ -402,8 +399,7 @@ const SocialMediaVisualization: FC = () => {
               style={{
                 margin: '0 5px',
                 padding: '5px 10px',
-                backgroundColor: categoryVisibility[category] ? COLORS[category] : '#ccc',
-                color: 'navy',
+                color: 'white',
                 border: 'none',
                 borderRadius: '0px',
                 cursor: 'pointer'
@@ -413,7 +409,13 @@ const SocialMediaVisualization: FC = () => {
             </button>
           );
         })}
+
+
+        <div class="counter" style={{  color: 'white', backgroundColor: 'rgba(0,0,0,0.7)', padding: '5px' }}>
+        Posts: {posts.length} | Visible: {spheresRef.current.length}
       </div>
+      </div>
+
 
         <button
         style={{
@@ -421,10 +423,7 @@ const SocialMediaVisualization: FC = () => {
           top: '90px',
           right: '10px',
           padding: '5px 10px',
-          backgroundColor: '#4CAF50',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
+          
           cursor: 'pointer'
         }}
         onClick={() => setSettingsPanelOpen(true)}
@@ -465,9 +464,7 @@ const SocialMediaVisualization: FC = () => {
         />
       )}
 
-      <div style={{ position: 'absolute', bottom: 10, right: 10, color: 'white', backgroundColor: 'rgba(0,0,0,0.7)', padding: '5px', borderRadius: '5px' }}>
-        Posts: {posts.length} | Visible: {spheresRef.current.length}
-      </div>
+      
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, FC } from 'react';
 
+
 interface RSSFeed {
   url: string;
   category: string;
@@ -94,7 +95,7 @@ const SettingsPanel: FC<SettingsPanelProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div style={{
+    <div class="sidebar" style={{
       position: 'fixed',
       right: 0,
       top: 0,
@@ -124,7 +125,7 @@ const SettingsPanel: FC<SettingsPanelProps> = ({
       <h3>RSS Feeds</h3>
       {rssFeeds.map((feed, index) => (
         <div key={index} style={{ marginBottom: '10px' }}>
-          <div>{feed.url} ({feed.category})</div>
+          <div class="feed-item">{feed.url} ({feed.category})</div>
           <button onClick={() => removeFeed(index)}>Remove</button>
         </div>
       ))}

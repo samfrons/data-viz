@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback, FC } from 'react';
 
-
 interface RSSFeed {
   url: string;
   category: string;
@@ -13,6 +12,13 @@ interface Post {
   pubDate: string;
   category: string;
   engagement: number;
+}
+
+interface RSSItem {
+  guid?: string;
+  link: string;
+  title: string;
+  pubDate: string;
 }
 
 interface SettingsPanelProps {
@@ -47,7 +53,7 @@ const SettingsPanel: FC<SettingsPanelProps> = ({
         console.error('Invalid RSS feed data:', data);
         return [];
       }
-      return data.items.map((item: unknown) => ({
+      return data.items.map((item: RSSItem) => ({
         id: item.guid || item.link,
         title: item.title,
         link: item.link,
@@ -95,7 +101,7 @@ const SettingsPanel: FC<SettingsPanelProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div class="sidebar" style={{
+    <div className="sidebar" style={{
       position: 'fixed',
       right: 0,
       top: 0,
@@ -125,7 +131,7 @@ const SettingsPanel: FC<SettingsPanelProps> = ({
       <h3>RSS Feeds</h3>
       {rssFeeds.map((feed, index) => (
         <div key={index} style={{ marginBottom: '10px' }}>
-          <div class="feed-item">{feed.url} ({feed.category})</div>
+          <div className="feed-item">{feed.url} ({feed.category})</div>
           <button onClick={() => removeFeed(index)}>Remove</button>
         </div>
       ))}

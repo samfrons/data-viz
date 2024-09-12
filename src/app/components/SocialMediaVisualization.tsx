@@ -3,7 +3,7 @@
 import React, { useRef, useEffect, useState, useCallback, FC } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import SettingsPanel from './SettingsPanel.tsx';
+import SettingsPanel from './SettingsPanel';
 import { Input } from '@headlessui/react';
 
 const COLORS: { [key: string]: number } = {

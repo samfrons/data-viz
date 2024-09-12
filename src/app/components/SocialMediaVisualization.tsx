@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback, FC } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import SettingsPanel from './SettingsPanel';
 import { Input } from '@headlessui/react';
 
 const COLORS: { [key: string]: number } = {
@@ -53,7 +52,7 @@ const SocialMediaVisualization: FC = () => {
   const [timeFilter, setTimeFilter] = useState<string>('all');
   const [searchTerm] = useState<string>('');
   const [autoRotate, setAutoRotate] = useState<boolean>(true);
-  const [settingsPanelOpen, setSettingsPanelOpen] = useState<boolean>(false);
+
   const [categoryVisibility, setCategoryVisibility] = useState<{ [key: string]: boolean }>({
     Technology: true,
     Business: true,
@@ -423,33 +422,6 @@ const SocialMediaVisualization: FC = () => {
           Posts: {posts.length} | Visible: {spheresRef.current.length}
         </div>
       </div>
-
-      <button
-        id="panel-open"
-        style={{
-          position: 'absolute',
-          top: '90px',
-          right: '10px',
-          padding: '5px 10px',
-          cursor: 'pointer'
-        }}
-        onClick={() => setSettingsPanelOpen(true)}
-      >
-        Open Settings
-      </button>
-
-      <SettingsPanel
-        isOpen={settingsPanelOpen}
-        onClose={() => setSettingsPanelOpen(false)}
-        autoRotate={autoRotate}
-        setAutoRotate={setAutoRotate}
-        rssFeeds={rssFeeds}
-        setRssFeeds={setRssFeeds}
-        onFeedsUpdate={() => {
-          console.log("Refreshing feeds");
-          // Implement feed refresh logic here
-        }}
-      />
 
       {tooltip && (
         <div

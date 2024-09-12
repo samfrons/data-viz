@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+     "build": "next build && cp -r .next public",
     "start": "next start",
     "lint": "next lint",
     "lint-build": "npm run lint && npm run build"
+  },
+  "vercel": {
+    "outputDirectory": ".next"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.7",

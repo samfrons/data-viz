@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, FC } from 'react';
+import React, { useState, FC } from 'react';
 
 interface RSSFeed {
   url: string;
@@ -14,20 +14,13 @@ interface Post {
   engagement: number;
 }
 
-interface RSSItem {
-  guid?: string;
-  link: string;
-  title: string;
-  pubDate: string;
-}
-
 interface SettingsPanelProps {
   isOpen: boolean;
   onClose: () => void;
   autoRotate: boolean;
   setAutoRotate: (value: boolean) => void;
-  rssFeeds: RssFeed[];
-  setRssFeeds: React.Dispatch<React.SetStateAction<RssFeed[]>>;
+  rssFeeds: RSSFeed[];
+  setRssFeeds: React.Dispatch<React.SetStateAction<RSSFeed[]>>;
   onPostsUpdate: (posts: Post[]) => void;
   onFeedsUpdate: () => void;
 }
@@ -37,68 +30,27 @@ const SettingsPanel: FC<SettingsPanelProps> = ({
   onClose, 
   autoRotate, 
   setAutoRotate, 
-  onPostsUpdate 
+  rssFeeds,
+  setRssFeeds,
+  onPostsUpdate,
+  onFeedsUpdate
 }) => {
-  const [rssFeeds, setRssFeeds] = useState<RSSFeed[]>([
-    { url: 'https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml', category: 'Technology' },
-    { url: 'https://feeds.bbci.co.uk/news/business/rss.xml', category: 'Business' },
-    { url: 'https://www.sciencedaily.com/rss/top.xml', category: 'Science' },
-    { url: 'https://www.who.int/rss-feeds/news-english.xml', category: 'Health' },
-  ]);
   const [newFeedUrl, setNewFeedUrl] = useState<string>('');
   const [newFeedCategory, setNewFeedCategory] = useState<string>('');
-
-  const fetchRSSFeed = async (feed: RSSFeed): Promise<Post[]> => {
-    try {
-      const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`);
-      const data = await response.json();
-      if (data.status !== 'ok' || !Array.isArray(data.items)) {
-        console.error('Invalid RSS feed data:', data);
-        return [];
-      }
-      return data.items.map((item: RSSItem) => ({
-        id: item.guid || item.link,
-        title: item.title,
-        link: item.link,
-        pubDate: item.pubDate,
-        category: feed.category,
-        engagement: Math.floor(Math.random() * 100)
-      }));
-    } catch (error) {
-      console.error('Error fetching RSS feed:', error);
-      return [];
-    }
-  };
-
-  const fetchAllFeeds = useCallback(() => {
-    console.log("Fetching all feeds");
-    Promise.all(rssFeeds.map(fetchRSSFeed))
-      .then((allPosts) => {
-        const newPosts = allPosts.flat();
-        console.log("Total posts fetched: " + newPosts.length);
-        onPostsUpdate(newPosts);  // Call the prop function here
-      });
-  }, [rssFeeds, onPostsUpdate]);
-
-  useEffect(() => {
-    fetchAllFeeds();
-    const interval = setInterval(fetchAllFeeds, 60000);
-    return () => clearInterval(interval);
-  }, [fetchAllFeeds]);
 
   const addNewFeed = () => {
     if (newFeedUrl && newFeedCategory) {
       setRssFeeds([...rssFeeds, { url: newFeedUrl, category: newFeedCategory }]);
       setNewFeedUrl('');
       setNewFeedCategory('');
-      fetchAllFeeds();
+      onFeedsUpdate();
     }
   };
 
   const removeFeed = (index: number) => {
     const updatedFeeds = rssFeeds.filter((_, i) => i !== index);
     setRssFeeds(updatedFeeds);
-    fetchAllFeeds();
+    onFeedsUpdate();
   };
 
   if (!isOpen) return null;

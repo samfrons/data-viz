@@ -6,6 +6,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import SettingsPanel from './SettingsPanel';
 import { Input } from '@headlessui/react';
 
+
 const COLORS: { [key: string]: number } = {
   Technology: 0x4e79a7,
   Business: 0xf28e2c,

@@ -70,19 +70,19 @@ const SocialMediaVisualization: FC = () => {
     setPosts(newPosts);
       }, []);
 
-  const filterPostsByTime = useCallback((posts: unknown[], filter: string): unknown[] => {
-    debug("Filtering posts by time: " + filter);
-    const now = new Date();
-    return posts.filter((post) => {
-      const postDate = new Date(post.pubDate);
-      switch(filter) {
-        case 'hour': return (now.getTime() - postDate.getTime()) < 3600000;
-        case 'day': return (now.getTime() - postDate.getTime()) < 86400000;
-        case 'week': return (now.getTime() - postDate.getTime()) < 604800000;
-        default: return true;
-      }
-    });
-  }, [debug]);
+const filterPostsByTime = useCallback((posts: Post[], filter: string): Post[] => {
+  debug("Filtering posts by time: " + filter);
+  const now = new Date();
+  return posts.filter((post) => {
+    const postDate = new Date(post.pubDate);
+    switch(filter) {
+      case 'hour': return (now.getTime() - postDate.getTime()) < 3600000;
+      case 'day': return (now.getTime() - postDate.getTime()) < 86400000;
+      case 'week': return (now.getTime() - postDate.getTime()) < 604800000;
+      default: return true;
+    }
+  });
+}, [debug]);
 
   const createParticleEffect = useCallback((position: THREE.Vector3) => {
     debug("Creating particle effect at position: " + JSON.stringify(position));
@@ -137,7 +137,7 @@ const SocialMediaVisualization: FC = () => {
     });
   }, [debug]);
 
-  const updateVisualization = useCallback((oldPosts: unknown[], newPosts: unknown[]) => {
+  const updateVisualization = useCallback((oldPosts: Post[], newPosts: Post[]) => {
     debug("Updating visualization");
     if (!sceneRef.current) return;
 
@@ -225,7 +225,7 @@ const SocialMediaVisualization: FC = () => {
     const fetchAllFeeds = () => {
       debug("Fetching all feeds");
       Promise.all(RSS_FEEDS.map(fetchRSSFeed))
-        .then((allPosts) => {
+        .then((allPosts: Post[][]) => {
           const newPosts = allPosts.flat();
           debug("Total posts fetched: " + newPosts.length);
           setPosts((prevPosts) => {

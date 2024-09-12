@@ -42,10 +42,10 @@ const SocialMediaVisualization: FC = () => {
   
   const [rssFeeds, setRssFeeds] = useState<RSSFeed[]>(RSS_FEEDS);
   const mountRef = useRef<HTMLDivElement | null>(null);
-  const [posts, setPosts] = useState<any[]>([]);
+  const [posts, setPosts] = useState<unknown[]>([]);
   const [tooltip, setTooltip] = useState<Tooltip | null>(null);
   const [timeFilter, setTimeFilter] = useState<string>('all');
-  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [searchTerm] = useState<string>('');
   const [autoRotate, setAutoRotate] = useState<boolean>(true);
   const [settingsPanelOpen, setSettingsPanelOpen] = useState<boolean>(false);
   const [categoryVisibility, setCategoryVisibility] = useState<{ [key: string]: boolean }>({
@@ -65,7 +65,7 @@ const SocialMediaVisualization: FC = () => {
     setPosts(newPosts);
       }, []);
 
-  const filterPostsByTime = useCallback((posts: any[], filter: string): any[] => {
+  const filterPostsByTime = useCallback((posts: unknown[], filter: string): unknown[] => {
     debug("Filtering posts by time: " + filter);
     const now = new Date();
     return posts.filter((post) => {
@@ -132,7 +132,7 @@ const SocialMediaVisualization: FC = () => {
     });
   }, [debug]);
 
-  const updateVisualization = useCallback((oldPosts: any[], newPosts: any[]) => {
+  const updateVisualization = useCallback((oldPosts: unknown[], newPosts: unknown[]) => {
     debug("Updating visualization");
     if (!sceneRef.current) return;
 
@@ -191,7 +191,7 @@ const SocialMediaVisualization: FC = () => {
 
   useEffect(() => {
     debug("Component mounted");
-    const fetchRSSFeed = (feed: RssFeed): Promise<any[]> => {
+    const fetchRSSFeed = (feed: RssFeed): Promise<unknown[]> => {
       debug("Fetching RSS feed: " + feed.url);
       return fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`)
         .then(response => response.json())
@@ -200,7 +200,7 @@ const SocialMediaVisualization: FC = () => {
             console.error('Invalid RSS feed data:', data);
             return [];
           }
-          return data.items.map((item: any) => {
+          return data.items.map((item: unknown) => {
             return {
               id: item.guid || item.link,
               title: item.title,

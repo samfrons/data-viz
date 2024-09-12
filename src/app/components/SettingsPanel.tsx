@@ -47,7 +47,7 @@ const SettingsPanel: FC<SettingsPanelProps> = ({
         console.error('Invalid RSS feed data:', data);
         return [];
       }
-      return data.items.map((item: any) => ({
+      return data.items.map((item: unknown) => ({
         id: item.guid || item.link,
         title: item.title,
         link: item.link,

@@ -45,7 +45,7 @@ interface Tooltip {
 
 const SocialMediaVisualization: FC = () => {
   
-  const [rssFeeds, setRssFeeds] = useState<RSSFeed[]>(RSS_FEEDS);
+  const [rssFeeds, setRssFeeds] = useState<RssFeed[]>(RSS_FEEDS);
   const mountRef = useRef<HTMLDivElement | null>(null);
   const [posts, setPosts] = useState<Post[]>([]);
   const [tooltip, setTooltip] = useState<Tooltip | null>(null);

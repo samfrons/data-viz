@@ -5,6 +5,7 @@ interface RSSFeed {
   category: string;
 }
 
+/*
 interface Post {
   id: string;
   title: string;
@@ -12,7 +13,7 @@ interface Post {
   pubDate: string;
   category: string;
   engagement: number;
-}
+}*/
 
 interface SettingsPanelProps {
   isOpen: boolean;
@@ -21,7 +22,7 @@ interface SettingsPanelProps {
   setAutoRotate: (value: boolean) => void;
   rssFeeds: RSSFeed[];
   setRssFeeds: React.Dispatch<React.SetStateAction<RSSFeed[]>>;
-  onPostsUpdate: (posts: Post[]) => void;
+//  onPostsUpdate: (posts: Post[]) => void;
   onFeedsUpdate: () => void;
 }
 
@@ -32,7 +33,7 @@ const SettingsPanel: FC<SettingsPanelProps> = ({
   setAutoRotate, 
   rssFeeds,
   setRssFeeds,
-  onPostsUpdate,
+ // onPostsUpdate,
   onFeedsUpdate
 }) => {
   const [newFeedUrl, setNewFeedUrl] = useState<string>('');

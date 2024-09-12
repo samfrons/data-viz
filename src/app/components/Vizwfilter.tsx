@@ -3,9 +3,7 @@
 import React, { useRef, useEffect, useState, useCallback, FC } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import SettingsPanel from './SettingsPanel';
-import { Input } from '@headlessui/react';
-
+import SettingsPanel from './SettingsPanel.tsx';
 
 const COLORS: { [key: string]: number } = {
   Technology: 0x4e79a7,
@@ -18,14 +16,6 @@ interface RssFeed {
   url: string;
   category: string;
 }
-
-interface RssItem {
-  guid?: string;
-  link: string;
-  title: string;
-  pubDate: string;
-}
-
 
 interface Post {
   id: string;
@@ -49,16 +39,14 @@ interface Tooltip {
   y: number;
 }
 
-
-
 const SocialMediaVisualization: FC = () => {
   
-  const [rssFeeds, setRssFeeds] = useState<RssFeed[]>(RSS_FEEDS);
+  const [rssFeeds, setRssFeeds] = useState<RSSFeed[]>(RSS_FEEDS);
   const mountRef = useRef<HTMLDivElement | null>(null);
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<any[]>([]);
   const [tooltip, setTooltip] = useState<Tooltip | null>(null);
   const [timeFilter, setTimeFilter] = useState<string>('all');
-  const [searchTerm] = useState<string>('');
+  const [searchTerm, setSearchTerm] = useState<string>('');
   const [autoRotate, setAutoRotate] = useState<boolean>(true);
   const [settingsPanelOpen, setSettingsPanelOpen] = useState<boolean>(false);
   const [categoryVisibility, setCategoryVisibility] = useState<{ [key: string]: boolean }>({
@@ -78,25 +66,25 @@ const SocialMediaVisualization: FC = () => {
     setPosts(newPosts);
       }, []);
 
-const filterPostsByTime = useCallback((posts: Post[], filter: string): Post[] => {
-  debug("Filtering posts by time: " + filter);
-  const now = new Date();
-  return posts.filter((post) => {
-    const postDate = new Date(post.pubDate);
-    switch(filter) {
-      case 'hour': return (now.getTime() - postDate.getTime()) < 3600000;
-      case 'day': return (now.getTime() - postDate.getTime()) < 86400000;
-      case 'week': return (now.getTime() - postDate.getTime()) < 604800000;
-      default: return true;
-    }
-  });
-}, [debug]);
+  const filterPostsByTime = useCallback((posts: any[], filter: string): any[] => {
+    debug("Filtering posts by time: " + filter);
+    const now = new Date();
+    return posts.filter((post) => {
+      const postDate = new Date(post.pubDate);
+      switch(filter) {
+        case 'hour': return (now.getTime() - postDate.getTime()) < 3600000;
+        case 'day': return (now.getTime() - postDate.getTime()) < 86400000;
+        case 'week': return (now.getTime() - postDate.getTime()) < 604800000;
+        default: return true;
+      }
+    });
+  }, [debug]);
 
   const createParticleEffect = useCallback((position: THREE.Vector3) => {
     debug("Creating particle effect at position: " + JSON.stringify(position));
     const particleGeometry = new THREE.BufferGeometry();
-    const particleCount = 1;
-    const posArray = new Float32Array(particleCount * 0);
+    const particleCount = 100;
+    const posArray = new Float32Array(particleCount * 3);
     
     for (let i = 0; i < particleCount * 3; i++) {
       posArray[i] = (Math.random() - 0.5) * 10;
@@ -125,9 +113,9 @@ const filterPostsByTime = useCallback((posts: Post[], filter: string): Post[] =>
       return child.type !== 'Line';
     });
 
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0xcccccc, transparent: false, opacity: 0.7 });
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0xcccccc, transparent: true, opacity: 0.3 });
     spheresRef.current.forEach((sphere, index) => {
-      const post = sphere.userData as Post;
+      const post = sphere.userData;
       const relatedSpheres = spheresRef.current.filter((s, i) => {
         return i !== index && 
           (s.userData.category === post.category || 
@@ -145,7 +133,7 @@ const filterPostsByTime = useCallback((posts: Post[], filter: string): Post[] =>
     });
   }, [debug]);
 
-  const updateVisualization = useCallback((oldPosts: Post[], newPosts: Post[]) => {
+  const updateVisualization = useCallback((oldPosts: any[], newPosts: any[]) => {
     debug("Updating visualization");
     if (!sceneRef.current) return;
 
@@ -168,38 +156,35 @@ const filterPostsByTime = useCallback((posts: Post[], filter: string): Post[] =>
       Health: new THREE.Vector3(50, -50, 0)
     };
 
-spheresRef.current = filteredPosts.map((post) => {
-  const radius = (post.engagement / 100) * 3 + 1;
-  const geometry = new THREE.SphereGeometry(radius, 32, 32);
-  const material = new THREE.MeshPhongMaterial({ 
-    color: COLORS[post.category],
-    transparent: true,
-    opacity: 0.7
-  });
-  const sphere = new THREE.Mesh(geometry, material);
-  
-  const basePosition = categoryPosition[post.category];
-  const newPosition = new THREE.Vector3(
-    basePosition.x + (Math.random() * 40 - 20),
-    basePosition.y + (Math.random() * 40 - 20),
-    basePosition.z + (Math.random() * 40 - 20)
-  );
+    spheresRef.current = filteredPosts.map((post) => {
+      const radius = (post.engagement / 100) * 3 + 1;
+      const geometry = new THREE.SphereGeometry(radius, 32, 32);
+      const material = new THREE.MeshPhongMaterial({ 
+        color: COLORS[post.category],
+        transparent: true,
+        opacity: 0.7
+      });
+      const sphere = new THREE.Mesh(geometry, material);
+      
+      const basePosition = categoryPosition[post.category];
+      const newPosition = new THREE.Vector3(
+        basePosition.x + (Math.random() * 40 - 20),
+        basePosition.y + (Math.random() * 40 - 20),
+        basePosition.z + (Math.random() * 40 - 20)
+      );
 
-  if (oldPosts.find(oldPost => oldPost.id === post.id)) {
-    sphere.position.set(newPosition.x, newPosition.y, newPosition.z);
-  } else {
-    sphere.position.set(newPosition.x, newPosition.y, newPosition.z);
-    createParticleEffect(sphere.position);
-  }
+      if (oldPosts.find(oldPost => oldPost.id === post.id)) {
+        sphere.position.set(newPosition.x, newPosition.y, newPosition.z);
+      } else {
+        sphere.position.set(newPosition.x, newPosition.y, newPosition.z);
+        createParticleEffect(sphere.position);
+      }
 
-  sphere.userData = post;
-  if (sceneRef.current) {
-    sceneRef.current.add(sphere);
-  } else {
-    console.warn('Scene is not initialized');
-  }
-  return sphere;
-});
+      sphere.userData = post;
+      sceneRef.current.add(sphere);
+      return sphere;
+    });
+
     updateConnections();
   }, [debug, filterPostsByTime, timeFilter, categoryVisibility, searchTerm, createParticleEffect, updateConnections]);
 
@@ -207,37 +192,36 @@ spheresRef.current = filteredPosts.map((post) => {
 
   useEffect(() => {
     debug("Component mounted");
-const fetchRSSFeed = (feed: RssFeed): Promise<Post[]> => {
-  debug("Fetching RSS feed: " + feed.url);
-  return fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`)
-    .then(response => response.json())
-    .then(data => {
-      if (data.status !== 'ok' || !Array.isArray(data.items)) {
-        console.error('Invalid RSS feed data:', data);
-        return [];
-      }
-      return data.items.map((item: unknown) => {
-        const rssItem = item as RssItem;
-        return {
-          id: rssItem.guid || rssItem.link,
-          title: rssItem.title,
-          link: rssItem.link,
-          pubDate: rssItem.pubDate,
-          category: feed.category,
-          engagement: Math.floor(Math.random() * 100)
-        };
-      });
-    })
-    .catch((error) => {
-      console.error('Error fetching RSS feed:', error);
-      return [];
-    });
-}
+    const fetchRSSFeed = (feed: RssFeed): Promise<any[]> => {
+      debug("Fetching RSS feed: " + feed.url);
+      return fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.status !== 'ok' || !Array.isArray(data.items)) {
+            console.error('Invalid RSS feed data:', data);
+            return [];
+          }
+          return data.items.map((item: any) => {
+            return {
+              id: item.guid || item.link,
+              title: item.title,
+              link: item.link,
+              pubDate: item.pubDate,
+              category: feed.category,
+              engagement: Math.floor(Math.random() * 100)
+            };
+          });
+        })
+        .catch((error) => {
+          console.error('Error fetching RSS feed:', error);
+          return [];
+        });
+    }
 
     const fetchAllFeeds = () => {
       debug("Fetching all feeds");
       Promise.all(RSS_FEEDS.map(fetchRSSFeed))
-        .then((allPosts: Post[][]) => {
+        .then((allPosts) => {
           const newPosts = allPosts.flat();
           debug("Total posts fetched: " + newPosts.length);
           setPosts((prevPosts) => {
@@ -296,76 +280,69 @@ const fetchRSSFeed = (feed: RssFeed): Promise<Post[]> => {
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
 
-const onMouseMove = (event: MouseEvent) => {
-  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    const onMouseMove = (event: MouseEvent) => {
+      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
-  raycaster.setFromCamera(mouse, camera);
-  const intersects = raycaster.intersectObjects(spheresRef.current);
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(spheresRef.current);
 
-  if (intersects.length > 0) {
-    const post = intersects[0].object.userData;
-    setTooltip({
-      content: `
-        <strong>${post.title}</strong><br>
-        Category: ${post.category}<br>
-        Published: ${new Date(post.pubDate).toLocaleString()}<br>
-        Engagement: ${post.engagement}
-      `,
-      x: event.clientX,
-      y: event.clientY
-    });
-    document.body.style.cursor = 'pointer';
+      if (intersects.length > 0) {
+        const post = intersects[0].object.userData;
+        setTooltip({
+          content: `
+            <strong>${post.title}</strong><br>
+            Category: ${post.category}<br>
+            Published: ${new Date(post.pubDate).toLocaleString()}<br>
+            Engagement: ${post.engagement}
+          `,
+          x: event.clientX,
+          y: event.clientY
+        });
+        document.body.style.cursor = 'pointer';
 
-    spheresRef.current.forEach((sphere) => {
-      const sphereMaterial = sphere.material as THREE.MeshBasicMaterial;
-      if (sphere.userData.category === post.category || 
-          new Date(sphere.userData.pubDate).toDateString() === new Date(post.pubDate).toDateString()) {
-        sphereMaterial.color.setHex(0x00ff00); // Highlight in green
+        spheresRef.current.forEach((sphere) => {
+          if (sphere.userData.category === post.category || 
+              new Date(sphere.userData.pubDate).toDateString() === new Date(post.pubDate).toDateString()) {
+            sphere.material.emissive.setHex(0x00ff00);
+          } else {
+            sphere.material.emissive.setHex(0x000000);
+          }
+        });
       } else {
-        // Reset to original color
-        sphereMaterial.color.setHex(COLORS[sphere.userData.category as keyof typeof COLORS]);
+        setTooltip(null);
+        document.body.style.cursor = 'default';
+        spheresRef.current.forEach((sphere) => {
+          sphere.material.emissive.setHex(0x000000);
+        });
       }
-    });
-  } else {
-    setTooltip(null);
-    document.body.style.cursor = 'default';
-    spheresRef.current.forEach((sphere) => {
-      const sphereMaterial = sphere.material as THREE.MeshBasicMaterial;
-      // Reset to original color
-      sphereMaterial.color.setHex(COLORS[sphere.userData.category as keyof typeof COLORS]);
-    });
-  }
-};
+    }
 
     window.addEventListener('mousemove', onMouseMove);
 
-  const updateBackgroundColor = () => {
-  const now = new Date();
-  const hours = now.getHours();
-  const nightColor = new THREE.Color(0x001a33);
-  const dayColor = new THREE.Color(0x001a33);
-  const t = Math.sin((hours / 24) * Math.PI);
-  const color = new THREE.Color().lerpColors(nightColor, dayColor, t);
-  
-  // Instead of setting scene.background, we'll set the clear color of the renderer
-  // with an alpha value for transparency
-  renderer.setClearColor(color, 0.3); // 0.3 is the alpha value, adjust as needed
-}
+    const updateBackgroundColor = () => {
+      const now = new Date();
+      const hours = now.getHours();
+      const nightColor = new THREE.Color(0x001a33);
+      const dayColor = new THREE.Color(0x001a33);
+      const t = Math.sin((hours / 24) * Math.PI);
+      const color = new THREE.Color().lerpColors(nightColor, dayColor, t);
+      scene.background = color;
+    }
 
-const animate = () => {
-  requestAnimationFrame(animate);
-  
-  spheresRef.current.forEach((sphere) => {
-    sphere.scale.x = sphere.scale.y = sphere.scale.z = 
-      1 + 0.1 * Math.sin(Date.now() * 0.001 + sphere.position.x);
-  });
+    const animate = () => {
+      requestAnimationFrame(animate);
+      
+      spheresRef.current.forEach((sphere) => {
+        sphere.scale.x = sphere.scale.y = sphere.scale.z = 
+          1 + 0.1 * Math.sin(Date.now() * 0.001 + sphere.position.x);
+      });
 
-  controls.update();
-  updateBackgroundColor();
-  controls.update();
-  renderer.render(scene, camera);
-}
+      controls.update();
+      updateBackgroundColor();
+      controls.update();
+      renderer.render(scene, camera);
+    }
     animate();
 
     const handleResize = () => {
@@ -410,8 +387,12 @@ const animate = () => {
       </div>
 
       <div style={{ position: 'absolute', top: 50, right: 10 }}>
-       
-        <Input name="full_name" type="text" className="border data-[hover]:shadow data-[focus]:bg-blue-100"/>
+        <input 
+          type="text" 
+          placeholder="Search posts..." 
+          value={searchTerm} 
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
       </div>
 
       <div style={{ position: 'absolute', bottom: 10, left: 10 }}>
@@ -423,7 +404,8 @@ const animate = () => {
               style={{
                 margin: '0 5px',
                 padding: '5px 10px',
-                color: 'white',
+                backgroundColor: categoryVisibility[category] ? COLORS[category] : '#ccc',
+                color: 'navy',
                 border: 'none',
                 borderRadius: '0px',
                 cursor: 'pointer'
@@ -433,20 +415,18 @@ const animate = () => {
             </button>
           );
         })}
-
-
-        <div className="counter" style={{  color: 'white', backgroundColor: 'rgba(0,0,0,0.7)', padding: '5px' }}>
-        Posts: {posts.length} | Visible: {spheresRef.current.length}
-      </div>
       </div>
 
-
-        <button id="panel-open"
+        <button
         style={{
           position: 'absolute',
           top: '90px',
           right: '10px',
           padding: '5px 10px',
+          backgroundColor: '#4CAF50',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
           cursor: 'pointer'
         }}
         onClick={() => setSettingsPanelOpen(true)}
@@ -470,13 +450,26 @@ const animate = () => {
 />
 
       {tooltip && (
-        <div className='tooltip'
-          style={{ top: tooltip.y + 10,
+        <div
+          style={{
+            position: 'absolute',
+            top: tooltip.y + 10,
             left: tooltip.x + 10,
-            pointerEvents: 'none', 
-          }} dangerouslySetInnerHTML={{ __html: tooltip.content }}
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            color: 'white',
+            padding: '5px 10px',
+            borderRadius: '5px',
+            fontSize: '14px',
+            pointerEvents: 'none',
+            zIndex: 1000,
+          }}
+          dangerouslySetInnerHTML={{ __html: tooltip.content }}
         />
       )}
+
+      <div style={{ position: 'absolute', bottom: 10, right: 10, color: 'white', backgroundColor: 'rgba(0,0,0,0.7)', padding: '5px', borderRadius: '5px' }}>
+        Posts: {posts.length} | Visible: {spheresRef.current.length}
+      </div>
     </div>
   );
 };

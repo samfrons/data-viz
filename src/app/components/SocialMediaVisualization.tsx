@@ -6,7 +6,6 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import SettingsPanel from './SettingsPanel';
 import { Input } from '@headlessui/react';
 
-
 const COLORS: { [key: string]: number } = {
   Technology: 0x4e79a7,
   Business: 0xf28e2c,
@@ -296,43 +295,47 @@ const fetchRSSFeed = (feed: RssFeed): Promise<Post[]> => {
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
 
-    const onMouseMove = (event: MouseEvent) => {
-      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-      mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+const onMouseMove = (event: MouseEvent) => {
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
-      raycaster.setFromCamera(mouse, camera);
-      const intersects = raycaster.intersectObjects(spheresRef.current);
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObjects(spheresRef.current);
 
-      if (intersects.length > 0) {
-        const post = intersects[0].object.userData;
-        setTooltip({
-          content: `
-            <strong>${post.title}</strong><br>
-            Category: ${post.category}<br>
-            Published: ${new Date(post.pubDate).toLocaleString()}<br>
-            Engagement: ${post.engagement}
-          `,
-          x: event.clientX,
-          y: event.clientY
-        });
-        document.body.style.cursor = 'pointer';
+  if (intersects.length > 0) {
+    const post = intersects[0].object.userData;
+    setTooltip({
+      content: `
+        <strong>${post.title}</strong><br>
+        Category: ${post.category}<br>
+        Published: ${new Date(post.pubDate).toLocaleString()}<br>
+        Engagement: ${post.engagement}
+      `,
+      x: event.clientX,
+      y: event.clientY
+    });
+    document.body.style.cursor = 'pointer';
 
-        spheresRef.current.forEach((sphere) => {
-          if (sphere.userData.category === post.category || 
-              new Date(sphere.userData.pubDate).toDateString() === new Date(post.pubDate).toDateString()) {
-            sphere.material.emissive.setHex(0x00ff00);
-          } else {
-            sphere.material.emissive.setHex(0x000000);
-          }
-        });
+    spheresRef.current.forEach((sphere) => {
+      const sphereMaterial = sphere.material as THREE.MeshBasicMaterial;
+      if (sphere.userData.category === post.category || 
+          new Date(sphere.userData.pubDate).toDateString() === new Date(post.pubDate).toDateString()) {
+        sphereMaterial.color.setHex(0x00ff00); // Highlight in green
       } else {
-        setTooltip(null);
-        document.body.style.cursor = 'default';
-        spheresRef.current.forEach((sphere) => {
-          sphere.material.emissive.setHex(0x000000);
-        });
+        // Reset to original color
+        sphereMaterial.color.setHex(COLORS[sphere.userData.category as keyof typeof COLORS]);
       }
-    }
+    });
+  } else {
+    setTooltip(null);
+    document.body.style.cursor = 'default';
+    spheresRef.current.forEach((sphere) => {
+      const sphereMaterial = sphere.material as THREE.MeshBasicMaterial;
+      // Reset to original color
+      sphereMaterial.color.setHex(COLORS[sphere.userData.category as keyof typeof COLORS]);
+    });
+  }
+};
 
     window.addEventListener('mousemove', onMouseMove);
 

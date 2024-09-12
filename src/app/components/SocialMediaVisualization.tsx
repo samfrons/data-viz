@@ -114,7 +114,7 @@ const SocialMediaVisualization: FC = () => {
 
     const lineMaterial = new THREE.LineBasicMaterial({ color: 0xcccccc, transparent: false, opacity: 0.7 });
     spheresRef.current.forEach((sphere, index) => {
-      const post = sphere.userData;
+      const post = sphere.userData as Post;
       const relatedSpheres = spheresRef.current.filter((s, i) => {
         return i !== index && 
           (s.userData.category === post.category || 
@@ -319,29 +319,32 @@ const SocialMediaVisualization: FC = () => {
 
     window.addEventListener('mousemove', onMouseMove);
 
-    const updateBackgroundColor = () => {
-      const now = new Date();
-      const hours = now.getHours();
-      const nightColor = new THREE.Color(0x001a33);
-      const dayColor = new THREE.Color(0x001a33);
-      const t = Math.sin((hours / 24) * Math.PI);
-      const color = new THREE.Color().lerpColors(nightColor, dayColor, t);
-      scene.background = color;
-    }
+  const updateBackgroundColor = () => {
+  const now = new Date();
+  const hours = now.getHours();
+  const nightColor = new THREE.Color(0x001a33);
+  const dayColor = new THREE.Color(0x001a33);
+  const t = Math.sin((hours / 24) * Math.PI);
+  const color = new THREE.Color().lerpColors(nightColor, dayColor, t);
+  
+  // Instead of setting scene.background, we'll set the clear color of the renderer
+  // with an alpha value for transparency
+  renderer.setClearColor(color, 0.3); // 0.3 is the alpha value, adjust as needed
+}
 
-    const animate = () => {
-      requestAnimationFrame(animate);
-      
-      spheresRef.current.forEach((sphere) => {
-        sphere.scale.x = sphere.scale.y = sphere.scale.z = 
-          1 + 0.1 * Math.sin(Date.now() * 0.001 + sphere.position.x);
-      });
+const animate = () => {
+  requestAnimationFrame(animate);
+  
+  spheresRef.current.forEach((sphere) => {
+    sphere.scale.x = sphere.scale.y = sphere.scale.z = 
+      1 + 0.1 * Math.sin(Date.now() * 0.001 + sphere.position.x);
+  });
 
-      controls.update();
-      updateBackgroundColor();
-      controls.update();
-      renderer.render(scene, camera);
-    }
+  controls.update();
+  updateBackgroundColor();
+  controls.update();
+  renderer.render(scene, camera);
+}
     animate();
 
     const handleResize = () => {
@@ -417,13 +420,12 @@ const SocialMediaVisualization: FC = () => {
       </div>
 
 
-        <button
+        <button id="panel-open"
         style={{
           position: 'absolute',
           top: '90px',
           right: '10px',
           padding: '5px 10px',
-          
           cursor: 'pointer'
         }}
         onClick={() => setSettingsPanelOpen(true)}
@@ -447,24 +449,13 @@ const SocialMediaVisualization: FC = () => {
 />
 
       {tooltip && (
-        <div
-          style={{
-            position: 'absolute',
-            top: tooltip.y + 10,
+        <div class='tooltip'
+          style={{ top: tooltip.y + 10,
             left: tooltip.x + 10,
-            backgroundColor: 'rgba(0, 0, 0, 0.7)',
-            color: 'white',
-            padding: '5px 10px',
-            borderRadius: '5px',
-            fontSize: '14px',
-            pointerEvents: 'none',
-            zIndex: 1000,
-          }}
-          dangerouslySetInnerHTML={{ __html: tooltip.content }}
+            pointerEvents: 'none', 
+          }} dangerouslySetInnerHTML={{ __html: tooltip.content }}
         />
       )}
-
-      
     </div>
   );
 };

@@ -4,7 +4,7 @@
 
 import React from 'react';
 import dynamic from 'next/dynamic';
-import BackgroundAnimation from './BackgroundAnimation';
+import BackgroundAnimation from './components/BackgroundAnimation';
 //import Mfc1 from './components/Mfc1';
 
 const SocialMediaVisualization = dynamic(

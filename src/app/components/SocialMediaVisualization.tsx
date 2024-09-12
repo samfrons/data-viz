@@ -18,6 +18,13 @@ interface RssFeed {
   category: string;
 }
 
+interface RssItem {
+  guid?: string;
+  link: string;
+  title: string;
+  pubDate: string;
+}
+
 
 interface Post {
   id: string;
@@ -160,35 +167,38 @@ const filterPostsByTime = useCallback((posts: Post[], filter: string): Post[] =>
       Health: new THREE.Vector3(50, -50, 0)
     };
 
-    spheresRef.current = filteredPosts.map((post) => {
-      const radius = (post.engagement / 100) * 3 + 1;
-      const geometry = new THREE.SphereGeometry(radius, 32, 32);
-      const material = new THREE.MeshPhongMaterial({ 
-        color: COLORS[post.category],
-        transparent: true,
-        opacity: 0.7
-      });
-      const sphere = new THREE.Mesh(geometry, material);
-      
-      const basePosition = categoryPosition[post.category];
-      const newPosition = new THREE.Vector3(
-        basePosition.x + (Math.random() * 40 - 20),
-        basePosition.y + (Math.random() * 40 - 20),
-        basePosition.z + (Math.random() * 40 - 20)
-      );
+spheresRef.current = filteredPosts.map((post) => {
+  const radius = (post.engagement / 100) * 3 + 1;
+  const geometry = new THREE.SphereGeometry(radius, 32, 32);
+  const material = new THREE.MeshPhongMaterial({ 
+    color: COLORS[post.category],
+    transparent: true,
+    opacity: 0.7
+  });
+  const sphere = new THREE.Mesh(geometry, material);
+  
+  const basePosition = categoryPosition[post.category];
+  const newPosition = new THREE.Vector3(
+    basePosition.x + (Math.random() * 40 - 20),
+    basePosition.y + (Math.random() * 40 - 20),
+    basePosition.z + (Math.random() * 40 - 20)
+  );
 
-      if (oldPosts.find(oldPost => oldPost.id === post.id)) {
-        sphere.position.set(newPosition.x, newPosition.y, newPosition.z);
-      } else {
-        sphere.position.set(newPosition.x, newPosition.y, newPosition.z);
-        createParticleEffect(sphere.position);
-      }
+  if (oldPosts.find(oldPost => oldPost.id === post.id)) {
+    sphere.position.set(newPosition.x, newPosition.y, newPosition.z);
+  } else {
+    sphere.position.set(newPosition.x, newPosition.y, newPosition.z);
+    createParticleEffect(sphere.position);
+  }
 
-      sphere.userData = post;
-      sceneRef.current.add(sphere);
-      return sphere;
-    });
-
+  sphere.userData = post;
+  if (sceneRef.current) {
+    sceneRef.current.add(sphere);
+  } else {
+    console.warn('Scene is not initialized');
+  }
+  return sphere;
+});
     updateConnections();
   }, [debug, filterPostsByTime, timeFilter, categoryVisibility, searchTerm, createParticleEffect, updateConnections]);
 
@@ -196,31 +206,32 @@ const filterPostsByTime = useCallback((posts: Post[], filter: string): Post[] =>
 
   useEffect(() => {
     debug("Component mounted");
-    const fetchRSSFeed = (feed: RssFeed): Promise<unknown[]> => {
-      debug("Fetching RSS feed: " + feed.url);
-      return fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`)
-        .then(response => response.json())
-        .then(data => {
-          if (data.status !== 'ok' || !Array.isArray(data.items)) {
-            console.error('Invalid RSS feed data:', data);
-            return [];
-          }
-          return data.items.map((item: unknown) => {
-            return {
-              id: item.guid || item.link,
-              title: item.title,
-              link: item.link,
-              pubDate: item.pubDate,
-              category: feed.category,
-              engagement: Math.floor(Math.random() * 100)
-            };
-          });
-        })
-        .catch((error) => {
-          console.error('Error fetching RSS feed:', error);
-          return [];
-        });
-    }
+const fetchRSSFeed = (feed: RssFeed): Promise<Post[]> => {
+  debug("Fetching RSS feed: " + feed.url);
+  return fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`)
+    .then(response => response.json())
+    .then(data => {
+      if (data.status !== 'ok' || !Array.isArray(data.items)) {
+        console.error('Invalid RSS feed data:', data);
+        return [];
+      }
+      return data.items.map((item: unknown) => {
+        const rssItem = item as RssItem;
+        return {
+          id: rssItem.guid || rssItem.link,
+          title: rssItem.title,
+          link: rssItem.link,
+          pubDate: rssItem.pubDate,
+          category: feed.category,
+          engagement: Math.floor(Math.random() * 100)
+        };
+      });
+    })
+    .catch((error) => {
+      console.error('Error fetching RSS feed:', error);
+      return [];
+    });
+}
 
     const fetchAllFeeds = () => {
       debug("Fetching all feeds");

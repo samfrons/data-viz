@@ -112,27 +112,6 @@ button:hover {
 .decades-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Changed from center to flex-start */
-  gap: 20px;
-  width: 100%; /* Ensure the container takes full width */
-}
-
-.decade {
-  flex: 1 1 calc(25% - 20px); /* 25% width for 4 items per row, accounting for gap */
-  min-width: 300px; /* Increased minimum width */
-  max-width: calc(25% - 20px); /* Limit maximum width */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden; /* Changed from visible to hidden */
-  min-height: 275px;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.decades-container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
@@ -147,11 +126,9 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-/* Ensure the last 3 decades are on their own row */
+
 .decade:nth-last-child(-n+3) {
-  flex-basis: calc(33.333% - 20px);
-  max-width: calc(33.333% - 20px);
-  min-width: 400px;
+  min-height: 480px;
 }
 
 .decade-label {
@@ -163,16 +140,15 @@ button:hover {
 
 .year-columns {
   display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  overflow: visible; /* Allow horizontal scrolling if needed */
+  flex-wrap: wrap;
   flex-grow: 1;
-  width: 100%;
 }
 
 .year-column {
-  flex: 0 0 10%; /* Fixed width for each year column */
+  flex: 1 0 10%;
   min-width: 30px;
   border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   display: flex;
   flex-direction: column;
 }
@@ -182,7 +158,6 @@ button:hover {
   font-size: 0.8em;
   padding: 5px 0;
   color: #666;
-  white-space: nowrap; /* Prevent wrapping of year labels */
 }
 
 .movie-dots {
@@ -233,7 +208,16 @@ button:hover {
   border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
 }
 
-
+.movie-info::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+}
 
 .movie-dot-container:hover .movie-info {
   display: block;
@@ -253,4 +237,44 @@ button:hover {
 .movie-info p:last-child {
   margin-top: 10px;
   font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .decade {
+    flex-basis: 100%;
+  }
+}
+
+
+/* ... (keep the rest of your existing CSS) ... */
+
+@media (max-width: 1200px) {
+  .decade {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .decade {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+  
+  .decade:nth-last-child(-n+3) {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .decade {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  .decade:nth-last-child(-n+3) {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }

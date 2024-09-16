@@ -18,12 +18,12 @@ const DisasterMovieTimeline: React.FC = () => {
   useEffect(() => {
     fetch('/movies.json')
       .then(response => response.json())
-     .then(data => {
-  setMovies(data.movies);
-  const types = Array.from(new Set(data.movies.map((m: Movie) => m.disasterType))) as string[];
-  setDisasterTypes(types);
-  setIsLoading(false);
-})
+      .then(data => {
+        setMovies(data.movies);
+        const types = Array.from(new Set(data.movies.map((m: Movie) => m.disasterType))) as string[];
+        setDisasterTypes(types);
+        setIsLoading(false);
+      })
       .catch(error => {
         console.error('Error fetching movie data:', error);
         setIsLoading(false);
@@ -34,7 +34,7 @@ const DisasterMovieTimeline: React.FC = () => {
     return <div className="loading">Loading...</div>;
   }
 
-  const minYear = 1930;
+  const minYear = 1920;
   const maxYear = Math.max(...movies.map(m => m.year));
   const decades = Array.from({ length: Math.ceil((maxYear - minYear) / 10) }, (_, i) => minYear + i * 10);
 
@@ -54,13 +54,26 @@ const DisasterMovieTimeline: React.FC = () => {
     return typeof rating === 'number' ? rating.toFixed(1) : rating;
   };
 
+  const getDecadeHeight = (decade: number) => {
+    const moviesInDecade = movies.filter(m => m.year >= decade && m.year < decade + 10);
+    const moviesByYear = Array.from({ length: 10 }, (_, i) => {
+      return moviesInDecade.filter(m => m.year === decade + i).length;
+    });
+    const maxMoviesInYear = Math.max(...moviesByYear);
+    
+    const minHeight = 100; // Minimum height for decades with few movies
+    const maxHeight = 500; // Maximum height for decades with many movies
+    const heightPerMovie = 25; // Adjust this value to change the scaling
+    return Math.min(Math.max(minHeight, maxMoviesInYear * heightPerMovie), maxHeight);
+  };
+
   return (
     <div className="disaster-movie-timeline">
-      <h1>Disaster Movie Timeline</h1>
+      <h1>Disasters by the decade</h1>
 
       <div className="decades-container">
         {decades.map(decade => (
-          <div key={decade} className="decade">
+          <div key={decade} className="decade" style={{ height: `${getDecadeHeight(decade)}px` }}>
             <div className="decade-label">{decade}s</div>
             <div className="year-columns">
               {Array.from({ length: 10 }, (_, i) => decade + i).map(year => (
@@ -96,7 +109,7 @@ const DisasterMovieTimeline: React.FC = () => {
       </div>
 
       <div className="legend">
-        <h3>Disaster Types (Total: {movies.length})</h3>
+        <h3>Disaster Breakdown (Total: {movies.length})</h3>
         <div className="legend-items">
           {sortedDisasterTypes.map(type => (
             <div key={type} className="legend-item">

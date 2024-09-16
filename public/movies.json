@@ -1,4 +1,69 @@
 { "movies": [
+
+   {
+      "title": "The Last Days of Pompeii",
+      "year": 1926,
+      "rating": 6.5,
+      "boxOffice": 1000000,
+      "numberOfRatings": 500,
+      "plotSummary": "Set in the ancient Roman city of Pompeii, the film depicts the events leading up to the catastrophic eruption of Mount Vesuvius in 79 AD.",
+      "disasterType": "Volcano"
+    },
+    {
+      "title": "Noah's Ark",
+      "year": 1928,
+      "rating": 6.8,
+      "boxOffice": 2500000,
+      "numberOfRatings": 600,
+      "plotSummary": "The film interweaves a Biblical retelling of the Great Flood with a modern-day (1920s) story, drawing parallels between the two narratives.",
+      "disasterType": "Biblical"
+    },
+    {
+      "title": "The Sea Beast",
+      "year": 1926,
+      "rating": 7.0,
+      "boxOffice": 1500000,
+      "numberOfRatings": 400,
+      "plotSummary": "A loose adaptation of Herman Melville's 'Moby-Dick', featuring a whaling ship's encounter with a monstrous white whale.",
+      "disasterType": "Monster(s)"
+    },
+    {
+      "title": "Sodom and Gomorrah",
+      "year": 1922,
+      "rating": 6.2,
+      "boxOffice": 800000,
+      "numberOfRatings": 300,
+      "plotSummary": "Based on the Biblical story, the film depicts the decadence of the cities of Sodom and Gomorrah and their ultimate destruction.",
+      "disasterType": "Biblical"
+    },
+    {
+      "title": "Torment",
+      "year": 1924,
+      "rating": 6.0,
+      "boxOffice": 600000,
+      "numberOfRatings": 200,
+      "plotSummary": "A melodrama featuring natural disasters as a backdrop to personal conflicts and romance.",
+      "disasterType": "Ecological Collapse"
+    },
+    {
+      "title": "Volcano!",
+      "year": 1926,
+      "rating": 5.8,
+      "boxOffice": 750000,
+      "numberOfRatings": 250,
+      "plotSummary": "Set on a tropical island, the film depicts the chaos and destruction unleashed by a sudden volcanic eruption.",
+      "disasterType": "Volcano"
+    },
+    {
+      "title": "The White Sister",
+      "year": 1923,
+      "rating": 6.7,
+      "boxOffice": 1200000,
+      "numberOfRatings": 350,
+      "plotSummary": "A romantic drama that includes a volcanic eruption as a major plot point, set against the backdrop of World War I.",
+      "disasterType": "Volcano"
+    }, 
+
     { "title": "Interstellar", "year": 2014, "disasterType": "Natural Disaster", "rating": 8.6, "boxOffice": 701700000, "numberOfRatings": 1700000, "plotSummary": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival." },
     { "title": "Ablaze", "year": 2001, "disasterType": "Man-made Disaster", "rating": 5.6, "boxOffice": 0, "numberOfRatings": 1200, "plotSummary": "A firefighter must save a city from a massive oil refinery fire." },
     { "title": "Backdraft", "year": 1991, "disasterType": "Man-made Disaster", "rating": 6.7, "boxOffice": 0, "numberOfRatings": 75000, "plotSummary": "Two feuding firefighter brothers investigate a series of arson attacks in Chicago." },
@@ -96,10 +161,10 @@
     { "title": "Volcano: Fire on the Mountain", "year": 1997, "disasterType": "Natural Disaster", "rating": 4.5, "boxOffice": 0, "numberOfRatings": 500, "plotSummary": "A long-dormant volcano threatens to erupt in a ski resort town." },
     { "title": "The Wave", "year": 2015, "disasterType": "Natural Disaster", "rating": 6.7, "boxOffice": 0, "numberOfRatings": 30000, "plotSummary": "A geologist races against time to save his family and town from an impending tsunami in Norway." },
     { "title": "When Time Ran Out", "year": 1980, "disasterType": "Natural Disaster", "rating": 4.5, "boxOffice": 0, "numberOfRatings": 2000, "plotSummary": "Tourists and residents of a tropical island must escape an erupting volcano." },
-    { "title": "Airport", "year": 1970, "disasterType": "Airplane Disaster", "rating": 6.6, "boxOffice": 0, "numberOfRatings": 25000, "plotSummary": "A bomber on a plane threatens the lives of the passengers and crew during a snowstorm." },
-    { "title": "Airport 1975", "year": 1975, "disasterType": "Airplane Disaster", "rating": 5.7, "boxOffice": 0, "numberOfRatings": 15000, "plotSummary": "A flight attendant must pilot a 747 after it collides with a small plane." },
-    { "title": "Airport '77", "year": 1977, "disasterType": "Airplane Disaster", "rating": 5.6, "boxOffice": 0, "numberOfRatings": 10000, "plotSummary": "A 747 carrying valuable art crashes in the Bermuda Triangle." },
-    { "title": "The Concorde ... Airport '79", "year": 1979, "disasterType": "Airplane Disaster", "rating": 4.3, "boxOffice": 0, "numberOfRatings": 8000, "plotSummary": "Concorde pilots must save the passengers when the plane is attacked by a wealthy industrialist." },
+    { "title": "Airport", "year": 1970, "disasterType": "Airplane", "rating": 6.6, "boxOffice": 0, "numberOfRatings": 25000, "plotSummary": "A bomber on a plane threatens the lives of the passengers and crew during a snowstorm." },
+    { "title": "Airport 1975", "year": 1975, "disasterType": "Airplane", "rating": 5.7, "boxOffice": 0, "numberOfRatings": 15000, "plotSummary": "A flight attendant must pilot a 747 after it collides with a small plane." },
+    { "title": "Airport '77", "year": 1977, "disasterType": "Airplane", "rating": 5.6, "boxOffice": 0, "numberOfRatings": 10000, "plotSummary": "A 747 carrying valuable art crashes in the Bermuda Triangle." },
+    { "title": "The Concorde ... Airport '79", "year": 1979, "disasterType": "Airplane", "rating": 4.3, "boxOffice": 0, "numberOfRatings": 8000, "plotSummary": "Concorde pilots must save the passengers when the plane is attacked by a wealthy industrialist." },
    
   {
     "title": "The End of the World",
@@ -410,7 +475,7 @@
   {
     "title": "A Thief in the Night",
     "year": 1972,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 4.6,
     "boxOffice": 0,
     "numberOfRatings": 1026,
@@ -671,7 +736,7 @@
   {
     "title": "The Rapture",
     "year": 1991,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 6.3,
     "boxOffice": 0,
     "numberOfRatings": "0.0",
@@ -914,7 +979,7 @@
   {
     "title": "Dogma",
     "year": 1999,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 7.3,
     "boxOffice": 0,
     "numberOfRatings": 230771,
@@ -932,7 +997,7 @@
   {
     "title": "The Omega Code",
     "year": 1999,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 3.5,
     "boxOffice": 0,
     "numberOfRatings": 5564,
@@ -959,7 +1024,7 @@
   {
     "title": "Left Behind",
     "year": 2000,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 4.3,
     "boxOffice": 0,
     "numberOfRatings": "0.0",
@@ -968,7 +1033,7 @@
   {
     "title": "Lost Souls",
     "year": 2000,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 4.8,
     "boxOffice": 0,
     "numberOfRatings": 11447,
@@ -977,7 +1042,7 @@
   {
     "title": "The Prophecy 3: The Ascent",
     "year": 2000,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 5.4,
     "boxOffice": 0,
     "numberOfRatings": 5869,
@@ -1013,7 +1078,7 @@
   {
     "title": "Megiddo: The Omega Code 2",
     "year": 2001,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 3.9,
     "boxOffice": 0,
     "numberOfRatings": 2993,
@@ -1193,7 +1258,7 @@
   {
     "title": "The Hitchhiker's Guide to the Galaxy",
     "year": 2005,
-    "disasterType": "Sci-Fi",
+    "disasterType": "Cosmic",
     "rating": 6.7,
     "boxOffice": 0,
     "numberOfRatings": 209889,
@@ -1634,7 +1699,7 @@
   {
     "title": "Maximum Shame",
     "year": 2010,
-    "disasterType": "Surrealist",
+    "disasterType": "Dystopian",
     "rating": 2.7,
     "boxOffice": 0,
     "numberOfRatings": 404,
@@ -1832,7 +1897,7 @@
   {
     "title": "Cloud Atlas",
     "year": 2012,
-    "disasterType": "Multi-era",
+    "disasterType": "General causes",
     "rating": 7.4,
     "boxOffice": 0,
     "numberOfRatings": "0.0",
@@ -1859,7 +1924,7 @@
   {
     "title": "Rapture-Palooza",
     "year": 2013,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 5.2,
     "boxOffice": 0,
     "numberOfRatings": 12722,
@@ -1994,7 +2059,7 @@
   {
     "title": "The Host",
     "year": "2013",
-    "disasterType": "Monster",
+    "disasterType": "Monster(s)",
     "rating": "0.0",
     "boxOffice": 0,
     "numberOfRatings": "0.0",
@@ -2057,7 +2122,7 @@
   {
     "title": "Young Ones",
     "year": 2014,
-    "disasterType": "Water Scarcity",
+    "disasterType": "Ecological Collapse",
     "rating": 5.8,
     "boxOffice": 0,
     "numberOfRatings": 10515,
@@ -2084,7 +2149,7 @@
   {
     "title": "Dawn of the Planet of the Apes",
     "year": 2014,
-    "disasterType": "Pandemic/Evolved Apes",
+    "disasterType": "Evolved Apes",
     "rating": 7.6,
     "boxOffice": 0,
     "numberOfRatings": 490343,
@@ -2102,7 +2167,7 @@
   {
     "title": "The Last Survivors",
     "year": 2014,
-    "disasterType": "Water Scarcity",
+    "disasterType": "Ecological Collapse",
     "rating": 5.3,
     "boxOffice": 0,
     "numberOfRatings": 3972,
@@ -2111,7 +2176,7 @@
   {
     "title": "Noah",
     "year": 2014,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 5.8,
     "boxOffice": 0,
     "numberOfRatings": 268711,
@@ -2219,7 +2284,7 @@
   {
     "title": "JeruZalem",
     "year": 2015,
-    "disasterType": "Religious",
+    "disasterType": "Biblical",
     "rating": 4.8,
     "boxOffice": 0,
     "numberOfRatings": 11189,
@@ -2237,7 +2302,7 @@
   {
     "title": "Attack on Titan",
     "year": 2013,
-    "disasterType": "Giant Monsters",
+    "disasterType": "Monster(s)",
     "rating": 9.1,
     "boxOffice": 0,
     "numberOfRatings": 543662,
@@ -2336,7 +2401,7 @@
   {
     "title": "Day of Reckoning",
     "year": 2016,
-    "disasterType": "Monster Invasion",
+    "disasterType": "Monster(s)",
     "rating": 3.4,
     "boxOffice": 0,
     "numberOfRatings": 1249,
@@ -2354,11 +2419,11 @@
   {
     "title": "Diverge",
     "year": 2016,
-    "disasterType": "unknown",
+    "disasterType": "Ecological Collapse",
     "rating": 4.6,
     "boxOffice": 0,
     "numberOfRatings": 870,
-    "plotSummary": "unknown"
+    "plotSummary": "In a post-apocalyptic world ravaged by a devastating plague, a lone survivor is given the chance to travel back in time to prevent the catastrophe and save his wife."
   },
   {
     "title": "The Northlander",
@@ -2372,11 +2437,11 @@
   {
     "title": "Stephanie",
     "year": 2017,
-    "disasterType": "unknown",
+    "disasterType": "Unknown Cause",
     "rating": 5.8,
     "boxOffice": 0,
     "numberOfRatings": 6467,
-    "plotSummary": "unknown"
+    "plotSummary": "A young girl survives alone in her house after a mysterious global crisis."
   },
   {
     "title": "It Comes at Night",
@@ -2390,7 +2455,7 @@
   {
     "title": "War for the Planet of the Apes",
     "year": 2017,
-    "disasterType": "Pandemic/Evolved Apes",
+    "disasterType": "Evolved Apes",
     "rating": 7.4,
     "boxOffice": 0,
     "numberOfRatings": 306180,
@@ -2408,7 +2473,7 @@
   {
     "title": "Resident Evil: Vendetta",
     "year": 2017,
-    "disasterType": "Bioterrorism",
+    "disasterType": "Terrorism",
     "rating": 6.2,
     "boxOffice": 0,
     "numberOfRatings": 15783,
@@ -2417,16 +2482,16 @@
   {
     "title": "Everything Beautiful Is Far Away",
     "year": 2017,
-    "disasterType": "unknown",
+    "disasterType": "Ecological Collapse",
     "rating": 5.8,
     "boxOffice": 0,
     "numberOfRatings": 1171,
-    "plotSummary": "unknown"
+    "plotSummary": "A man and a robot search for water in a barren, post-apocalyptic world."
   },
   {
     "title": "Bokeh",
     "year": 2017,
-    "disasterType": "Unexplained Disappearance",
+    "disasterType": "Unknown Cause",
     "rating": 5,
     "boxOffice": 0,
     "numberOfRatings": 7942,
@@ -2453,11 +2518,11 @@
   {
     "title": "Here Alone",
     "year": 2017,
-    "disasterType": "unknown",
+    "disasterType": "Ecological Collapse",
     "rating": "0.0",
     "boxOffice": 0,
     "numberOfRatings": "0.0",
-    "plotSummary": "unknown"
+    "plotSummary": "A young woman struggles to survive on her own in the wake of a mysterious epidemic that has killed much of society and forced her into the unforgiving wilderness."
   },
   {
     "title": "Deep",
@@ -2507,7 +2572,7 @@
   {
     "title": "How It Ends",
     "year": 2018,
-    "disasterType": "Mysterious Disaster",
+    "disasterType": "Unknown Cause",
     "rating": 5.1,
     "boxOffice": 0,
     "numberOfRatings": 59601,
@@ -2516,7 +2581,7 @@
   {
     "title": "I Think We're Alone Now",
     "year": 2018,
-    "disasterType": "Unexplained Disappearance",
+    "disasterType": "Unknown Cause",
     "rating": 5.7,
     "boxOffice": 0,
     "numberOfRatings": 13014,
@@ -2525,7 +2590,7 @@
   {
     "title": "In My Room",
     "year": 2018,
-    "disasterType": "Unexplained Disappearance",
+    "disasterType": "Unknown Cause",
     "rating": 6.2,
     "boxOffice": 0,
     "numberOfRatings": 1324,
@@ -2633,7 +2698,7 @@
   {
     "title": "The Silence",
     "year": 2019,
-    "disasterType": "Monster Invasion",
+    "disasterType": "Monster(s)",
     "rating": 5.3,
     "boxOffice": 0,
     "numberOfRatings": "0.0",
@@ -2678,7 +2743,7 @@
   {
     "title": 3022,
     "year": 2019,
-    "disasterType": "Space Disaster",
+    "disasterType": "Ecological Collapse",
     "rating": 4.5,
     "boxOffice": 0,
     "numberOfRatings": 6040,
@@ -2687,11 +2752,11 @@
   {
     "title": 2067,
     "year": 2020,
-    "disasterType": "unknown",
+    "disasterType": "Ecological Collapse",
     "rating": "0.0",
     "boxOffice": 0,
     "numberOfRatings": "0.0",
-    "plotSummary": "unknown"
+    "plotSummary": "A man travels to the future to save humanity from an oxygen-depleted Earth."
   },
   {
     "title": "#Alive",
@@ -2732,7 +2797,7 @@
   {
     "title": "Love and Monsters",
     "year": 2020,
-    "disasterType": "Monster Apocalypse",
+    "disasterType": "Monster(s)",
     "rating": 6.9,
     "boxOffice": 0,
     "numberOfRatings": 148158,
@@ -2777,7 +2842,7 @@
   {
     "title": "Quarantine",
     "year": 2021,
-    "disasterType": "unknown",
+    "disasterType": "Pandemic",
     "rating": 7.8,
     "boxOffice": 0,
     "numberOfRatings": 15,
@@ -2804,7 +2869,7 @@
   {
     "title": "Awake",
     "year": 2021,
-    "disasterType": "Sleep Deprivation",
+    "disasterType": "Pandemic",
     "rating": 4.9,
     "boxOffice": 0,
     "numberOfRatings": 26806,
@@ -2813,7 +2878,7 @@
   {
     "title": "Don't Look Up",
     "year": 2021,
-    "disasterType": "Cosmic Disaster",
+    "disasterType": "Cosmic",
     "rating": 7.2,
     "boxOffice": 0,
     "numberOfRatings": 615446,
@@ -2912,7 +2977,7 @@
   {
     "title": "Bird Box Barcelona",
     "year": 2023,
-    "disasterType": "Supernatural Threat",
+    "disasterType": "Unknown Cause",
     "rating": 5.3,
     "boxOffice": 0,
     "numberOfRatings": 25298,
@@ -2948,7 +3013,7 @@
   {
     "title": "Leave the World Behind",
     "year": 2023,
-    "disasterType": "Unexplained Disaster",
+    "disasterType": "Unknown Cause",
     "rating": 6.4,
     "boxOffice": 0,
     "numberOfRatings": 211637,

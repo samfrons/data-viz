@@ -1,8 +1,73 @@
 { "movies": [
+
+   {
+      "title": "The Last Days of Pompeii",
+      "year": 1926,
+      "rating": 6.5,
+      "boxOffice": 1000000,
+      "numberOfRatings": 500,
+      "plotSummary": "Set in the ancient Roman city of Pompeii, the film depicts the events leading up to the catastrophic eruption of Mount Vesuvius in 79 AD.",
+      "disasterType": "Volcano"
+    },
+    {
+      "title": "Noah's Ark",
+      "year": 1928,
+      "rating": 6.8,
+      "boxOffice": 2500000,
+      "numberOfRatings": 600,
+      "plotSummary": "The film interweaves a Biblical retelling of the Great Flood with a modern-day (1920s) story, drawing parallels between the two narratives.",
+      "disasterType": "Biblical"
+    },
+    {
+      "title": "The Sea Beast",
+      "year": 1926,
+      "rating": 7.0,
+      "boxOffice": 1500000,
+      "numberOfRatings": 400,
+      "plotSummary": "A loose adaptation of Herman Melville's 'Moby-Dick', featuring a whaling ship's encounter with a monstrous white whale.",
+      "disasterType": "Monster(s)"
+    },
+    {
+      "title": "Sodom and Gomorrah",
+      "year": 1922,
+      "rating": 6.2,
+      "boxOffice": 800000,
+      "numberOfRatings": 300,
+      "plotSummary": "Based on the Biblical story, the film depicts the decadence of the cities of Sodom and Gomorrah and their ultimate destruction.",
+      "disasterType": "Biblical"
+    },
+    {
+      "title": "Torment",
+      "year": 1924,
+      "rating": 6.0,
+      "boxOffice": 600000,
+      "numberOfRatings": 200,
+      "plotSummary": "A melodrama featuring natural disasters as a backdrop to personal conflicts and romance.",
+      "disasterType": "Ecological Collapse"
+    },
+    {
+      "title": "Volcano!",
+      "year": 1926,
+      "rating": 5.8,
+      "boxOffice": 750000,
+      "numberOfRatings": 250,
+      "plotSummary": "Set on a tropical island, the film depicts the chaos and destruction unleashed by a sudden volcanic eruption.",
+      "disasterType": "Volcano"
+    },
+    {
+      "title": "The White Sister",
+      "year": 1923,
+      "rating": 6.7,
+      "boxOffice": 1200000,
+      "numberOfRatings": 350,
+      "plotSummary": "A romantic drama that includes a volcanic eruption as a major plot point, set against the backdrop of World War I.",
+      "disasterType": "Volcano"
+    }, 
+
     { "title": "Interstellar", "year": 2014, "disasterType": "Natural Disaster", "rating": 8.6, "boxOffice": 701700000, "numberOfRatings": 1700000, "plotSummary": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival." },
     { "title": "Ablaze", "year": 2001, "disasterType": "Man-made Disaster", "rating": 5.6, "boxOffice": 0, "numberOfRatings": 1200, "plotSummary": "A firefighter must save a city from a massive oil refinery fire." },
     { "title": "Backdraft", "year": 1991, "disasterType": "Man-made Disaster", "rating": 6.7, "boxOffice": 0, "numberOfRatings": 75000, "plotSummary": "Two feuding firefighter brothers investigate a series of arson attacks in Chicago." },
-    { "title": "The Burning Sea", "year": 2021, "disasterType": "Man-made Disaster", "rating": 6.2, "boxOffice": 0, "numberOfRatings": 5000, "plotSummary": "An oil platform collapse in the North Sea triggers a potential environmental disaster." },
+    { "title": "The Burning Sea", "year": 2021, "disasterType": "Man-made Disaster", "rating": 6.2, "boxOffice": 0, "numberOfRatings": 5000, "plotSummary": "An oil platform collapse in the North Sea triggers a potential Ecological Collapse." },
     { "title": "City on Fire", "year": 1979, "disasterType": "Man-made Disaster", "rating": 5.5, "boxOffice": 0, "numberOfRatings": 1000, "plotSummary": "A disgruntled employee sets an oil refinery ablaze, threatening a nearby city." },
     { "title": "The Core", "year": 2003, "disasterType": "Man-made Disaster", "rating": 5.5, "boxOffice": 74000000, "numberOfRatings": 85000, "plotSummary": "Scientists must drill to the Earth's core to restart it and save the planet." },
     { "title": "Crack in the World", "year": 1965, "disasterType": "Man-made Disaster", "rating": 5.5, "boxOffice": 0, "numberOfRatings": 1500, "plotSummary": "Scientists accidentally create a crack in the Earth's crust, threatening global destruction." },
@@ -13,7 +78,7 @@
     { "title": "Firestorm", "year": 1998, "disasterType": "Man-made Disaster", "rating": 5.1, "boxOffice": 8165000, "numberOfRatings": 10000, "plotSummary": "A firefighter must stop escaped convicts during a raging forest fire." },
     { "title": "In Old Chicago", "year": 1937, "disasterType": "Man-made Disaster", "rating": 6.8, "boxOffice": 0, "numberOfRatings": 2000, "plotSummary": "A fictional account of the Great Chicago Fire of 1871." },
     { "title": "Ladder 49", "year": 2004, "disasterType": "Man-made Disaster", "rating": 6.5, "boxOffice": 74541707, "numberOfRatings": 55000, "plotSummary": "A firefighter trapped in a burning building reflects on his life and career." },
-    { "title": "Pandora", "year": 2016, "disasterType": "Man-made Disaster", "rating": 6.6, "boxOffice": 0, "numberOfRatings": 3000, "plotSummary": "A nuclear power plant meltdown threatens a Korean peninsula." },
+    { "title": "Pandora", "year": 2016, "disasterType": "Nukes!", "rating": 6.6, "boxOffice": 0, "numberOfRatings": 3000, "plotSummary": "A nuclear power plant meltdown threatens a Korean peninsula." },
     { "title": "Red Skies of Montana", "year": 1952, "disasterType": "Man-made Disaster", "rating": 6.0, "boxOffice": 0, "numberOfRatings": 500, "plotSummary": "Smokejumpers battle a massive forest fire in Montana." },
     { "title": "The Tower", "year": 2012, "disasterType": "Man-made Disaster", "rating": 6.6, "boxOffice": 0, "numberOfRatings": 8000, "plotSummary": "A fire breaks out in a luxury skyscraper in South Korea on Christmas Eve." },
     { "title": "The Towering Inferno", "year": 1974, "disasterType": "Man-made Disaster", "rating": 7.0, "boxOffice": 139700000, "numberOfRatings": 40000, "plotSummary": "A fire breaks out in a newly-built skyscraper during its opening ceremony." },
@@ -96,368 +161,3127 @@
     { "title": "Volcano: Fire on the Mountain", "year": 1997, "disasterType": "Natural Disaster", "rating": 4.5, "boxOffice": 0, "numberOfRatings": 500, "plotSummary": "A long-dormant volcano threatens to erupt in a ski resort town." },
     { "title": "The Wave", "year": 2015, "disasterType": "Natural Disaster", "rating": 6.7, "boxOffice": 0, "numberOfRatings": 30000, "plotSummary": "A geologist races against time to save his family and town from an impending tsunami in Norway." },
     { "title": "When Time Ran Out", "year": 1980, "disasterType": "Natural Disaster", "rating": 4.5, "boxOffice": 0, "numberOfRatings": 2000, "plotSummary": "Tourists and residents of a tropical island must escape an erupting volcano." },
-    { "title": "Airport", "year": 1970, "disasterType": "Airplane Disaster", "rating": 6.6, "boxOffice": 0, "numberOfRatings": 25000, "plotSummary": "A bomber on a plane threatens the lives of the passengers and crew during a snowstorm." },
-    { "title": "Airport 1975", "year": 1975, "disasterType": "Airplane Disaster", "rating": 5.7, "boxOffice": 0, "numberOfRatings": 15000, "plotSummary": "A flight attendant must pilot a 747 after it collides with a small plane." },
-    { "title": "Airport '77", "year": 1977, "disasterType": "Airplane Disaster", "rating": 5.6, "boxOffice": 0, "numberOfRatings": 10000, "plotSummary": "A 747 carrying valuable art crashes in the Bermuda Triangle." },
-    { "title": "The Concorde ... Airport '79", "year": 1979, "disasterType": "Airplane Disaster", "rating": 4.3, "boxOffice": 0, "numberOfRatings": 8000, "plotSummary": "Concorde pilots must save the passengers when the plane is attacked by a wealthy industrialist." }
-    {
-      "title": "2012",
-      "year": 2009,
-      "disasterType": "Natural Disaster",
-      "rating": 5.8,
-      "boxOffice": 791217826,
-      "numberOfRatings": 362000,
-      "plotSummary": "A frustrated writer struggles to keep his family alive when a series of global catastrophes threatens to annihilate mankind."
-    },
-    
-    {
-      "title": "Contagion",
-      "year": 2011,
-      "disasterType": "Pandemic",
-      "rating": 6.8,
-      "boxOffice": 136515867,
-      "numberOfRatings": 285000,
-      "plotSummary": "Healthcare professionals, government officials and everyday people find themselves in the midst of a pandemic as the CDC works to find a cure."
-    },
-    {
-      "title": "Mad Max: Fury Road",
-      "year": 2015,
-      "disasterType": "Post-Apocalyptic",
-      "rating": 8.1,
-      "boxOffice": 375632354,
-      "numberOfRatings": 950000,
-      "plotSummary": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max."
-    },
-    {
-      "title": "The Hunger Games",
-      "year": 2012,
-      "disasterType": "Dystopian",
-      "rating": 7.2,
-      "boxOffice": 694394724,
-      "numberOfRatings": 850000,
-      "plotSummary": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death."
-    },
+    { "title": "Airport", "year": 1970, "disasterType": "Airplane", "rating": 6.6, "boxOffice": 0, "numberOfRatings": 25000, "plotSummary": "A bomber on a plane threatens the lives of the passengers and crew during a snowstorm." },
+    { "title": "Airport 1975", "year": 1975, "disasterType": "Airplane", "rating": 5.7, "boxOffice": 0, "numberOfRatings": 15000, "plotSummary": "A flight attendant must pilot a 747 after it collides with a small plane." },
+    { "title": "Airport '77", "year": 1977, "disasterType": "Airplane", "rating": 5.6, "boxOffice": 0, "numberOfRatings": 10000, "plotSummary": "A 747 carrying valuable art crashes in the Bermuda Triangle." },
+    { "title": "The Concorde ... Airport '79", "year": 1979, "disasterType": "Airplane", "rating": 4.3, "boxOffice": 0, "numberOfRatings": 8000, "plotSummary": "Concorde pilots must save the passengers when the plane is attacked by a wealthy industrialist." },
    
-    {
-      "title": "Independence Day",
-      "year": 1996,
-      "disasterType": "Post-Apocalyptic",
-      "rating": 7.0,
-      "boxOffice": 817400891,
-      "numberOfRatings": 550000,
-      "plotSummary": "The aliens are coming and their goal is to invade and destroy Earth, but a group of courageous humans led by the U.S. President and a scientist fight back against the invaders."
-    },
-    {
-      "title": "Titanic",
-      "year": 1997,
-      "disasterType": "Natural Disaster",
-      "rating": 7.9,
-      "boxOffice": 2201647264,
-      "numberOfRatings": 1100000,
-      "plotSummary": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
-    },
-    {
-      "title": "The Matrix",
-      "year": 1999,
-      "disasterType": "Dystopian",
-      "rating": 8.7,
-      "boxOffice": 463517383,
-      "numberOfRatings": 1800000,
-      "plotSummary": "A computer programmer discovers that reality as he knows it is a simulation created by machines, and joins a rebellion to break free."
-    },
-    {
-      "title": "World War Z",
-      "year": 2013,
-      "disasterType": "Pandemic",
-      "rating": 7.0,
-      "boxOffice": 540007876,
-      "numberOfRatings": 630000,
-      "plotSummary": "Former United Nations employee Gerry Lane traverses the world in a race against time to stop a zombie pandemic that is toppling armies and governments and threatens to destroy humanity itself."
-    },
-    {
-      "title": "Waterworld",
-      "year": 1995,
-      "disasterType": "Post-Apocalyptic",
-      "rating": 6.1,
-      "boxOffice": 264218220,
-      "numberOfRatings": 180000,
-      "plotSummary": "In a future where the polar ice caps have melted and most of Earth is underwater, a mutated mariner fights starvation and outlaw 'smokers,' and reluctantly helps a woman and a young girl try to find dry land."
-    },
-  
-    {
-      "title": "Children of Men",
-      "year": 2006,
-      "disasterType": "Dystopian",
-      "rating": 7.9,
-      "boxOffice": 70000000,
-      "numberOfRatings": 480000,
-      "plotSummary": "In a chaotic world in which women have become somehow infertile, a former activist agrees to help transport a miraculously pregnant woman to a sanctuary at sea."
-    },
-    
-    {
-      "title": "Snowpiercer",
-      "year": 2013,
-      "disasterType": "Post-Apocalyptic",
-      "rating": 7.1,
-      "boxOffice": 86758912,
-      "numberOfRatings": 340000,
-      "plotSummary": "In a future where a failed climate-change experiment has killed all life except for the survivors who boarded the Snowpiercer, a train that travels around the globe, a new class system emerges."
-    },
-    {
-    "Title": "The End of the World",
-    "Year": 2017,
-    "Director": "Unknown",
-    "Rating": 8.0,
+  {
+    "title": "The End of the World",
+    "year": 2017,
+    "disasterType": "Apocalyptic",
+    "rating": 8,
+    "boxOffice": 0,
     "numberOfRatings": 225725,
-    "Country": "United Kingdom",
-    "disasterType": "Apocalyptic",
-    "plotSummary": "A 2017 remake of a 1916 film depicting the end of the world."
+    "plotSummary": "A group of survivors struggle to stay alive as the world faces an unknown apocalyptic event."
   },
   {
-    "Title": "End of the World",
-    "Year": 1931,
-    "Director": "Abel Gance",
-    "Rating": 5.3,
+    "title": "End of the World",
+    "year": 1931,
+    "disasterType": "Apocalyptic",
+    "rating": 5.3,
+    "boxOffice": 0,
     "numberOfRatings": 91,
-    "Country": "United Kingdom",
-    "disasterType": "Apocalyptic",
-    "plotSummary": "An early apocalyptic film exploring the concept of global destruction."
+    "plotSummary": "A scientist predicts a comet will destroy Earth causing worldwide panic and social upheaval."
   },
   {
-    "Title": "Deluge",
-    "Year": 1933,
-    "Director": "Felix E. Feist",
-    "Rating": 6.4,
+    "title": "Deluge",
+    "year": 1933,
+    "disasterType": "Natural Disaster",
+    "rating": 6.4,
+    "boxOffice": 0,
     "numberOfRatings": 731,
-    "Country": "United States",
-    "disasterType": "Disaster",
-    "plotSummary": "A catastrophic flood threatens to destroy civilization."
+    "plotSummary": "Massive earthquakes and floods destroy most of the world leaving a few survivors to rebuild civilization."
   },
   {
-    "Title": "Things to Come",
-    "Year": 2021,
-    "Director": "Unknown",
-    "Rating": "N/A",
+    "title": "Things to Come",
+    "year": 2021,
+    "disasterType": "Dystopian",
+    "rating": "0.0",
+    "boxOffice": 0,
     "numberOfRatings": 9238,
-    "Country": "United Kingdom",
-    "disasterType": "Science Fiction",
-    "plotSummary": "A reimagining of H.G. Wells' vision of a future world."
+    "plotSummary": "Based on H.G. Wells' work this film depicts a future world recovering from a long war and technological advancements."
   },
   {
-    "Title": "Five",
-    "Year": 1951,
-    "Director": "Arch Oboler",
-    "Rating": 6.3,
+    "title": "Five",
+    "year": 1951,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.3,
+    "boxOffice": 0,
     "numberOfRatings": 1644,
-    "Country": "United States",
-    "disasterType": "Post-Apocalyptic",
-    "plotSummary": "Five survivors struggle in a world devastated by nuclear war."
+    "plotSummary": "Five survivors of a nuclear holocaust struggle to coexist and rebuild in a devastated world."
   },
   {
-    "Title": "When Worlds Collide",
-    "Year": 1951,
-    "Director": "Rudolph Maté",
-    "Rating": 6.6,
+    "title": "When Worlds Collide",
+    "year": 1951,
+    "disasterType": "Natural Disaster",
+    "rating": 6.6,
+    "boxOffice": 0,
     "numberOfRatings": 9487,
-    "Country": "United States",
-    "disasterType": "Science Fiction",
-    "plotSummary": "Humanity races to build a spaceship to escape Earth's impending collision with another planet."
+    "plotSummary": "As a rogue planet hurtles toward Earth a small group of people construct a spaceship to escape."
   },
   {
-    "Title": "Captive Women",
-    "Year": 1952,
-    "Director": "Stuart Gilmore",
-    "Rating": 5.0,
+    "title": "Captive Women",
+    "year": 1952,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5,
+    "boxOffice": 0,
     "numberOfRatings": 160,
-    "Country": "United States",
+    "plotSummary": "In a post-nuclear New York three tribes of survivors fight for dominance and survival."
+  },
+  {
+    "title": "Robot Monster",
+    "year": 1953,
+    "disasterType": "Alien Invasion",
+    "rating": 3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "An alien robot attempts to wipe out humanity leaving only a small group of survivors."
+  },
+  {
+    "title": "Day the World Ended",
+    "year": 1955,
     "disasterType": "Post-Apocalyptic",
-    "plotSummary": "In a post-nuclear world, surviving tribes fight for control and resources."
-  },
-  {
-    "Title": "Robot Monster",
-    "Year": 1953,
-    "Director": "Phil Tucker",
-    "Rating": 3.0,
-    "numberOfRatings": "N/A",
-    "Country": "Australia",
-    "disasterType": "Science Fiction",
-    "plotSummary": "An alien robot attempts to conquer Earth in this notoriously low-budget film."
-  },
-  {
-    "Title": "Day the World Ended",
-    "Year": 1955,
-    "Director": "Roger Corman",
-    "Rating": 5.4,
+    "rating": 5.4,
+    "boxOffice": 0,
     "numberOfRatings": 2695,
-    "Country": "United States",
-    "disasterType": "Post-Apocalyptic",
-    "plotSummary": "Survivors of a nuclear war face mutant threats in this early Roger Corman film."
+    "plotSummary": "Survivors of a nuclear war take refuge in a valley protected from radiation facing various challenges."
   },
   {
-    "Title": "World Without End",
-    "Year": 1977,
-    "Director": "Unknown",
-    "Rating": "N/A",
+    "title": "World Without End",
+    "year": 1977,
+    "disasterType": "Post-Apocalyptic",
+    "rating": "0.0",
+    "boxOffice": 0,
     "numberOfRatings": 2418,
-    "Country": "United States",
-    "disasterType": "Science Fiction",
-    "plotSummary": "A remake of a 1956 film about astronauts who travel to a post-apocalyptic future Earth."
-  }
-
-
+    "plotSummary": "Astronauts accidentally travel to a future Earth devastated by nuclear war."
+  },
   {
-     "Title": "The Lost Missile",
-     "Year": 1958,
-     "Director": "Lester Wm. Berke",
-     "Rating": 5.1,
-     "numberOfRatings": 1043,
-     "Country": "United States",
-     "disasterType": "Science Fiction",
-     "plotSummary": "A mysterious missile threatens to destroy Earth as scientists race to stop it."
-   },
-   {
-     "Title": "Teenage Caveman",
-     "Year": 1958,
-     "Director": "Roger Corman",
-     "Rating": 3.5,
-     "numberOfRatings": "N/A",
-     "Country": "Unknown",
-     "disasterType": "Post-Apocalyptic",
-     "plotSummary": "A young caveman challenges his tribe's superstitions in a world that may be post-apocalyptic."
-   },
-   {
-     "Title": "On the Beach",
-     "Year": 1959,
-     "Director": "Stanley Kramer",
-     "Rating": 7.1,
-     "numberOfRatings": 14621,
-     "Country": "United States",
-     "disasterType": "Post-Apocalyptic",
-     "plotSummary": "Survivors in Australia await the arrival of deadly radiation following a nuclear war."
-   },
-   {
-     "Title": "The World, the Flesh and the Devil",
-     "Year": 1959,
-     "Director": "Ranald MacDougall",
-     "Rating": 6.8,
-     "numberOfRatings": 3591,
-     "Country": "United States",
-     "disasterType": "Post-Apocalyptic",
-     "plotSummary": "Three survivors of a global catastrophe struggle with their relationships and prejudices."
-   },
-   {
-     "Title": "Beyond the Time Barrier",
-     "Year": 1960,
-     "Director": "Edgar G. Ulmer",
-     "Rating": 5.3,
-     "numberOfRatings": 2077,
-     "Country": "United States",
-     "disasterType": "Science Fiction",
-     "plotSummary": "A pilot travels to a dystopian future where humanity faces extinction from a deadly plague."
-   },
-   {
-     "Title": "Last Woman on Earth",
-     "Year": 1960,
-     "Director": "Roger Corman",
-     "Rating": 4.7,
-     "numberOfRatings": 2206,
-     "Country": "United States",
-     "disasterType": "Post-Apocalyptic",
-     "plotSummary": "Three survivors of a mysterious catastrophe that wiped out the world's population struggle with their new reality."
-   },
-   {
-     "Title": "Battle of the Worlds",
-     "Year": 1970,
-     "Director": "Unknown",
-     "Rating": "N/A",
-     "numberOfRatings": 1009,
-     "Country": "Italy",
-     "disasterType": "Science Fiction",
-     "plotSummary": "A rogue planet threatens Earth, and scientists must find a way to save humanity."
-   },
-   {
-     "Title": "The Last War",
-     "Year": 1961,
-     "Director": "Shûe Matsubayashi",
-     "Rating": 6.2,
-     "numberOfRatings": 266,
-     "Country": "Japan",
-     "disasterType": "Apocalyptic",
-     "plotSummary": "A Japanese film depicting the potential devastation of a global nuclear war."
-   },
-   {
-     "Title": "The Day the Earth Caught Fire",
-     "Year": 1961,
-     "Director": "Val Guest",
-     "Rating": 7.2,
-     "numberOfRatings": 6385,
-     "Country": "United Kingdom",
-     "disasterType": "Apocalyptic",
-     "plotSummary": "Nuclear tests knock Earth off its axis, causing global climate changes that threaten all life."
-   },
-   {
-     "Title": "The Creation of the Humanoids",
-     "Year": 1962,
-     "Director": "Wesley Barry",
-     "Rating": 5.7,
-     "numberOfRatings": 1556,
-     "Country": "United States",
-     "disasterType": "Post-Apocalyptic",
-     "plotSummary": "In a post-nuclear world, humans create humanoid robots, leading to conflicts between the two groups."
-   },
-   {
-     "Title": "Panic in Year Zero!",
-     "Year": 1962,
-     "Director": "Ray Milland",
-     "Rating": 6.6,
-     "numberOfRatings": 4923,
-     "Country": "United States",
-     "disasterType": "Post-Apocalyptic",
-     "plotSummary": "A family tries to survive in the aftermath of a nuclear attack on Los Angeles."
-   },
-   {
-     "Title": "The Day of the Triffids",
-     "Year": 2009,
-     "Director": "Unknown",
-     "Rating": 7.0,
-     "numberOfRatings": 9072,
-     "Country": "United Kingdom",
-     "disasterType": "Science Fiction",
-     "plotSummary": "A remake of the 1962 film where most of humanity is blinded, leaving them vulnerable to carnivorous plants."
-   },
-   {
-     "Title": "This Is Not a Test",
-     "Year": 1962,
-     "Director": "Fredric Gadette",
-     "Rating": 5.3,
-     "numberOfRatings": 913,
-     "Country": "United States",
-     "disasterType": "Apocalyptic",
-     "plotSummary": "A group of people at a roadblock face the possibility of imminent nuclear war."
-   },
-   {
-     "Title": "La Jetée",
-     "Year": 1962,
-     "Director": "Chris Marker",
-     "Rating": 8.2,
-     "numberOfRatings": "N/A",
-     "Country": "Unknown",
-     "disasterType": "Post-Apocalyptic",
-     "plotSummary": "A man is sent back in time to save the future in this influential experimental short film."
-   },
-   {
-     "Title": "Ladybug Ladybug",
-     "Year": 1963,
-     "Director": "Frank Perry",
-     "Rating": 7.2,
-     "numberOfRatings": 1000,
-     "Country": "United States",
-     "disasterType": "Drama",
-     "plotSummary": "A school receives a nuclear attack warning, and teachers must decide how to protect their students."
-   }
-
-
+    "title": "The World the Flesh and the Devil",
+    "year": 1959,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": 3591,
+    "plotSummary": "Three survivors of a global catastrophe struggle with their relationships and prejudices in an empty New York City."
+  },
+  {
+    "title": "The Day of the Triffids",
+    "year": 1962,
+    "disasterType": "Alien Invasion",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 9072,
+    "plotSummary": "Most of humanity is blinded by a meteor shower leaving them vulnerable to carnivorous plants."
+  },
+  {
+    "title": "La Jetée",
+    "year": 1962,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 8.2,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a post-apocalyptic future a man is sent back in time to save humanity."
+  },
+  {
+    "title": "Ladybug Ladybug",
+    "year": 1963,
+    "disasterType": "Nukes!",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 1000,
+    "plotSummary": "A school receives a nuclear attack warning and teachers must decide how to protect their students."
+  },
+  {
+    "title": "Dr. Strangelove or: How I Learned To Stop Worrying and Love the Bomb",
+    "year": 1964,
+    "disasterType": "Nukes!",
+    "rating": 8.3,
+    "boxOffice": 0,
+    "numberOfRatings": 523888,
+    "plotSummary": "A satirical take on Cold War fears of a nuclear conflict between the US and Soviet Union."
+  },
+  {
+    "title": "The Time Travelers",
+    "year": 1974,
+    "disasterType": "Time Travel",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": 3277,
+    "plotSummary": "Scientists accidentally travel to a post-apocalyptic future and try to prevent it from happening."
+  },
+  {
+    "title": "Fail-Safe",
+    "year": 1964,
+    "disasterType": "Nukes!",
+    "rating": 8,
+    "boxOffice": 0,
+    "numberOfRatings": 24889,
+    "plotSummary": "American planes are accidentally ordered to drop nuclear bombs on Moscow causing a crisis."
+  },
+  {
+    "title": "The Last Man on Earth",
+    "year": 1964,
+    "disasterType": "Pandemic",
+    "rating": 6.7,
+    "boxOffice": 0,
+    "numberOfRatings": 21942,
+    "plotSummary": "A man believes he is the last human survivor in a world overrun by vampire-like creatures."
+  },
+  {
+    "title": "Crack in the World",
+    "year": 1965,
+    "disasterType": "Natural Disaster",
+    "rating": 5.9,
+    "boxOffice": 0,
+    "numberOfRatings": 2946,
+    "plotSummary": "Scientists accidentally create a crack in the Earth's crust threatening global destruction."
+  },
+  {
+    "title": "Daleks – Invasion Earth: 2150 A.D.",
+    "year": 1966,
+    "disasterType": "Alien Invasion",
+    "rating": 5.9,
+    "boxOffice": 0,
+    "numberOfRatings": 4633,
+    "plotSummary": "The Doctor and his companions arrive on Earth in 2150 to find it devastated by the Daleks."
+  },
+  {
+    "title": "In the Year 2889",
+    "year": 2016,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 7.5,
+    "boxOffice": 0,
+    "numberOfRatings": 1206,
+    "plotSummary": "Survivors of a nuclear war struggle to stay alive in a contaminated world."
+  },
+  {
+    "title": "Late August at the Hotel Ozone",
+    "year": 1967,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 656,
+    "plotSummary": "A group of young women search for other survivors in a post-apocalyptic world."
+  },
+  {
+    "title": "Night of the Living Dead",
+    "year": 1968,
+    "disasterType": "Zombies",
+    "rating": 7.8,
+    "boxOffice": 0,
+    "numberOfRatings": 141007,
+    "plotSummary": "A group of survivors barricade themselves in a farmhouse against a horde of flesh-eating Zombies."
+  },
+  {
+    "title": "Planet of the Apes",
+    "year": 1968,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 8,
+    "boxOffice": 0,
+    "numberOfRatings": 200445,
+    "plotSummary": "An astronaut crash-lands on a planet where intelligent apes dominate humans."
+  },
+  {
+    "title": "Il seme dell'uomo",
+    "year": 1969,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 567,
+    "plotSummary": "A couple struggles to survive in a post-apocalyptic world devoid of other humans."
+  },
+  {
+    "title": "The Bed-Sitting Room",
+    "year": 1969,
+    "disasterType": "Nukes!",
+    "rating": 6.1,
+    "boxOffice": 0,
+    "numberOfRatings": 2609,
+    "plotSummary": "Survivors of a nuclear war try to maintain civilization in a surreal devastated London."
+  },
+  {
+    "title": "Colossus: The Forbin Project",
+    "year": 1970,
+    "disasterType": "AI Takeover",
+    "rating": 7.1,
+    "boxOffice": 0,
+    "numberOfRatings": 10407,
+    "plotSummary": "A supercomputer takes control of nuclear weapons and threatens global destruction."
+  },
+  {
+    "title": "Beneath the Planet of the Apes",
+    "year": 1970,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": 54435,
+    "plotSummary": "Astronauts discover a subterranean society of mutant humans in the dystopian ape-ruled Earth."
+  },
+  {
+    "title": "No Blade of Grass",
+    "year": 1970,
+    "disasterType": "Ecological Collapse",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 2088,
+    "plotSummary": "A family struggles to survive as a grass-killing virus causes global famine and societal collapse."
+  },
+  {
+    "title": "Gas-s-s-s",
+    "year": 1970,
+    "disasterType": "Man-made Disaster",
+    "rating": 7.4,
+    "boxOffice": 0,
+    "numberOfRatings": 78479,
+    "plotSummary": "A gas leak kills everyone over 25 leaving the world to be rebuilt by the younger generation."
+  },
+  {
+    "title": "The Andromeda Strain",
+    "year": 1971,
+    "disasterType": "Pandemic",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 41069,
+    "plotSummary": "Scientists race to contain a deadly extraterrestrial microorganism that causes rapid blood clotting."
+  },
+  {
+    "title": "Escape from the Planet of the Apes",
+    "year": 1971,
+    "disasterType": "Time Travel",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 41780,
+    "plotSummary": "Three intelligent apes travel back in time to 20th-century Earth causing fear and controversy."
+  },
+  {
+    "title": "The Omega Man",
+    "year": 1971,
+    "disasterType": "Pandemic",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 34441,
+    "plotSummary": "A survivor of a global pandemic battles against nocturnal mutants in a deserted Los Angeles."
+  },
+  {
+    "title": "Glen and Randa",
+    "year": 1971,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 684,
+    "plotSummary": "Two young survivors explore a post-apocalyptic world searching for a mythical city."
+  },
+  {
+    "title": "A Thief in the Night",
+    "year": 1972,
+    "disasterType": "Biblical",
+    "rating": 4.6,
+    "boxOffice": 0,
+    "numberOfRatings": 1026,
+    "plotSummary": "A young woman faces the aftermath of the Rapture and the beginning of the Great Tribulation."
+  },
+  {
+    "title": "Conquest of the Planet of the Apes",
+    "year": 1972,
+    "disasterType": "Dystopian",
+    "rating": 6.1,
+    "boxOffice": 0,
+    "numberOfRatings": 38075,
+    "plotSummary": "Intelligent apes rise up against their human oppressors in a near-future society."
+  },
+  {
+    "title": "Silent Running",
+    "year": 1972,
+    "disasterType": "Ecological Collapse",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A botanist aboard a space freighter fights to preserve the last remnants of Earth's plant life."
+  },
+  {
+    "title": "Soylent Green",
+    "year": 1973,
+    "disasterType": "Dystopian",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In an overpopulated future a detective investigates a murder that leads to a disturbing secret about the food supply."
+  },
+  {
+    "title": "Zardoz",
+    "year": 1974,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 24855,
+    "plotSummary": "A savage warrior infiltrates an elite society of immortals in a post-apocalyptic world."
+  },
+  {
+    "title": "Where Have All The People Gone?",
+    "year": 1974,
+    "disasterType": "Pandemic",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": 1536,
+    "plotSummary": "A family searches for survivors after a strange phenomenon wipes out most of humanity."
+  },
+  {
+    "title": "A Boy and His Dog",
+    "year": 1975,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 19646,
+    "plotSummary": "A young man and his telepathic dog navigate a post-apocalyptic wasteland in search of food and companionship."
+  },
+  {
+    "title": "Logan's Run",
+    "year": 1976,
+    "disasterType": "Dystopian",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a future society where people are killed at age 30 a man tries to escape his fate."
+  },
+  {
+    "title": "Damnation Alley",
+    "year": 1977,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "Survivors of a nuclear war travel across a mutant-infested America in an armored vehicle."
+  },
+  {
+    "title": "Dawn of the Dead",
+    "year": 1978,
+    "disasterType": "Zombies",
+    "rating": 7.8,
+    "boxOffice": 0,
+    "numberOfRatings": 130086,
+    "plotSummary": "A group of survivors take refuge in a shopping mall during a zombie apocalypse."
+  },
+  {
+    "title": "Invasion of the Body Snatchers",
+    "year": 1978,
+    "disasterType": "Alien Invasion",
+    "rating": 7.4,
+    "boxOffice": 0,
+    "numberOfRatings": 72342,
+    "plotSummary": "Alien pods gradually replace humans with emotionless duplicates in San Francisco."
+  },
+  {
+    "title": "Mad Max",
+    "year": "1979",
+    "disasterType": "Post-Apocalyptic",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a dystopian Australia a highway patrolman seeks revenge against a violent motorcycle gang."
+  },
+  {
+    "title": "Quintet",
+    "year": 1979,
+    "disasterType": "Ecological Collapse",
+    "rating": 5,
+    "boxOffice": 0,
+    "numberOfRatings": 3621,
+    "plotSummary": "In a world entering a new ice age survivors play a mysterious and deadly game for survival."
+  },
+  {
+    "title": "The Shape of Things to Come",
+    "year": 1979,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 3.2,
+    "boxOffice": 0,
+    "numberOfRatings": 1383,
+    "plotSummary": "Colonists on the Moon must save Earth from a robot dictatorship in this loose adaptation of H.G. Wells' work."
+  },
+  {
+    "title": "Stalker",
+    "year": 1979,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 8.1,
+    "boxOffice": 0,
+    "numberOfRatings": 146894,
+    "plotSummary": "A guide leads two men through a mysterious and dangerous area known as the Zone to find a room that grants wishes."
+  },
+  {
+    "title": "Virus",
+    "year": 1980,
+    "disasterType": "Pandemic",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 3126,
+    "plotSummary": "A deadly virus wipes out most of humanity leaving survivors to face various challenges in a post-apocalyptic world."
+  },
+  {
+    "title": "Mad Max 2",
+    "year": 1981,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 7.6,
+    "boxOffice": 0,
+    "numberOfRatings": 203029,
+    "plotSummary": "In the post-apocalyptic Australian wasteland Max helps defend a small community from marauding gangs."
+  },
+  {
+    "title": "Escape from New York",
+    "year": 1981,
+    "disasterType": "Dystopian",
+    "rating": 7.1,
+    "boxOffice": 0,
+    "numberOfRatings": 160541,
+    "plotSummary": "A convicted criminal is sent to rescue the U.S. President from the island prison of Manhattan."
+  },
+  {
+    "title": "Blade Runner",
+    "year": 1982,
+    "disasterType": "Dystopian",
+    "rating": 8.1,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A blade runner must pursue and terminate four replicants who have returned to Earth seeking their creator."
+  },
+  {
+    "title": "The Day After",
+    "year": 1983,
+    "disasterType": "Nukes!",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 18587,
+    "plotSummary": "The film depicts the devastating effects of a nuclear war on the people of Kansas and Missouri."
+  },
+  {
+    "title": "Testament",
+    "year": 1983,
+    "disasterType": "Nukes!",
+    "rating": 6.9,
+    "boxOffice": 0,
+    "numberOfRatings": 7345,
+    "plotSummary": "A suburban family faces the aftermath of a nuclear attack and struggles with the slow effects of radiation."
+  },
+  {
+    "title": "Threads",
+    "year": 1984,
+    "disasterType": "Nukes!",
+    "rating": 8,
+    "boxOffice": 0,
+    "numberOfRatings": 21054,
+    "plotSummary": "The film realistically portrays the effects of a nuclear war on Sheffield England and its inhabitants."
+  },
+  {
+    "title": "The Terminator",
+    "year": 1984,
+    "disasterType": "AI Takeover",
+    "rating": 8.1,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A cyborg assassin is sent back in time to kill the mother of the future leader of the human resistance against machines."
+  },
+  {
+    "title": "Mad Max Beyond Thunderdome",
+    "year": 1985,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 154729,
+    "plotSummary": "Max becomes involved in the conflicts of a post-apocalyptic community built on a barter system."
+  },
+  {
+    "title": "The Quiet Earth",
+    "year": 1985,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.7,
+    "boxOffice": 0,
+    "numberOfRatings": 27983,
+    "plotSummary": "A man wakes up to find that he may be the last person on Earth after a scientific experiment goes wrong."
+  },
+  {
+    "title": "Akira",
+    "year": 1988,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 8,
+    "boxOffice": 0,
+    "numberOfRatings": 208879,
+    "plotSummary": "In a dystopian Neo-Tokyo a biker gang leader tries to save his friend from a powerful psychic experiment."
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "year": 2017,
+    "disasterType": "Dystopian",
+    "rating": 8.4,
+    "boxOffice": 0,
+    "numberOfRatings": 262477,
+    "plotSummary": "In a totalitarian society a woman is forced into sexual servitude in a world of declining births."
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "year": 1991,
+    "disasterType": "AI Takeover",
+    "rating": 8.6,
+    "boxOffice": 0,
+    "numberOfRatings": 1192411,
+    "plotSummary": "A reprogrammed Terminator is sent back in time to protect John Connor from a more advanced Terminator."
+  },
+  {
+    "title": "Until the End of the World",
+    "year": 1991,
+    "disasterType": "Natural Disaster",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": 11539,
+    "plotSummary": "As a nuclear satellite threatens to crash into Earth a woman becomes involved in a global journey involving dreams and memory."
+  },
+  {
+    "title": "The Rapture",
+    "year": 1991,
+    "disasterType": "Biblical",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A woman becomes increasingly obsessed with an impending apocalypse as she experiences a religious awakening."
+  },
+  {
+    "title": "Neon City",
+    "year": 1991,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 1284,
+    "plotSummary": "In a post-apocalyptic world a bounty hunter escorts a group of passengers through a dangerous wasteland."
+  },
+  {
+    "title": "Delicatessen",
+    "year": 1991,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 7.5,
+    "boxOffice": 0,
+    "numberOfRatings": 90815,
+    "plotSummary": "In a post-apocalyptic world where food is scarce a landlord of an apartment building serves human flesh to his tenants."
+  },
+  {
+    "title": "Split Second",
+    "year": "1992",
+    "disasterType": "Post-Apocalyptic",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a flooded future London a detective hunts a mysterious serial killer with possible supernatural origins."
+  },
+  {
+    "title": "American Cyborg: Steel Warrior",
+    "year": 1993,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4.3,
+    "boxOffice": 0,
+    "numberOfRatings": 1672,
+    "plotSummary": "In a post-apocalyptic world a cyborg protects the last fertile woman on her journey to deliver humanity's last hope."
+  },
+  {
+    "title": "Body Snatchers",
+    "year": 1993,
+    "disasterType": "Alien Invasion",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A teenage girl discovers that her community is being taken over by alien duplicates in this remake of the classic film."
+  },
+  {
+    "title": "The Last Border",
+    "year": 1993,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4.5,
+    "boxOffice": 0,
+    "numberOfRatings": 517,
+    "plotSummary": "In a post-apocalyptic Nordic wasteland survivors struggle against harsh conditions and each other."
+  },
+  {
+    "title": "Without Warning",
+    "year": 1994,
+    "disasterType": "Alien Invasion",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": 1553,
+    "plotSummary": "A TV reporter covers a series of strange events that turn out to be an alien invasion."
+  },
+  {
+    "title": "Plughead Rewired: Circuitry Man II",
+    "year": 1994,
+    "disasterType": "Technological Apocalypse",
+    "rating": 3.5,
+    "boxOffice": 0,
+    "numberOfRatings": 481,
+    "plotSummary": "In a dystopian future a man with a computerized brain fights against evil forces in this sequel."
+  },
+  {
+    "title": "In the Mouth of Madness",
+    "year": 1994,
+    "disasterType": "Supernatural",
+    "rating": 7.1,
+    "boxOffice": 0,
+    "numberOfRatings": 80898,
+    "plotSummary": "An insurance investigator uncovers a conspiracy involving a horror novelist whose books are driving readers insane."
+  },
+  {
+    "title": "12 Monkeys",
+    "year": 1995,
+    "disasterType": "Time Travel",
+    "rating": 8,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A convict is sent back in time to gather information about a man-made virus that wiped out most of the human population."
+  },
+  {
+    "title": "Sentinel 2099",
+    "year": 1995,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5.6,
+    "boxOffice": 0,
+    "numberOfRatings": 34,
+    "plotSummary": "In a post-apocalyptic future a lone sentinel guards the last city on Earth against mutant threats."
+  },
+  {
+    "title": "Steel Frontier",
+    "year": 1995,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4.8,
+    "boxOffice": 0,
+    "numberOfRatings": 648,
+    "plotSummary": "A lone gunman protects a small community from a tyrannical gang in a post-apocalyptic wasteland."
+  },
+  {
+    "title": "Tank Girl",
+    "year": 1995,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5.4,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a drought-stricken future a rebellious woman fights against a tyrannical corporation that controls the world's water supply."
+  },
+  {
+    "title": "Judge Dredd",
+    "year": 1995,
+    "disasterType": "Dystopian",
+    "rating": 5.6,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a violent future city a street judge with the power to convict and execute criminals fights against corruption."
+  },
+  {
+    "title": "Waterworld",
+    "year": 1995,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 213157,
+    "plotSummary": "In a world covered by water due to polar ice cap melting a mutated mariner helps a woman and a girl find dry land."
+  },
+  {
+    "title": "The Prophecy",
+    "year": 1995,
+    "disasterType": "Supernatural",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A detective becomes entangled in a war between angels with the fate of humanity hanging in the balance."
+  },
+  {
+    "title": "The Arrival",
+    "year": 1996,
+    "disasterType": "Alien Invasion",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "An astronomer discovers evidence of alien activity on Earth and uncovers a worldwide conspiracy."
+  },
+  {
+    "title": "Omega Doom",
+    "year": 1996,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4,
+    "boxOffice": 0,
+    "numberOfRatings": 3375,
+    "plotSummary": "A robot warrior navigates a post-apocalyptic world where machines have taken over seeking to restore balance."
+  },
+  {
+    "title": "Escape from L.A.",
+    "year": 1996,
+    "disasterType": "Dystopian",
+    "rating": 5.7,
+    "boxOffice": 0,
+    "numberOfRatings": 81487,
+    "plotSummary": "Snake Plissken is forced to infiltrate the island of Los Angeles now a prison city to retrieve a doomsday device."
+  },
+  {
+    "title": "The End of Evangelion",
+    "year": 1997,
+    "disasterType": "Apocalyptic",
+    "rating": 8.1,
+    "boxOffice": 0,
+    "numberOfRatings": 66435,
+    "plotSummary": "This anime film provides a alternate ending to the Neon Genesis Evangelion series depicting the apocalyptic finale of humanity."
+  },
+  {
+    "title": "The Postman",
+    "year": 1997,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.1,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a post-apocalyptic America a drifter assumes the role of a postal worker and becomes a symbol of hope for surviving communities."
+  },
+  {
+    "title": "Future Fear",
+    "year": 1997,
+    "disasterType": "Pandemic",
+    "rating": 2.7,
+    "boxOffice": 0,
+    "numberOfRatings": 376,
+    "plotSummary": "In a dystopian future a man must confront his past to save humanity from a deadly virus."
+  },
+  {
+    "title": "Last Night",
+    "year": 1998,
+    "disasterType": "Apocalyptic",
+    "rating": 7.1,
+    "boxOffice": 0,
+    "numberOfRatings": 10211,
+    "plotSummary": "Various individuals in Toronto cope with their final six hours before an unspecified apocalypse."
+  },
+  {
+    "title": "The Prophecy 2",
+    "year": 1998,
+    "disasterType": "Supernatural",
+    "rating": 5.7,
+    "boxOffice": 0,
+    "numberOfRatings": 8290,
+    "plotSummary": "The angel Gabriel returns to Earth to prevent the birth of a Nephilim which could end the war in Heaven."
+  },
+  {
+    "title": "Six String Samurai",
+    "year": 1998,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 8084,
+    "plotSummary": "In a post-apocalyptic world where Elvis was King of Lost Vegas a samurai guitarist journeys to claim the throne."
+  },
+  {
+    "title": "Beowulf",
+    "year": 1999,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4.1,
+    "boxOffice": 0,
+    "numberOfRatings": 12681,
+    "plotSummary": "A futuristic retelling of the classic epic where Beowulf battles Grendel in a post-apocalyptic world."
+  },
+  {
+    "title": "Dogma",
+    "year": 1999,
+    "disasterType": "Biblical",
+    "rating": 7.3,
+    "boxOffice": 0,
+    "numberOfRatings": 230771,
+    "plotSummary": "Two fallen angels attempt to exploit a loophole and return to Heaven inadvertently threatening all of existence."
+  },
+  {
+    "title": "End of Days",
+    "year": 1999,
+    "disasterType": "Supernatural",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 117633,
+    "plotSummary": "At the end of the millennium an ex-cop protects a woman who Satan wants to use to father the Antichrist."
+  },
+  {
+    "title": "The Omega Code",
+    "year": 1999,
+    "disasterType": "Biblical",
+    "rating": 3.5,
+    "boxOffice": 0,
+    "numberOfRatings": 5564,
+    "plotSummary": "A man becomes involved in a plot to decipher hidden messages within the Bible that could trigger the Apocalypse."
+  },
+  {
+    "title": "Fail Safe",
+    "year": 2000,
+    "disasterType": "Nukes!",
+    "rating": 7.4,
+    "boxOffice": 0,
+    "numberOfRatings": 6632,
+    "plotSummary": "A Cold War thriller about a crisis that erupts when a malfunction sends bombers to destroy Moscow."
+  },
+  {
+    "title": "The Last Warrior",
+    "year": 2017,
+    "disasterType": "Fantasy",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 3490,
+    "plotSummary": "In a world where magic has disappeared the last Russian bogatyr must travel to the magical world to save both realms."
+  },
+  {
+    "title": "Left Behind",
+    "year": 2000,
+    "disasterType": "Biblical",
+    "rating": 4.3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "After millions of people suddenly vanish those left behind struggle to understand what happened and survive the chaos."
+  },
+  {
+    "title": "Lost Souls",
+    "year": 2000,
+    "disasterType": "Biblical",
+    "rating": 4.8,
+    "boxOffice": 0,
+    "numberOfRatings": 11447,
+    "plotSummary": "A Catholic school teacher teams up with a man destined to become the Antichrist to prevent the end of the world."
+  },
+  {
+    "title": "The Prophecy 3: The Ascent",
+    "year": 2000,
+    "disasterType": "Biblical",
+    "rating": 5.4,
+    "boxOffice": 0,
+    "numberOfRatings": 5869,
+    "plotSummary": "The angel Gabriel now human must protect a young man who is key to preventing Armageddon."
+  },
+  {
+    "title": "On the Beach",
+    "year": 2023,
+    "disasterType": "Nukes!",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": 14621,
+    "plotSummary": "Survivors in Australia await the arrival of deadly radiation following a global nuclear war."
+  },
+  {
+    "title": "Titan A.E.",
+    "year": 2000,
+    "disasterType": "Alien Invasion",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "After Earth is destroyed by an alien race a young man searches for a spacecraft that is humanity's last hope for survival."
+  },
+  {
+    "title": "Final Fantasy: The Spirits Within",
+    "year": 2001,
+    "disasterType": "Alien Invasion",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 84463,
+    "plotSummary": "Scientists race to save humanity from mysterious spirits that have invaded Earth and threaten all life."
+  },
+  {
+    "title": "Megiddo: The Omega Code 2",
+    "year": 2001,
+    "disasterType": "Biblical",
+    "rating": 3.9,
+    "boxOffice": 0,
+    "numberOfRatings": 2993,
+    "plotSummary": "The son of a powerful world leader becomes the Antichrist and attempts to bring about Armageddon."
+  },
+  {
+    "title": "A.I. Artificial Intelligence",
+    "year": 2001,
+    "disasterType": "Ecological Collapse",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 326048,
+    "plotSummary": "In a future where the polar ice caps have melted a highly advanced robotic boy embarks on a journey to discover his true nature."
+  },
+  {
+    "title": "Blue Gender: The Warrior",
+    "year": 2002,
+    "disasterType": "Alien Invasion",
+    "rating": 5.5,
+    "boxOffice": 0,
+    "numberOfRatings": 270,
+    "plotSummary": "A man awakens from cryogenic sleep to find Earth overrun by alien insects and joins the fight to reclaim the planet."
+  },
+  {
+    "title": "28 Days Later",
+    "year": 2002,
+    "disasterType": "Zombies",
+    "rating": 7.5,
+    "boxOffice": 0,
+    "numberOfRatings": 453660,
+    "plotSummary": "A man awakens from a coma to find London devastated by a rage virus that turns people into violent infected."
+  },
+  {
+    "title": "The Time Machine",
+    "year": 2002,
+    "disasterType": "Societal Collapse",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": 131448,
+    "plotSummary": "An inventor travels to the future and discovers a world divided between peaceful surface dwellers and underground cannibals."
+  },
+  {
+    "title": "Reign of Fire",
+    "year": 2002,
+    "disasterType": "Monster(s)",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 146889,
+    "plotSummary": "In a world ravaged by dragons a small group of survivors in England fight to stay alive and defeat the beasts."
+  },
+  {
+    "title": "Resident Evil",
+    "year": 2002,
+    "disasterType": "Pandemic",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A special military unit fights a powerful out-of-control supercomputer and hundreds of scientists who have mutated into flesh-eating creatures."
+  },
+  {
+    "title": "Returner",
+    "year": 2002,
+    "disasterType": "Alien Invasion",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 11645,
+    "plotSummary": "A woman from the future returns to present-day Japan to prevent an alien invasion that will destroy humanity."
+  },
+  {
+    "title": "Terminator 3: Rise of the Machines",
+    "year": 2003,
+    "disasterType": "AI Takeover",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 422250,
+    "plotSummary": "John Connor must face a new Terminator sent from the future to kill him and his future wife before Judgment Day."
+  },
+  {
+    "title": "Dragon Head",
+    "year": 2003,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5.6,
+    "boxOffice": 0,
+    "numberOfRatings": 264,
+    "plotSummary": "Survivors of a catastrophic event struggle to stay alive and understand what happened to Japan."
+  },
+  {
+    "title": "Dreamcatcher",
+    "year": 2003,
+    "disasterType": "Alien Invasion",
+    "rating": 5.5,
+    "boxOffice": 0,
+    "numberOfRatings": 97140,
+    "plotSummary": "Four childhood friends on a hunting trip encounter an alien invasion that threatens humanity."
+  },
+  {
+    "title": "Save the Green Planet!",
+    "year": 2003,
+    "disasterType": "Alien Invasion",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 8874,
+    "plotSummary": "A man kidnaps a businessman believing him to be an alien plotting Earth's destruction in this genre-bending film."
+  },
+  {
+    "title": "Time of the Wolf",
+    "year": 2003,
+    "disasterType": "Societal Collapse",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 11657,
+    "plotSummary": "A family struggles to survive in rural France after an unspecified catastrophe disrupts modern civilization."
+  },
+  {
+    "title": "The Animatrix",
+    "year": 2003,
+    "disasterType": "Dystopian",
+    "rating": 7.3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A collection of short animated films set in the universe of The Matrix exploring various aspects of the machine-dominated world."
+  },
+  {
+    "title": "The Matrix Reloaded",
+    "year": 2003,
+    "disasterType": "Dystopian",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 638151,
+    "plotSummary": "Neo Morpheus and Trinity continue their battle against the machines as they defend Zion from an imminent attack."
+  },
+  {
+    "title": "The Matrix Revolutions",
+    "year": 2003,
+    "disasterType": "Dystopian",
+    "rating": 6.7,
+    "boxOffice": 0,
+    "numberOfRatings": 549602,
+    "plotSummary": "The human city of Zion defends itself against the massive invasion of the machines as Neo fights to end the war."
+  },
+  {
+    "title": "Dawn of the Dead",
+    "year": 2004,
+    "disasterType": "Zombies",
+    "rating": 7.3,
+    "boxOffice": 0,
+    "numberOfRatings": 276034,
+    "plotSummary": "A group of survivors takes refuge in a shopping mall during a zombie apocalypse."
+  },
+  {
+    "title": "The Day After Tomorrow",
+    "year": 2004,
+    "disasterType": "Ecological Collapse",
+    "rating": 6.5,
+    "boxOffice": 0,
+    "numberOfRatings": 483319,
+    "plotSummary": "Global warming triggers a new Ice Age and a climatologist races to save his son trapped in frozen New York."
+  },
+  {
+    "title": "Shaun of the Dead",
+    "year": 2004,
+    "disasterType": "Pandemic",
+    "rating": 7.9,
+    "boxOffice": 0,
+    "numberOfRatings": 602478,
+    "plotSummary": "A slacker and his friends must fight their way through a zombie outbreak in London."
+  },
+  {
+    "title": "Resident Evil: Apocalypse",
+    "year": 2004,
+    "disasterType": "Zombies",
+    "rating": 6.1,
+    "boxOffice": 0,
+    "numberOfRatings": 212065,
+    "plotSummary": "Alice and a group of survivors attempt to escape Raccoon City which is overrun by Zombies and deadly creatures."
+  },
+  {
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "year": 2005,
+    "disasterType": "Cosmic",
+    "rating": 6.7,
+    "boxOffice": 0,
+    "numberOfRatings": 209889,
+    "plotSummary": "Moments before Earth is destroyed to make way for a galactic freeway an ordinary man is whisked away on a cosmic adventure."
+  },
+  {
+    "title": "Æon Flux",
+    "year": 2005,
+    "disasterType": "Dystopian",
+    "rating": 5.4,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a future where most of humanity has been wiped out a rebel assassin targets a government leader."
+  },
+  {
+    "title": "The Prophecy: Forsaken",
+    "year": 2005,
+    "disasterType": "Supernatural",
+    "rating": 4.4,
+    "boxOffice": 0,
+    "numberOfRatings": 1976,
+    "plotSummary": "The final chapter in the Prophecy series follows the guardian of a sacred text hunted by both angels and demons."
+  },
+  {
+    "title": "War of the Worlds",
+    "year": 2005,
+    "disasterType": "Alien Invasion",
+    "rating": 6.5,
+    "boxOffice": 0,
+    "numberOfRatings": 480673,
+    "plotSummary": "A divorced father must protect his children when aliens invade Earth in this adaptation of H.G. Wells' classic novel."
+  },
+  {
+    "title": "Land of the Dead",
+    "year": 2005,
+    "disasterType": "Zombies",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 101606,
+    "plotSummary": "In a world overrun by Zombies the wealthy live in a fortified city while scavengers venture into the dangerous outside world."
+  },
+  {
+    "title": "Supervolcano",
+    "year": 2005,
+    "disasterType": "Natural Disaster",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 2559,
+    "plotSummary": "A docudrama depicting the potential catastrophic effects of a supervolcanic eruption at Yellowstone National Park."
+  },
+  {
+    "title": "Children of Men",
+    "year": 2006,
+    "disasterType": "Dystopian",
+    "rating": 7.9,
+    "boxOffice": 0,
+    "numberOfRatings": 535957,
+    "plotSummary": "In a world where humans can no longer reproduce a man must protect the first pregnant woman in 18 years."
+  },
+  {
+    "title": "Idiocracy",
+    "year": 2006,
+    "disasterType": "Dystopian",
+    "rating": 6.5,
+    "boxOffice": 0,
+    "numberOfRatings": 189157,
+    "plotSummary": "An average man wakes up 500 years in the future to find that society has become incredibly dumb and he's the smartest person alive."
+  },
+  {
+    "title": "Right at Your Door",
+    "year": 2006,
+    "disasterType": "Terrorism",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": 14494,
+    "plotSummary": "A man seals himself in his house after a series of dirty bombs detonate in Los Angeles but faces a dilemma when his wife returns home."
+  },
+  {
+    "title": "Solar Attack",
+    "year": 2006,
+    "disasterType": "Natural Disaster",
+    "rating": 4,
+    "boxOffice": 0,
+    "numberOfRatings": 1178,
+    "plotSummary": "Scientists race against time to prevent a series of solar flares from incinerating the Earth."
+  },
+  {
+    "title": "Southland Tales",
+    "year": 2006,
+    "disasterType": "Apocalyptic",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a dystopian near-future various characters' lives intertwine as a catastrophic event looms."
+  },
+  {
+    "title": "Planet Terror",
+    "year": 2007,
+    "disasterType": "Zombies",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A go-go dancer and her ex-boyfriend lead a group of survivors in a fight against zombie-like creatures."
+  },
+  {
+    "title": "Tooth and Nail",
+    "year": "0.0",
+    "disasterType": "Post-Apocalyptic",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": 3979,
+    "plotSummary": "In a post-apocalyptic world where gasoline is scarce a group of survivors defend their compound against vicious cannibals."
+  },
+  {
+    "title": "The Signal",
+    "year": "0.0",
+    "disasterType": "Apocalyptic",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A mysterious transmission turns people into killers and three interconnected stories follow different characters dealing with the chaos."
+  },
+  {
+    "title": "The Invasion",
+    "year": 2007,
+    "disasterType": "Alien Invasion",
+    "rating": 5.9,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A psychiatrist uncovers an alien epidemic where humans are replaced by emotionless duplicates."
+  },
+  {
+    "title": "Resident Evil: Extinction",
+    "year": 2007,
+    "disasterType": "Zombies",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 207372,
+    "plotSummary": "Alice and survivors of the T-virus outbreak travel across the Nevada desert battling Zombies and the Umbrella Corporation."
+  },
+  {
+    "title": "20 Years After",
+    "year": 2008,
+    "disasterType": "Nukes!",
+    "rating": 3.2,
+    "boxOffice": 0,
+    "numberOfRatings": 1599,
+    "plotSummary": "Two decades after a nuclear war, a young woman searches for other survivors in a desolate American landscape."
+  },
+  {
+    "title": "The Dark Hour",
+    "year": 1936,
+    "disasterType": "Supernatural",
+    "rating": 5.4,
+    "boxOffice": 0,
+    "numberOfRatings": 366,
+    "plotSummary": "A group of people are trapped in a house and must confront their deepest fears as reality shifts around them."
+  },
+  {
+    "title": "Diary of the Dead",
+    "year": 2007,
+    "disasterType": "Zombies",
+    "rating": 5.5,
+    "boxOffice": 0,
+    "numberOfRatings": 49549,
+    "plotSummary": "A group of film students document the zombie apocalypse as it unfolds around them."
+  },
+  {
+    "title": "28 Weeks Later",
+    "year": 2007,
+    "disasterType": "Zombies",
+    "rating": 6.9,
+    "boxOffice": 0,
+    "numberOfRatings": 298009,
+    "plotSummary": "As the US Army helps repatriate London six months after the rage virus outbreak, a carrier threatens to reignite the epidemic."
+  },
+  {
+    "title": "I Am Legend",
+    "year": 2007,
+    "disasterType": "Pandemic",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 827462,
+    "plotSummary": "A lone scientist in New York City struggles to find a cure for a plague that has turned humans into aggressive mutants."
+  },
+  {
+    "title": "Babylon A.D.",
+    "year": 2008,
+    "disasterType": "Dystopian",
+    "rating": 5.5,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A mercenary escorts a woman carrying a synthetic virus to New York in a dystopian future."
+  },
+  {
+    "title": "Blindness",
+    "year": 2008,
+    "disasterType": "Pandemic",
+    "rating": 6.5,
+    "boxOffice": 0,
+    "numberOfRatings": 75590,
+    "plotSummary": "A sudden epidemic of blindness affects nearly everyone in a city leading to societal breakdown and chaos."
+  },
+  {
+    "title": "Resident Evil: Degeneration",
+    "year": 2008,
+    "disasterType": "Pandemic",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 33450,
+    "plotSummary": "Leon S. Kennedy and Claire Redfield battle a rogue warrior seeking revenge after his family was killed in Raccoon City."
+  },
+  {
+    "title": "WALL-E",
+    "year": 2008,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 8.4,
+    "boxOffice": 0,
+    "numberOfRatings": 1219823,
+    "plotSummary": "A lonely robot on an abandoned, trash-covered Earth discovers a new purpose when he meets a sleek search robot."
+  },
+  {
+    "title": "Daybreakers",
+    "year": 2009,
+    "disasterType": "Pandemic",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 135969,
+    "plotSummary": "In a world where most humans have become vampires, a researcher works on a blood substitute to save the dwindling human population."
+  },
+  {
+    "title": "Aftermath: Population Zero",
+    "year": 2008,
+    "disasterType": "Ecological Collapse",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": 1498,
+    "plotSummary": "A speculative documentary exploring what would happen to Earth if humans suddenly disappeared."
+  },
+  {
+    "title": "Doomsday",
+    "year": 2008,
+    "disasterType": "Pandemic",
+    "rating": 5.9,
+    "boxOffice": 0,
+    "numberOfRatings": 80501,
+    "plotSummary": "A team enters a quarantined Scotland to find a cure for a deadly virus, encountering chaos and danger."
+  },
+  {
+    "title": "City of Ember",
+    "year": 2008,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 70477,
+    "plotSummary": "Two young residents of an underground city race to solve the mystery of their failing power source before time runs out."
+  },
+  {
+    "title": "The Happening",
+    "year": 2008,
+    "disasterType": "Ecological Collapse",
+    "rating": 5,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A mysterious natural event causes people to commit suicide en masse, as a family tries to escape the inexplicable threat."
+  },
+  {
+    "title": "Pontypool",
+    "year": 2008,
+    "disasterType": "Pandemic",
+    "rating": 6.5,
+    "boxOffice": 0,
+    "numberOfRatings": 36045,
+    "plotSummary": "A radio host and his staff become trapped in their station as a deadly virus spreads through language."
+  },
+  {
+    "title": "The Road",
+    "year": 2009,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A father and son journey through a desolate America, struggling to survive in a world devoid of resources and filled with danger."
+  },
+  {
+    "title": "Pandorum",
+    "year": 2009,
+    "disasterType": "Sci-Fi",
+    "rating": 6.7,
+    "boxOffice": 0,
+    "numberOfRatings": 161110,
+    "plotSummary": "Two crew members of a spaceship wake from hypersleep to find themselves alone and unsure of their mission."
+  },
+  {
+    "title": "Watchmen",
+    "year": 2009,
+    "disasterType": "Nukes!",
+    "rating": 7.6,
+    "boxOffice": 0,
+    "numberOfRatings": 588360,
+    "plotSummary": "In an alternate 1985, superheroes investigate a conspiracy as tensions between the US and Soviet Union escalate towards nuclear war."
+  },
+  {
+    "title": 9,
+    "year": 2009,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 149482,
+    "plotSummary": "In a post-apocalyptic world, a group of sentient rag dolls battle machines for the future of their kind."
+  },
+  {
+    "title": "Knowing",
+    "year": 2009,
+    "disasterType": "Apocalyptic",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 250477,
+    "plotSummary": "A professor races to prevent global catastrophes predicted by a mysterious document found in a time capsule."
+  },
+  {
+    "title": "Survival of the Dead",
+    "year": 2009,
+    "disasterType": "Zombies",
+    "rating": 4.8,
+    "boxOffice": 0,
+    "numberOfRatings": 22716,
+    "plotSummary": "On an island off North America, two feuding families deal differently with the zombie plague, one seeking a cure and the other killing the undead."
+  },
+  {
+    "title": "Zombieland",
+    "year": 2009,
+    "disasterType": "Zombies",
+    "rating": 7.5,
+    "boxOffice": 0,
+    "numberOfRatings": 630749,
+    "plotSummary": "A shy student trying to reach his family in Ohio, a gun-toting tough guy, and a pair of sisters survive the zombie apocalypse by following a list of survival rules."
+  },
+  {
+    "title": 2012,
+    "year": 2009,
+    "disasterType": "Natural Disaster",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A family struggles to survive as a series of catastrophic natural disasters signal the possible end of the world."
+  },
+  {
+    "title": "Terminator Salvation",
+    "year": 2009,
+    "disasterType": "AI Takeover",
+    "rating": 6.5,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a post-apocalyptic world, John Connor leads the resistance against Skynet and its army of Terminators."
+  },
+  {
+    "title": "Battlestar Galactica: The Plan",
+    "year": 2009,
+    "disasterType": "Alien Invasion",
+    "rating": 6.9,
+    "boxOffice": 0,
+    "numberOfRatings": 21404,
+    "plotSummary": "The story of the Cylon attack on the Twelve Colonies is told from the perspective of two Cylon leaders."
+  },
+  {
+    "title": "Happy End",
+    "year": 2009,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.1,
+    "boxOffice": 0,
+    "numberOfRatings": 1136,
+    "plotSummary": "A couple tries to maintain their relationship as the world around them crumbles in this French apocalyptic drama."
+  },
+  {
+    "title": "Carriers",
+    "year": 2009,
+    "disasterType": "Pandemic",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": 49975,
+    "plotSummary": "Four friends fleeing a viral pandemic soon learn they are more dangerous to each other than the virus they are trying to escape."
+  },
+  {
+    "title": "Earth 2100",
+    "year": 2009,
+    "disasterType": "General Collapse",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 1054,
+    "plotSummary": "A speculative documentary that explores what the world might look like in 2100 if humans fail to address global issues."
+  },
+  {
+    "title": "Juan of the Dead",
+    "year": 2004,
+    "disasterType": "Zombies",
+    "rating": 7.9,
+    "boxOffice": 0,
+    "numberOfRatings": 11102,
+    "plotSummary": "A group of slackers in Cuba decide to profit from a zombie outbreak by offering to kill infected family members for a fee."
+  },
+  {
+    "title": "Monsters",
+    "year": 2010,
+    "disasterType": "Alien Invasion",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 98411,
+    "plotSummary": "A journalist agrees to escort a tourist through an alien-infested Mexico to the safety of the US border."
+  },
+  {
+    "title": "Stake Land",
+    "year": 2010,
+    "disasterType": "Pandemic",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a post-apocalyptic America overrun by vampires, a young man is taken under the wing of a legendary vampire hunter."
+  },
+  {
+    "title": "Vanishing on 7th Street",
+    "year": 2010,
+    "disasterType": "Supernatural",
+    "rating": 4.9,
+    "boxOffice": 0,
+    "numberOfRatings": 27606,
+    "plotSummary": "A mysterious, spreading darkness causes most of humanity to vanish, leaving a few survivors to search for answers and safety."
+  },
+  {
+    "title": "Legion",
+    "year": 2010,
+    "disasterType": "Supernatural",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 113385,
+    "plotSummary": "An out-of-the-way diner becomes the battleground for the survival of the human race when God loses faith in humankind and sends his legion of angels to bring on the Apocalypse."
+  },
+  {
+    "title": "Maximum Shame",
+    "year": 2010,
+    "disasterType": "Dystopian",
+    "rating": 2.7,
+    "boxOffice": 0,
+    "numberOfRatings": 404,
+    "plotSummary": "In a dystopian future, a man must navigate a surreal landscape to save his lover from a despotic queen."
+  },
+  {
+    "title": "The Book of Eli",
+    "year": 2010,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": 343819,
+    "plotSummary": "A lone warrior travels across a post-apocalyptic America, guarding a sacred book that may hold the key to saving humanity."
+  },
+  {
+    "title": "Resident Evil: Afterlife",
+    "year": 2010,
+    "disasterType": "Zombies",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 180712,
+    "plotSummary": "Alice continues her journey to find survivors and lead them to safety in a world ravaged by a zombie virus."
+  },
+  {
+    "title": "4:44 Last Day on Earth",
+    "year": 2011,
+    "disasterType": "Apocalyptic",
+    "rating": 4.6,
+    "boxOffice": 0,
+    "numberOfRatings": 5817,
+    "plotSummary": "A couple in New York City spend their final hours together before the world comes to an end at 4:44 a.m."
+  },
+  {
+    "title": "Deadheads",
+    "year": 2011,
+    "disasterType": "Zombies",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 5576,
+    "plotSummary": "Two young Zombies go on a road trip to find one's lost love in this horror-comedy."
+  },
+  {
+    "title": "Perfect Sense",
+    "year": 2011,
+    "disasterType": "Pandemic",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 64525,
+    "plotSummary": "A chef and a scientist fall in love as an epidemic begins to rob people of their sensory perceptions."
+  },
+  {
+    "title": "The Darkest Hour",
+    "year": 2011,
+    "disasterType": "Alien Invasion",
+    "rating": 4.9,
+    "boxOffice": 0,
+    "numberOfRatings": 64321,
+    "plotSummary": "Five young people find themselves stranded in Moscow, fighting to survive in the wake of an alien attack."
+  },
+  {
+    "title": "The Day",
+    "year": 2011,
+    "disasterType": "Post-Apocalyptic",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A group of survivors in a post-apocalyptic world must defend an abandoned farmhouse from a band of marauders."
+  },
+  {
+    "title": "The Divide",
+    "year": 2011,
+    "disasterType": "Nukes!",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 38951,
+    "plotSummary": "Survivors of a nuclear attack are grouped together for days in the basement of their apartment building, where fear and dwindling supplies wear away at their dynamic."
+  },
+  {
+    "title": "Melancholia",
+    "year": 2011,
+    "disasterType": "Natural Disaster",
+    "rating": 7.1,
+    "boxOffice": 0,
+    "numberOfRatings": 198172,
+    "plotSummary": "Two sisters find their already strained relationship challenged as a mysterious new planet threatens to collide with Earth."
+  },
+  {
+    "title": "Hell",
+    "year": 2011,
+    "disasterType": "Natural Disaster",
+    "rating": 8.3,
+    "boxOffice": 0,
+    "numberOfRatings": 56456,
+    "plotSummary": "In a world ravaged by the effects of global warming, a group of survivors search for water and refuge from dangerous scavengers."
+  },
+  {
+    "title": "Take Shelter",
+    "year": 2011,
+    "disasterType": "Psychological",
+    "rating": 7.3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A man's sanity is tested as he becomes obsessed with building a storm shelter to protect his family from an impending apocalyptic event."
+  },
+  {
+    "title": "Rise of the Planet of the Apes",
+    "year": 2011,
+    "disasterType": "Pandemic",
+    "rating": 7.6,
+    "boxOffice": 0,
+    "numberOfRatings": 582525,
+    "plotSummary": "A scientist's attempt to cure Alzheimer's has unintended consequences, leading to the rise of intelligent apes and a deadly virus."
+  },
+  {
+    "title": "The Cabin in the Woods",
+    "year": 2011,
+    "disasterType": "Supernatural",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 458314,
+    "plotSummary": "Five friends go for a break at a remote cabin, where they get more than they bargained for, discovering the truth behind the cabin in the woods."
+  },
+  {
+    "title": "The Hunger Games",
+    "year": 2012,
+    "disasterType": "Dystopian",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 1017332,
+    "plotSummary": "In a dystopian future, a young woman volunteers to take her sister's place in a televised survival competition with a brutal legacy."
+  },
+  {
+    "title": "Seeking a Friend for the End of the World",
+    "year": 2012,
+    "disasterType": "Apocalyptic",
+    "rating": 6.7,
+    "boxOffice": 0,
+    "numberOfRatings": 119479,
+    "plotSummary": "As an asteroid nears Earth, a man embarks on a road trip to reunite with his high school sweetheart before the world ends."
+  },
+  {
+    "title": "5 Shells",
+    "year": 2012,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4.5,
+    "boxOffice": 0,
+    "numberOfRatings": 254,
+    "plotSummary": "In a post-apocalyptic world, a young girl must protect her little sister as they search for safety and resources."
+  },
+  {
+    "title": "Dredd",
+    "year": 2012,
+    "disasterType": "Dystopian",
+    "rating": 7.1,
+    "boxOffice": 0,
+    "numberOfRatings": 298069,
+    "plotSummary": "In a violent, futuristic city, a law enforcer and a psychic rookie fight a drug lord who has taken over a 200-story super-building."
+  },
+  {
+    "title": "It's a Disaster",
+    "year": 2012,
+    "disasterType": "Apocalyptic",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": 11695,
+    "plotSummary": "Four couples meet for Sunday brunch only to discover the world may be ending, forcing them to face their relationships and themselves."
+  },
+  {
+    "title": "Battle: Los Angeles",
+    "year": 2012,
+    "disasterType": "Alien Invasion",
+    "rating": 5.7,
+    "boxOffice": 0,
+    "numberOfRatings": 186072,
+    "plotSummary": "A Marine staff sergeant and his platoon fight against an alien invasion in Los Angeles."
+  },
+  {
+    "title": "Resident Evil: Retribution",
+    "year": 2012,
+    "disasterType": "Pandemic",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 151648,
+    "plotSummary": "Alice fights alongside a resistance movement to regain her freedom from an Umbrella Corporation testing facility."
+  },
+  {
+    "title": "Resident Evil: Damnation",
+    "year": 2012,
+    "disasterType": "Pandemic",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 22655,
+    "plotSummary": "Leon S. Kennedy investigates the use of bioweapons in a European war zone, uncovering a conspiracy involving familiar monsters."
+  },
+  {
+    "title": "Cloud Atlas",
+    "year": 2012,
+    "disasterType": "General causes",
+    "rating": 7.4,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "An exploration of how the actions of individual lives impact one another in the past, present and future, as one soul is shaped from a killer into a hero."
+  },
+  {
+    "title": "Cockneys vs Zombies",
+    "year": 2012,
+    "disasterType": "Zombies",
+    "rating": 5.9,
+    "boxOffice": 0,
+    "numberOfRatings": 20435,
+    "plotSummary": "A group of bank robbers and pensioners fight their way out of London's East End when a zombie outbreak occurs."
+  },
+  {
+    "title": "The Battery",
+    "year": 2012,
+    "disasterType": "Zombies",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "Two former baseball players travel the back roads of a post-zombie apocalypse New England in this character-driven film."
+  },
+  {
+    "title": "Rapture-Palooza",
+    "year": 2013,
+    "disasterType": "Biblical",
+    "rating": 5.2,
+    "boxOffice": 0,
+    "numberOfRatings": 12722,
+    "plotSummary": "A couple battles their way through a religious apocalypse on a mission to defeat the Antichrist."
+  },
+  {
+    "title": "The Colony",
+    "year": 2013,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 47511,
+    "plotSummary": "In a future where the Earth has been frozen, survivors living in underground bunkers face a new threat."
+  },
+  {
+    "title": "These Final Hours",
+    "year": 2013,
+    "disasterType": "Apocalyptic",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 19242,
+    "plotSummary": "A self-obsessed young man makes his way to the party-to-end-all-parties on the last day on Earth but ends up saving the life of a little girl searching for her father."
+  },
+  {
+    "title": "This Is the End",
+    "year": 2013,
+    "disasterType": "Apocalyptic",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 438525,
+    "plotSummary": "A group of celebrities face the apocalypse while attending a party at James Franco's house in this comedy."
+  },
+  {
+    "title": "After the Dark",
+    "year": 2013,
+    "disasterType": "Philosophical",
+    "rating": 5.6,
+    "boxOffice": 0,
+    "numberOfRatings": 23781,
+    "plotSummary": "At an international school in Jakarta, a philosophy teacher challenges his class of twenty students to a final thought experiment before graduation."
+  },
+  {
+    "title": "After Earth",
+    "year": 2013,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4.8,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A crash landing leaves a father and son stranded on Earth, 1,000 years after events forced humanity's escape from the planet."
+  },
+  {
+    "title": "Los Últimos Días",
+    "year": 2013,
+    "disasterType": "Pandemic",
+    "rating": 6.1,
+    "boxOffice": 0,
+    "numberOfRatings": 9094,
+    "plotSummary": "A mysterious epidemic of agoraphobia spreads, trapping people inside buildings, as a man searches for his pregnant girlfriend."
+  },
+  {
+    "title": "Antisocial",
+    "year": 2013,
+    "disasterType": "Pandemic",
+    "rating": 4.5,
+    "boxOffice": 0,
+    "numberOfRatings": 3595,
+    "plotSummary": "Five university friends gather on New Year's Eve, unaware that a social media-based epidemic is turning people into killers."
+  },
+  {
+    "title": "Snowpiercer",
+    "year": 2013,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 7.1,
+    "boxOffice": 0,
+    "numberOfRatings": 394361,
+    "plotSummary": "In a future where a failed climate-change experiment has killed all life except for the survivors on a train that travels around the globe, a class system evolves."
+  },
+  {
+    "title": "Oblivion",
+    "year": 2013,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 558842,
+    "plotSummary": "A veteran assigned to extract Earth's remaining resources begins to question what he knows about his mission and himself."
+  },
+  {
+    "title": "Warm Bodies",
+    "year": 2013,
+    "disasterType": "Zombies",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A zombie falls in love with a human girl, potentially starting a chain reaction that could change the world."
+  },
+  {
+    "title": "World War Z",
+    "year": 2013,
+    "disasterType": "Zombies",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 733018,
+    "plotSummary": "A former UN investigator races against time and fate as he travels the world trying to stop a zombie pandemic."
+  },
+  {
+    "title": "Edge of Tomorrow",
+    "year": 2014,
+    "disasterType": "Alien Invasion",
+    "rating": 7.9,
+    "boxOffice": 0,
+    "numberOfRatings": 749455,
+    "plotSummary": "A soldier fighting aliens gets to relive the same day over and over again, the day restarting every time he dies."
+  },
+  {
+    "title": "Forever's End",
+    "year": 2013,
+    "disasterType": "unknown",
+    "rating": 4.7,
+    "boxOffice": 0,
+    "numberOfRatings": 348,
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "The World's End",
+    "year": 2013,
+    "disasterType": "Alien Invasion",
+    "rating": 6.9,
+    "boxOffice": 0,
+    "numberOfRatings": 301121,
+    "plotSummary": "Five friends reuniting for an epic pub crawl discover their hometown has been overtaken by robots."
+  },
+  {
+    "title": "The Host",
+    "year": "2013",
+    "disasterType": "Monster(s)",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Goodbye World",
+    "year": 2013,
+    "disasterType": "Technological Apocalypse",
+    "rating": 5.4,
+    "boxOffice": 0,
+    "numberOfRatings": 7431,
+    "plotSummary": "A group of friends reunite at a remote cabin as a cyber-attack causes societal collapse."
+  },
+  {
+    "title": "Die Gstettensaga: The Rise of Echsenfriedl",
+    "year": 2014,
+    "disasterType": "unknown",
+    "rating": 5.2,
+    "boxOffice": 0,
+    "numberOfRatings": 1447,
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Wyrmwood: Road of the Dead",
+    "year": 2014,
+    "disasterType": "Zombies",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 18563,
+    "plotSummary": "A mechanic teams up with a group of survivors to battle Zombies in the Australian outback."
+  },
+  {
+    "title": "The Rover",
+    "year": 2014,
+    "disasterType": "General Collapse",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A loner pursues the gang that stole his car through the Australian outback."
+  },
+  {
+    "title": "Zodiac: Signs of the Apocalypse",
+    "year": 2014,
+    "disasterType": "Natural Disaster",
+    "rating": 3.3,
+    "boxOffice": 0,
+    "numberOfRatings": 1871,
+    "plotSummary": "A group of scholars race to prevent catastrophic events linked to the zodiac."
+  },
+  {
+    "title": "X-Men: Days of Future Past",
+    "year": 2014,
+    "disasterType": "Dystopian",
+    "rating": 7.9,
+    "boxOffice": 0,
+    "numberOfRatings": 756725,
+    "plotSummary": "Wolverine is sent back in time to prevent a war between humans and mutants."
+  },
+  {
+    "title": "Young Ones",
+    "year": 2014,
+    "disasterType": "Ecological Collapse",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 10515,
+    "plotSummary": "In a future where water is scarce, a teenage boy sets out to protect his family and survive."
+  },
+  {
+    "title": "Aftermath",
+    "year": 2014,
+    "disasterType": "Nukes!",
+    "rating": 4.8,
+    "boxOffice": 0,
+    "numberOfRatings": 2147,
+    "plotSummary": "Survivors of a nuclear attack struggle to stay alive in a basement shelter."
+  },
+  {
+    "title": "The Maze Runner",
+    "year": 2014,
+    "disasterType": "Dystopian",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": 520001,
+    "plotSummary": "A group of teens must escape a mysterious maze in a post-apocalyptic world."
+  },
+  {
+    "title": "Dawn of the Planet of the Apes",
+    "year": 2014,
+    "disasterType": "Evolved Apes",
+    "rating": 7.6,
+    "boxOffice": 0,
+    "numberOfRatings": 490343,
+    "plotSummary": "Humans and intelligent apes clash in a world ravaged by a deadly virus."
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "disasterType": "Ecological Collapse",
+    "rating": 8.7,
+    "boxOffice": 0,
+    "numberOfRatings": 2155164,
+    "plotSummary": "A team of astronauts travel through a wormhole in search of a new home for humanity."
+  },
+  {
+    "title": "The Last Survivors",
+    "year": 2014,
+    "disasterType": "Ecological Collapse",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 3972,
+    "plotSummary": "A teenage girl must defend her water supply in a drought-stricken world."
+  },
+  {
+    "title": "Noah",
+    "year": 2014,
+    "disasterType": "Biblical",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 268711,
+    "plotSummary": "Noah builds an ark to save his family and the animals from a world-ending flood."
+  },
+  {
+    "title": "Autómata",
+    "year": 2014,
+    "disasterType": "AI Takeover",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": 59770,
+    "plotSummary": "An insurance agent investigates robots that may be evolving beyond human control."
+  },
+  {
+    "title": "Scouts Guide to the Zombie Apocalypse",
+    "year": 2015,
+    "disasterType": "Zombies",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 56524,
+    "plotSummary": "Three scouts must use their skills to survive a zombie outbreak."
+  },
+  {
+    "title": "Crumbs",
+    "year": 2015,
+    "disasterType": "unknown",
+    "rating": 5.9,
+    "boxOffice": 0,
+    "numberOfRatings": 777,
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Turbo Kid",
+    "year": 2015,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.7,
+    "boxOffice": 0,
+    "numberOfRatings": 30051,
+    "plotSummary": "A young scavenger teams up with a mysterious girl to fight an evil warlord in a retro-futuristic wasteland."
+  },
+  {
+    "title": "Z for Zachariah",
+    "year": 2015,
+    "disasterType": "Nukes!",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": 33002,
+    "plotSummary": "Three survivors of a nuclear disaster form a love triangle in an isolated valley."
+  },
+  {
+    "title": "The End of the World and the Cat's Disappearance",
+    "year": 2023,
+    "disasterType": "unknown",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 55,
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "The Walking Deceased",
+    "year": 2019,
+    "disasterType": "Zombies",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": 3567,
+    "plotSummary": "A parody of various zombie films and TV shows."
+  },
+  {
+    "title": "Extinction",
+    "year": 2015,
+    "disasterType": "Alien Invasion",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 18063,
+    "plotSummary": "A man must protect his family from an alien invasion in this sci-fi thriller."
+  },
+  {
+    "title": "Hidden",
+    "year": 2015,
+    "disasterType": "unknown",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 26350,
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Air",
+    "year": 2015,
+    "disasterType": "Ecological Collapse",
+    "rating": 5.1,
+    "boxOffice": 0,
+    "numberOfRatings": 12620,
+    "plotSummary": "Two custodians struggle to maintain an underground bunker for cryogenically frozen people."
+  },
+  {
+    "title": "Into the Forest",
+    "year": 2015,
+    "disasterType": "Societal Collapse",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 22247,
+    "plotSummary": "Two sisters must survive in the forest after a massive power outage."
+  },
+  {
+    "title": "JeruZalem",
+    "year": 2015,
+    "disasterType": "Biblical",
+    "rating": 4.8,
+    "boxOffice": 0,
+    "numberOfRatings": 11189,
+    "plotSummary": "American tourists in Jerusalem find themselves caught in the middle of a biblical apocalypse."
+  },
+  {
+    "title": "The Survivalist",
+    "year": 2015,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 19030,
+    "plotSummary": "A lone survivor protecting his farm must decide if he can trust two women seeking shelter."
+  },
+  {
+    "title": "Attack on Titan",
+    "year": 2013,
+    "disasterType": "Monster(s)",
+    "rating": 9.1,
+    "boxOffice": 0,
+    "numberOfRatings": 543662,
+    "plotSummary": "Humans fight for survival against man-eating giants in a post-apocalyptic world."
+  },
+  {
+    "title": "Terminator Genisys",
+    "year": 2015,
+    "disasterType": "AI Takeover",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "John Connor sends Kyle Reese back in time to protect Sarah Connor, but things go awry."
+  },
+  {
+    "title": "Maze Runner: The Scorch Trials",
+    "year": 2015,
+    "disasterType": "Dystopian",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 282869,
+    "plotSummary": "The Gladers face new challenges as they search for clues about WCKD."
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 8.1,
+    "boxOffice": 0,
+    "numberOfRatings": 1129167,
+    "plotSummary": "Max teams up with a group of rebels fleeing from a tyrannical warlord in a post-apocalyptic wasteland."
+  },
+  {
+    "title": "Maggie",
+    "year": 2015,
+    "disasterType": "Zombies",
+    "rating": 5.6,
+    "boxOffice": 0,
+    "numberOfRatings": 47107,
+    "plotSummary": "A father stays with his daughter as she slowly turns into a zombie."
+  },
+  {
+    "title": "10 Cloverfield Lane",
+    "year": 2016,
+    "disasterType": "Alien Invasion",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 360807,
+    "plotSummary": "A woman is held in an underground bunker by a man who claims the outside world is uninhabitable."
+  },
+  {
+    "title": "Train to Busan",
+    "year": 2016,
+    "disasterType": "Zombies",
+    "rating": 7.6,
+    "boxOffice": 0,
+    "numberOfRatings": 267431,
+    "plotSummary": "Passengers on a train to Busan struggle to survive during a zombie outbreak in South Korea."
+  },
+  {
+    "title": "Seoul Station",
+    "year": 2016,
+    "disasterType": "Zombies",
+    "rating": 6.1,
+    "boxOffice": 0,
+    "numberOfRatings": 7830,
+    "plotSummary": "A zombie outbreak begins at Seoul Station in this animated prequel to Train to Busan."
+  },
+  {
+    "title": "I Am a Hero",
+    "year": 2016,
+    "disasterType": "Zombies",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A manga artist battles Zombies in Tokyo."
+  },
+  {
+    "title": "The Fifth Wave",
+    "year": 2016,
+    "disasterType": "Alien Invasion",
+    "rating": 5.2,
+    "boxOffice": 0,
+    "numberOfRatings": 118707,
+    "plotSummary": "A young woman fights to save her brother from alien invaders."
+  },
+  {
+    "title": "Cell",
+    "year": 2016,
+    "disasterType": "Technological Apocalypse",
+    "rating": 4.4,
+    "boxOffice": 0,
+    "numberOfRatings": 31022,
+    "plotSummary": "A mysterious signal turns cell phone users into mindless killers."
+  },
+  {
+    "title": "Day of Reckoning",
+    "year": 2016,
+    "disasterType": "Monster(s)",
+    "rating": 3.4,
+    "boxOffice": 0,
+    "numberOfRatings": 1249,
+    "plotSummary": "Fifteen years after a global apocalypse, monsters return to finish off humanity."
+  },
+  {
+    "title": "The Girl with All the Gifts",
+    "year": 2016,
+    "disasterType": "Zombies",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 65237,
+    "plotSummary": "A scientist and a teacher accompany a special young girl through a post-apocalyptic landscape."
+  },
+  {
+    "title": "Diverge",
+    "year": 2016,
+    "disasterType": "Ecological Collapse",
+    "rating": 4.6,
+    "boxOffice": 0,
+    "numberOfRatings": 870,
+    "plotSummary": "In a post-apocalyptic world ravaged by a devastating plague, a lone survivor is given the chance to travel back in time to prevent the catastrophe and save his wife."
+  },
+  {
+    "title": "The Northlander",
+    "year": 2016,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 3.7,
+    "boxOffice": 0,
+    "numberOfRatings": 3831,
+    "plotSummary": "In a future primitive world, a young hunter searches for a way to save his tribe."
+  },
+  {
+    "title": "Stephanie",
+    "year": 2017,
+    "disasterType": "Unknown Cause",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 6467,
+    "plotSummary": "A young girl survives alone in her house after a mysterious global crisis."
+  },
+  {
+    "title": "It Comes at Night",
+    "year": 2017,
+    "disasterType": "Pandemic",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 104854,
+    "plotSummary": "A family in a post-apocalyptic world is threatened by an unknown outside force."
+  },
+  {
+    "title": "War for the Planet of the Apes",
+    "year": 2017,
+    "disasterType": "Evolved Apes",
+    "rating": 7.4,
+    "boxOffice": 0,
+    "numberOfRatings": 306180,
+    "plotSummary": "Caesar leads his apes in a war against humans for the fate of both species."
+  },
+  {
+    "title": "Resident Evil: The Final Chapter",
+    "year": 2017,
+    "disasterType": "Zombies",
+    "rating": 7.6,
+    "boxOffice": 0,
+    "numberOfRatings": 31,
+    "plotSummary": "Alice returns to Raccoon City for a final stand against the Umbrella Corporation."
+  },
+  {
+    "title": "Resident Evil: Vendetta",
+    "year": 2017,
+    "disasterType": "Terrorism",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 15783,
+    "plotSummary": "Chris Redfield enlists the help of Leon S. Kennedy to stop a deadly virus in New York."
+  },
+  {
+    "title": "Everything Beautiful Is Far Away",
+    "year": 2017,
+    "disasterType": "Ecological Collapse",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 1171,
+    "plotSummary": "A man and a robot search for water in a barren, post-apocalyptic world."
+  },
+  {
+    "title": "Bokeh",
+    "year": 2017,
+    "disasterType": "Unknown Cause",
+    "rating": 5,
+    "boxOffice": 0,
+    "numberOfRatings": 7942,
+    "plotSummary": "An American couple on vacation in Iceland wake to find that everyone has disappeared."
+  },
+  {
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "disasterType": "Dystopian",
+    "rating": 8,
+    "boxOffice": 0,
+    "numberOfRatings": 682290,
+    "plotSummary": "A blade runner uncovers a secret that threatens to destabilize society."
+  },
+  {
+    "title": "Cargo",
+    "year": 2017,
+    "disasterType": "Zombies",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 48965,
+    "plotSummary": "A father tries to save his infant daughter in zombie-infested rural Australia."
+  },
+  {
+    "title": "Here Alone",
+    "year": 2017,
+    "disasterType": "Ecological Collapse",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A young woman struggles to survive on her own in the wake of a mysterious epidemic that has killed much of society and forced her into the unforgiving wilderness."
+  },
+  {
+    "title": "Deep",
+    "year": 2017,
+    "disasterType": "Ecological Collapse",
+    "rating": 4.2,
+    "boxOffice": 0,
+    "numberOfRatings": 1655,
+    "plotSummary": "Sea creatures must find a new home when their habitat is destroyed."
+  },
+  {
+    "title": "Bird Box",
+    "year": "2018",
+    "disasterType": "unknown",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Blue World Order",
+    "year": 2017,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4.5,
+    "boxOffice": 0,
+    "numberOfRatings": 4503,
+    "plotSummary": "In a world where a pandemic has killed every child except one, a father will do anything to protect his daughter."
+  },
+  {
+    "title": "The Domestics",
+    "year": 2018,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 5.7,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A young couple must travel through a dangerous post-apocalyptic America."
+  },
+  {
+    "title": "Future World",
+    "year": 2018,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 3.3,
+    "boxOffice": 0,
+    "numberOfRatings": 6999,
+    "plotSummary": "A young man searches for a cure for his mother in a post-apocalyptic world."
+  },
+  {
+    "title": "How It Ends",
+    "year": 2018,
+    "disasterType": "Unknown Cause",
+    "rating": 5.1,
+    "boxOffice": 0,
+    "numberOfRatings": 59601,
+    "plotSummary": "A desperate father tries to return home to his pregnant wife amid a mysterious apocalyptic event."
+  },
+  {
+    "title": "I Think We're Alone Now",
+    "year": 2018,
+    "disasterType": "Unknown Cause",
+    "rating": 5.7,
+    "boxOffice": 0,
+    "numberOfRatings": 13014,
+    "plotSummary": "A man who believes he is the last human on Earth has his world upended when a second survivor appears."
+  },
+  {
+    "title": "In My Room",
+    "year": 2018,
+    "disasterType": "Unknown Cause",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 1324,
+    "plotSummary": "A man wakes up to find that all of humanity has disappeared."
+  },
+  {
+    "title": "Maze Runner: The Death Cure",
+    "year": 2018,
+    "disasterType": "Pandemic",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 169277,
+    "plotSummary": "Thomas leads his group of escaped Gladers on their final mission."
+  },
+  {
+    "title": "Mortal Engines",
+    "year": 2018,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.1,
+    "boxOffice": 0,
+    "numberOfRatings": 143749,
+    "plotSummary": "In a post-apocalyptic world, giant moving cities prey on smaller towns for resources."
+  },
+  {
+    "title": "The Night Eats the World",
+    "year": 2018,
+    "disasterType": "Zombies",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": 16412,
+    "plotSummary": "A man wakes up to find Paris overrun by Zombies and must survive alone in his apartment building."
+  },
+  {
+    "title": "Patient Zero",
+    "year": 2018,
+    "disasterType": "Pandemic",
+    "rating": 4.6,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A man with the ability to speak the language of the infected leads the search for Patient Zero and a cure."
+  },
+  {
+    "title": "A Quiet Place",
+    "year": 2018,
+    "disasterType": "Alien Invasion",
+    "rating": 7.5,
+    "boxOffice": 0,
+    "numberOfRatings": 605198,
+    "plotSummary": "A family must live in silence to avoid mysterious creatures that hunt by sound."
+  },
+  {
+    "title": "Scorched Earth",
+    "year": 2018,
+    "disasterType": "Ecological Collapse",
+    "rating": 4.4,
+    "boxOffice": 0,
+    "numberOfRatings": 4550,
+    "plotSummary": "In a post-apocalyptic world, a bounty hunter tracks down criminals."
+  },
+  {
+    "title": "What Still Remains",
+    "year": 2018,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4.7,
+    "boxOffice": 0,
+    "numberOfRatings": 2112,
+    "plotSummary": "A young woman encounters a charismatic leader of a cult-like community in a post-apocalyptic world."
+  },
+  {
+    "title": "This World Alone",
+    "year": 2018,
+    "disasterType": "unknown",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 188,
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Blood Quantum",
+    "year": 2019,
+    "disasterType": "Zombies",
+    "rating": 5.6,
+    "boxOffice": 0,
+    "numberOfRatings": 21,
+    "plotSummary": "Indigenous people find they are immune to a zombie plague decimating the world around them."
+  },
+  {
+    "title": "Zombieland: Double Tap",
+    "year": 2019,
+    "disasterType": "Zombies",
+    "rating": 6.7,
+    "boxOffice": 0,
+    "numberOfRatings": 207862,
+    "plotSummary": "The dysfunctional family of zombie slayers face new evolved Zombies and human survivors."
+  },
+  {
+    "title": "The Wandering Earth",
+    "year": 2019,
+    "disasterType": "Ecological Collapse",
+    "rating": 5.9,
+    "boxOffice": 0,
+    "numberOfRatings": 36911,
+    "plotSummary": "As the sun is dying, people all around the world build giant thrusters to move Earth out of its orbit."
+  },
+  {
+    "title": "The Silence",
+    "year": 2019,
+    "disasterType": "Monster(s)",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A family struggles to survive in a world overrun by blind but noise-sensitive creatures."
+  },
+  {
+    "title": "Io",
+    "year": 2019,
+    "disasterType": "Ecological Collapse",
+    "rating": 4.8,
+    "boxOffice": 0,
+    "numberOfRatings": 36601,
+    "plotSummary": "A young scientist searches for a way to save Earth as humanity abandons the toxic planet."
+  },
+  {
+    "title": "Terminator: Dark Fate",
+    "year": 2019,
+    "disasterType": "AI Takeover",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 196448,
+    "plotSummary": "Sarah Connor and a hybrid cyborg human must protect a young girl from a new Terminator."
+  },
+  {
+    "title": "Light of My Life",
+    "year": 2019,
+    "disasterType": "Pandemic",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 15693,
+    "plotSummary": "A father and his young daughter journey through the outskirts of society a decade after a pandemic."
+  },
+  {
+    "title": "The Lego Movie 2: The Second Part",
+    "year": 2019,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.5,
+    "boxOffice": 0,
+    "numberOfRatings": 78336,
+    "plotSummary": "Emmet must rescue his friends from the Systar System in this animated sequel."
+  },
+  {
+    "title": 3022,
+    "year": 2019,
+    "disasterType": "Ecological Collapse",
+    "rating": 4.5,
+    "boxOffice": 0,
+    "numberOfRatings": 6040,
+    "plotSummary": "Astronauts aboard a space station witness a catastrophic event on Earth."
+  },
+  {
+    "title": 2067,
+    "year": 2020,
+    "disasterType": "Ecological Collapse",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A man travels to the future to save humanity from an oxygen-depleted Earth."
+  },
+  {
+    "title": "#Alive",
+    "year": 2020,
+    "disasterType": "Zombies",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 49140,
+    "plotSummary": "A gamer's struggle for survival as he is trapped in his apartment during a zombie apocalypse."
+  },
+  {
+    "title": "Alone",
+    "year": 2020,
+    "disasterType": "Zombies",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 30503,
+    "plotSummary": "A recently widowed traveler is stranded in the wilderness during the zombie apocalypse."
+  },
+  {
+    "title": "Friend of the World",
+    "year": 2020,
+    "disasterType": "unknown",
+    "rating": 5.4,
+    "boxOffice": 0,
+    "numberOfRatings": 99,
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Greenland",
+    "year": 2020,
+    "disasterType": "Natural Disaster",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 138867,
+    "plotSummary": "A family struggles for survival in the face of a planet-killing comet."
+  },
+  {
+    "title": "Love and Monsters",
+    "year": 2020,
+    "disasterType": "Monster(s)",
+    "rating": 6.9,
+    "boxOffice": 0,
+    "numberOfRatings": 148158,
+    "plotSummary": "In a monster-infested world, a young man embarks on a quest to reunite with his high school sweetheart."
+  },
+  {
+    "title": "Train to Busan Presents: Peninsula",
+    "year": 2020,
+    "disasterType": "Zombies",
+    "rating": 5.5,
+    "boxOffice": 0,
+    "numberOfRatings": 38807,
+    "plotSummary": "A soldier and his team return to zombie-infested South Korea on a retrieval mission."
+  },
+  {
+    "title": "The Midnight Sky",
+    "year": 2020,
+    "disasterType": "Ecological Collapse",
+    "rating": 5.7,
+    "boxOffice": 0,
+    "numberOfRatings": 90231,
+    "plotSummary": "A lone scientist in the Arctic races to contact a crew of astronauts returning home to a mysterious global catastrophe."
+  },
+  {
+    "title": "Songbird",
+    "year": 2020,
+    "disasterType": "Pandemic",
+    "rating": 4.8,
+    "boxOffice": 0,
+    "numberOfRatings": 11817,
+    "plotSummary": "In 2024, a courier who's immune to the virus that has ravaged the world races against time to save the woman he loves."
+  },
+  {
+    "title": "How It Ends",
+    "year": 2021,
+    "disasterType": "Apocalyptic",
+    "rating": 5.4,
+    "boxOffice": 0,
+    "numberOfRatings": 4404,
+    "plotSummary": "A woman reconciles her relationships on her last day on Earth before the apocalypse."
+  },
+  {
+    "title": "Quarantine",
+    "year": 2021,
+    "disasterType": "Pandemic",
+    "rating": 7.8,
+    "boxOffice": 0,
+    "numberOfRatings": 15,
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Silent Night",
+    "year": 2021,
+    "disasterType": "Ecological Collapse",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A family gathers for Christmas dinner as an Ecological Collapse threatens all of humanity."
+  },
+  {
+    "title": "Army of the Dead",
+    "year": 2021,
+    "disasterType": "Zombies",
+    "rating": 5.8,
+    "boxOffice": 0,
+    "numberOfRatings": 191236,
+    "plotSummary": "A group of mercenaries attempt a heist in a zombie-infested Las Vegas."
+  },
+  {
+    "title": "Awake",
+    "year": 2021,
+    "disasterType": "Pandemic",
+    "rating": 4.9,
+    "boxOffice": 0,
+    "numberOfRatings": 26806,
+    "plotSummary": "After a global event wipes out humanity's ability to sleep, a mother fights to save her children."
+  },
+  {
+    "title": "Don't Look Up",
+    "year": 2021,
+    "disasterType": "Cosmic",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 615446,
+    "plotSummary": "Two astronomers go on a media tour to warn mankind of an approaching comet that will destroy Earth."
+  },
+  {
+    "title": "The Tomorrow War",
+    "year": 2021,
+    "disasterType": "Alien Invasion",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 232608,
+    "plotSummary": "A man is drafted to fight in a future war where the fate of humanity relies on his ability to confront the past."
+  },
+  {
+    "title": "Finch",
+    "year": 2021,
+    "disasterType": "Ecological Collapse",
+    "rating": 6.9,
+    "boxOffice": 0,
+    "numberOfRatings": 99571,
+    "plotSummary": "A robotics engineer and his dog embark on a journey to find a new home in a post-apocalyptic world."
+  },
+  {
+    "title": "Mother/Android",
+    "year": 2021,
+    "disasterType": "AI Takeover",
+    "rating": 4.9,
+    "boxOffice": 0,
+    "numberOfRatings": 21501,
+    "plotSummary": "In a post-apocalyptic world, a young couple seek refuge in a human stronghold before the birth of their child."
+  },
+  {
+    "title": "The Mitchells vs. The Machines",
+    "year": 2021,
+    "disasterType": "AI Takeover",
+    "rating": 7.6,
+    "boxOffice": 0,
+    "numberOfRatings": 129722,
+    "plotSummary": "A quirky family's road trip is interrupted by a robot apocalypse in this animated adventure."
+  },
+  {
+    "title": "The Matrix Resurrections",
+    "year": 2021,
+    "disasterType": "AI Takeover",
+    "rating": 5.7,
+    "boxOffice": 0,
+    "numberOfRatings": 285176,
+    "plotSummary": "Neo is drawn back into the Matrix to face a new threat to both machine and human worlds."
+  },
+  {
+    "title": "A Quiet Place Part II",
+    "year": 2020,
+    "disasterType": "Alien Invasion",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 287928,
+    "plotSummary": "The Abbott family must leave their home and face the terrors of the outside world in silence."
+  },
+  {
+    "title": "Resident Evil: Welcome to Raccoon City",
+    "year": 2021,
+    "disasterType": "Zombies",
+    "rating": 5.2,
+    "boxOffice": 0,
+    "numberOfRatings": 65639,
+    "plotSummary": "A group of survivors must work together to uncover the truth behind the Umbrella Corporation and survive the night."
+  },
+  {
+    "title": "Vesper",
+    "year": 2022,
+    "disasterType": "Ecological Collapse",
+    "rating": 6,
+    "boxOffice": 0,
+    "numberOfRatings": 23336,
+    "plotSummary": "A 13-year-old girl uses her survival skills to subsist in a post-apocalyptic world."
+  },
+  {
+    "title": "Resident Evil: Death Island",
+    "year": 2023,
+    "disasterType": "Terrorism",
+    "rating": 5.7,
+    "boxOffice": 0,
+    "numberOfRatings": 9334,
+    "plotSummary": "Leon S. Kennedy investigates a mysterious outbreak on Alcatraz Island."
+  },
+  {
+    "title": "The Wandering Earth 2",
+    "year": 2023,
+    "disasterType": "unknown",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Bird Box Barcelona",
+    "year": 2023,
+    "disasterType": "Unknown Cause",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 25298,
+    "plotSummary": "A father and daughter navigate the streets of post-apocalyptic Barcelona, where an unseen force drives people to suicide."
+  },
+  {
+    "title": "Zom 100: Bucket List of the Dead",
+    "year": 2023,
+    "disasterType": "Zombies",
+    "rating": 7.4,
+    "boxOffice": 0,
+    "numberOfRatings": 9126,
+    "plotSummary": "A man decides to complete his bucket list during a zombie apocalypse."
+  },
+  {
+    "title": "The Creator",
+    "year": 2023,
+    "disasterType": "AI Takeover",
+    "rating": 6.7,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "In a future war between humans and artificial intelligence, a ex-special forces agent is recruited to hunt down the Creator."
+  },
+  {
+    "title": "Foe",
+    "year": 2023,
+    "disasterType": "Ecological Collapse",
+    "rating": 5.4,
+    "boxOffice": 0,
+    "numberOfRatings": 10815,
+    "plotSummary": "A married couple faces a life-changing decision when one of them is chosen to leave Earth for a better life."
+  },
+  {
+    "title": "Leave the World Behind",
+    "year": 2023,
+    "disasterType": "Unknown Cause",
+    "rating": 6.4,
+    "boxOffice": 0,
+    "numberOfRatings": 211637,
+    "plotSummary": "Two families are forced together on a long weekend gone terribly wrong."
+  },
+  {
+    "title": "Arcadian",
+    "year": 2024,
+    "disasterType": "unknown",
+    "rating": 5.5,
+    "boxOffice": 0,
+    "numberOfRatings": 16093,
+    "plotSummary": "unknown"
+  },
+  {
+    "title": "Breathe",
+    "year": 2024,
+    "disasterType": "Ecological Collapse",
+    "rating": 3.9,
+    "boxOffice": 0,
+    "numberOfRatings": 3448,
+    "plotSummary": "Parents fight for survival in a world where there is no more breathable air."
+  },
+  {
+    "title": "Kingdom of the Planet of the Apes",
+    "year": 2024,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.9,
+    "boxOffice": 0,
+    "numberOfRatings": 118860,
+    "plotSummary": "Apes and humans clash in a struggle for power years after Caesar's reign."
+  },
+  {
+    "title": "Furiosa: A Mad Max Saga",
+    "year": 2024,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 7.6,
+    "boxOffice": 0,
+    "numberOfRatings": 190094,
+    "plotSummary": "A young Furiosa is taken from the Green Place of Many Mothers and falls into the hands of a Biker Horde."
+  },
+  {
+    "title": "A Quiet Place: Day One",
+    "year": 2024,
+    "disasterType": "Alien Invasion",
+    "rating": 6.3,
+    "boxOffice": 0,
+    "numberOfRatings": 92309,
+    "plotSummary": "A prequel exploring the origins of the sound-hunting creatures."
+  },
+  {
+    "title": "28 Years Later",
+    "year": 2025,
+    "disasterType": "Zombies",
+    "rating": "0.0",
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A sequel to the '28 Days Later' franchise set nearly three decades after the initial outbreak."
+  },
+  {
+    "title": "Contagion",
+    "year": 2011,
+    "disasterType": "Pandemic",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": 285000,
+    "plotSummary": "Healthcare professionals, government officials and everyday people find themselves in the midst of a pandemic as the CDC works to find a cure."
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 8.1,
+    "boxOffice": 0,
+    "numberOfRatings": 950000,
+    "plotSummary": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max."
+  },
+  {
+    "title": "The Hunger Games",
+    "year": 2012,
+    "disasterType": "Dystopian",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 850000,
+    "plotSummary": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death."
+  },
+  {
+    "title": "Independence Day",
+    "year": 1996,
+    "disasterType": "Alien Invasion",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 550000,
+    "plotSummary": "The aliens are coming and their goal is to invade and destroy Earth, but a group of courageous humans led by the U.S. President and a scientist fight back against the invaders."
+  },
+  {
+    "title": "Titanic",
+    "year": 1997,
+    "disasterType": "Natural Disaster",
+    "rating": 7.9,
+    "boxOffice": 0,
+    "numberOfRatings": 1100000,
+    "plotSummary": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "disasterType": "Dystopian",
+    "rating": 8.7,
+    "boxOffice": 0,
+    "numberOfRatings": 1800000,
+    "plotSummary": "A computer programmer discovers that reality as he knows it is a simulation created by machines, and joins a rebellion to break free."
+  },
+  {
+    "title": "World War Z",
+    "year": 2013,
+    "disasterType": "Zombies",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 630000,
+    "plotSummary": "Former United Nations employee Gerry Lane traverses the world in a race against time to stop a zombie pandemic that is toppling armies and governments and threatens to destroy humanity itself."
+  },
+  {
+    "title": "Waterworld",
+    "year": 1995,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.1,
+    "boxOffice": 0,
+    "numberOfRatings": 180000,
+    "plotSummary": "In a future where the polar ice caps have melted and most of Earth is underwater, a mutated mariner fights starvation and outlaw 'smokers,' and reluctantly helps a woman and a young girl try to find dry land."
+  },
+  {
+    "title": "Children of Men",
+    "year": 2006,
+    "disasterType": "Dystopian",
+    "rating": 7.9,
+    "boxOffice": 0,
+    "numberOfRatings": 480000,
+    "plotSummary": "In a chaotic world in which women have become somehow infertile, a former activist agrees to help transport a miraculously pregnant woman to a sanctuary at sea."
+  },
+  {
+    "title": "Snowpiercer",
+    "year": 2013,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 7.1,
+    "boxOffice": 0,
+    "numberOfRatings": 340000,
+    "plotSummary": "In a future where a failed climate-change experiment has killed all life except for the survivors who boarded the Snowpiercer, a train that travels around the globe, a new class system emerges."
+  },
+  {
+    "title": "The Lost Missile",
+    "year": 1958,
+    "disasterType": "Science Fiction",
+    "rating": 5.1,
+    "boxOffice": 0,
+    "numberOfRatings": 1043,
+    "plotSummary": "A mysterious missile threatens to destroy Earth as scientists race to stop it."
+  },
+  {
+    "title": "Teenage Caveman",
+    "year": 1958,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 3.5,
+    "boxOffice": 0,
+    "numberOfRatings": "0.0",
+    "plotSummary": "A young caveman challenges his tribe's superstitions in a world that may be post-apocalyptic."
+  },
+  {
+    "title": "On the Beach",
+    "year": 1959,
+    "disasterType": "Nukes!",
+    "rating": 7.1,
+    "boxOffice": 0,
+    "numberOfRatings": 14621,
+    "plotSummary": "Survivors in Australia await the arrival of deadly radiation following a nuclear war."
+  },
+  {
+    "title": "The World, the Flesh and the Devil",
+    "year": 1959,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 6.8,
+    "boxOffice": 0,
+    "numberOfRatings": 3591,
+    "plotSummary": "Three survivors of a global catastrophe struggle with their relationships and prejudices."
+  },
+  {
+    "title": "Beyond the Time Barrier",
+    "year": 1960,
+    "disasterType": "Dystopian",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 2077,
+    "plotSummary": "A pilot travels to a dystopian future where humanity faces extinction from a deadly plague."
+  },
+  {
+    "title": "Last Woman on Earth",
+    "year": 1960,
+    "disasterType": "Post-Apocalyptic",
+    "rating": 4.7,
+    "boxOffice": 0,
+    "numberOfRatings": 2206,
+    "plotSummary": "Three survivors of a mysterious catastrophe that wiped out the world's population struggle with their new reality."
+  },
+  {
+    "title": "Battle of the Worlds",
+    "year": 1970,
+    "disasterType": "Alien Invasion",
+    "rating": "",
+    "boxOffice": 0,
+    "numberOfRatings": 1009,
+    "plotSummary": "A rogue planet threatens Earth, and scientists must find a way to save humanity."
+  },
+  {
+    "title": "The Last War",
+    "year": 1961,
+    "disasterType": "Nukes!",
+    "rating": 6.2,
+    "boxOffice": 0,
+    "numberOfRatings": 266,
+    "plotSummary": "A Japanese film depicting the potential devastation of a global nuclear war."
+  },
+  {
+    "title": "The Day the Earth Caught Fire",
+    "year": 1961,
+    "disasterType": "Nukes!",
+    "rating": 7.2,
+    "boxOffice": 0,
+    "numberOfRatings": 6385,
+    "plotSummary": "Nuclear tests knock Earth off its axis, causing global climate changes that threaten all life."
+  },
+  {
+    "title": "The Creation of the Humanoids",
+    "year": 1962,
+    "disasterType": "Nukes!",
+    "rating": 5.7,
+    "boxOffice": 0,
+    "numberOfRatings": 1556,
+    "plotSummary": "In a post-nuclear world, humans create humanoid robots, leading to conflicts between the two groups."
+  },
+  {
+    "title": "Panic in year Zero!",
+    "year": 1962,
+    "disasterType": "Nukes!",
+    "rating": 6.6,
+    "boxOffice": 0,
+    "numberOfRatings": 4923,
+    "plotSummary": "A family tries to survive in the aftermath of a nuclear attack on Los Angeles."
+  },
+  {
+    "title": "The Day of the Triffids",
+    "year": 2009,
+    "disasterType": "Science Fiction",
+    "rating": 7,
+    "boxOffice": 0,
+    "numberOfRatings": 9072,
+    "plotSummary": "A remake of the 1962 film where most of humanity is blinded leaving them vulnerable to carnivorous plants."
+  },
+  {
+    "title": "This Is Not a Test",
+    "year": 1962,
+    "disasterType": "Nukes!",
+    "rating": 5.3,
+    "boxOffice": 0,
+    "numberOfRatings": 913,
+    "plotSummary": "A group of people at a roadblock face the possibility of imminent nuclear war."
+  }
 ]
+
 
 
 }

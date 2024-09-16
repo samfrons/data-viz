@@ -198,7 +198,7 @@ button {
 
 .disaster-movie-timeline {
   font-family: Arial, sans-serif;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -313,7 +313,6 @@ h1 {
 .year-column {
   max-width: 30px;
 }
-
 .disaster-movie-timeline {
   font-family: Arial, sans-serif;
   max-width: 1200px;
@@ -339,7 +338,7 @@ h1 {
 
 .decade {
   flex: 0 0 auto;
-  width: 600px;
+  width: 330px;
   border-right: 1px solid #ccc;
 }
 
@@ -431,6 +430,8 @@ h1 {
   font-size: 1.2em;
   margin-top: 50px;
 }
+
+
 /* Apply the animations */
 .info-content {
   animation: fadeIn 0.3s ease-in-out;
@@ -438,3 +439,112 @@ h1 {
 
 .info-content.fade-out {
   animation: fadeOut 0.3s ease-in-out;}
+
+
+.disaster-movie-timeline {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.decades-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.decade {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.decade-label {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.year-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.year-column {
+  flex: 1 0 10%;
+  min-width: 30px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.year-label {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 5px 0;
+  color: #666;
+}
+
+.movie-dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  min-height: 50px;
+}
+
+.movie-dot {
+  position: relative;
+  margin: 2px;
+  border-radius: 50%;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  display: none;
+  z-index: 10;
+  font-size: 0.8em;
+}
+
+.movie-dot:hover .movie-info {
+  display: block;
+}
+
+.legend {
+  margin-top: 20px;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .decade {
+    flex-basis: 100%;
+  }
+}

@@ -68,8 +68,10 @@ const SocialMediaVisualization: FC = () => {
       const geometry = new THREE.SphereGeometry(radius, 32, 32);
       const material = new THREE.MeshPhongMaterial({ 
         color: COLORS[post.category],
-        transparent: true,
-        opacity: 0.7
+        transparent: false,
+        opacity: 1,
+        shininess: 50,
+  specular: 0x444444
       });
       const sphere = new THREE.Mesh(geometry, material);
       
@@ -121,25 +123,30 @@ const SocialMediaVisualization: FC = () => {
   }, []);
 
   useEffect(() => {
-    if (!mountRef.current) return;
+  if (!mountRef.current) return;
 
-    const scene = new THREE.Scene();
-    sceneRef.current = scene;
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    mountRef.current.appendChild(renderer.domElement);
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xf0f0f0); // Light gray background
+  sceneRef.current = scene;
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  mountRef.current.appendChild(renderer.domElement);
 
-    const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.05;
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = ;
 
-    const ambientLight = new THREE.AmbientLight(0x404040);
-    scene.add(ambientLight);
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
-    scene.add(directionalLight);
+  // Increase ambient light intensity
+  const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+  scene.add(ambientLight);
 
-    camera.position.z = 200;
+  // Add a point light for more dimension
+  const pointLight = new THREE.PointLight(0xffffff, 0.8);
+  pointLight.position.set(200, 100, 100);
+  scene.add(pointLight);
+
+  camera.position.z = 200;
 
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();

@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 interface Movie {
   title: string;
   year: number;
-  disasterType: string;
   rating: number | string;
   boxOffice: number;
   numberOfRatings: number;
   plotSummary: string;
+  disasterType: string;
 }
 
 const DisasterMovieTimeline: React.FC = () => {
@@ -18,12 +18,12 @@ const DisasterMovieTimeline: React.FC = () => {
   useEffect(() => {
     fetch('/movies.json')
       .then(response => response.json())
-      .then(data => {
-        setMovies(data.movies);
-        const types = Array.from(new Set(data.movies.map((m: Movie) => m.disasterType)));
-        setDisasterTypes(types);
-        setIsLoading(false);
-      })
+     .then(data => {
+  setMovies(data.movies);
+  const types = Array.from(new Set(data.movies.map((m: Movie) => m.disasterType))) as string[];
+  setDisasterTypes(types);
+  setIsLoading(false);
+})
       .catch(error => {
         console.error('Error fetching movie data:', error);
         setIsLoading(false);

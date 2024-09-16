@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "3D News Network",
+  title: "Disaster Movies Chart",
   description: "Welcome!",
 };
 

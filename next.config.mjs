@@ -3,9 +3,9 @@ const nextConfig = {
   output: 'export',
   reactStrictMode: false,
   transpilePackages: ['three'],
-  /** eslint: {
+ eslint: {
     ignoreDuringBuilds: true,
-  },**/
+  },
 }
 
 export default nextConfig;

@@ -69,8 +69,42 @@ const DisasterMovieTimeline: React.FC = () => {
 
   return (
     <div className="disaster-movie-timeline">
+    <header>
       <h1>Disasters by the decade</h1>
-
+      <h2>According to hollywood</h2>
+      </header>
+ <div className="disaster-breakdown">
+  <h3>Disaster Breakdown (Total: {movies.length})</h3>
+  <div className="stacked-bar-chart">
+    {sortedDisasterTypes.map(type => {
+      const count = categoryCount[type];
+      const percentage = (count / movies.length) * 100;
+      return (
+        <div
+          key={type}
+          className="bar-segment"
+          style={{
+            width: `${percentage}%`,
+            backgroundColor: getColorForDisasterType(type)
+          }}
+          title={`${type}: ${count} (${percentage.toFixed(1)}%)`}
+        ></div>
+      );
+    })}
+  </div>
+  <div className="legend">
+    {sortedDisasterTypes.map(type => (
+      <div key={type} className="legend-item">
+        <span 
+          className="color-box" 
+          style={{ backgroundColor: getColorForDisasterType(type) }}
+        ></span>
+        <span className="type-name">{type}</span>
+        <span className="type-count">({categoryCount[type]})</span>
+      </div>
+    ))}
+  </div>
+</div>
       <div className="decades-container">
         {decades.map(decade => (
           <div key={decade} className="decade" style={{ height: `${getDecadeHeight(decade)}px` }}>
@@ -84,41 +118,38 @@ const DisasterMovieTimeline: React.FC = () => {
                       .filter(movie => movie.year === year)
                       .map((movie, index) => (
                         <div
-                          key={movie.title}
-                          className="movie-dot"
-                          style={{
-                            backgroundColor: getColorForDisasterType(movie.disasterType),
-                            width: `${Math.max(8, Math.min(24, Number(movie.rating) * 2))}px`,
-                            height: `${Math.max(8, Math.min(24, Number(movie.rating) * 2))}px`,
-                          }}
-                        >
-                          <div className="movie-info">
-                            <h3>{movie.title}</h3>
-                            <p>Year: {movie.year}</p>
-                            <p>Type: {movie.disasterType}</p>
-                            <p>Rating: {formatRating(movie.rating)}/10</p>
-                          </div>
+      key={movie.title}
+      className="movie-dot"
+      style={{
+        backgroundColor: getColorForDisasterType(movie.disasterType),
+        width: `${Math.max(8, Math.min(24, Number(movie.rating) * 2))}px`,
+        height: `${Math.max(8, Math.min(24, Number(movie.rating) * 2))}px`,
+      }}
+    >
+     <div className="movie-info-container">
+                             <div className="movie-info">
+        <h3>{movie.title}</h3>
+        <p>Year: {movie.year}</p>
+        <p>Type: {movie.disasterType}</p>
+        <p>Rating: {formatRating(movie.rating)}/10</p>
+      
+        <p>Number of Ratings: {movie.numberOfRatings.toLocaleString()}</p>
+        <p>Plot: {movie.plotSummary}</p>
+      </div>
+                        </div>   
+
                         </div>
                       ))}
                   </div>
                 </div>
               ))}
             </div>
-          </div>
+       
+           </div>
         ))}
       </div>
 
-      <div className="legend">
-        <h3>Disaster Breakdown (Total: {movies.length})</h3>
-        <div className="legend-items">
-          {sortedDisasterTypes.map(type => (
-            <div key={type} className="legend-item">
-              <div className="legend-color" style={{ backgroundColor: getColorForDisasterType(type) }}></div>
-              <span>{type}: {categoryCount[type]}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+    
     </div>
   );
 };

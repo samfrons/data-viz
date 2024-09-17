@@ -50,24 +50,34 @@ const DisasterMovieTimeline: React.FC = () => {
   );
 
   const getColorForDisasterType = (type: string) => {
-  const colorMap: { [key: string]: string } = {
-    'Natural Disaster': '#E63946',
-    'Post-Apocalyptic': '#1D3557',
-    'Zombies': '#43AA8B',
-    'Alien Invasion': '#F4A261',
-    'Pandemic': '#F47F83',
-    'Man-made Disaster': '#4A6FA5',
-    'Ecological Collapse': '#7BCBB5',
-    'Nukes!': '#F7C39B',
-    'Dystopian': '#FAA5A8',
-    'Biblical': '#7798C0',
-    'Apocalyptic': '#A5DCD0',
-    'AI Takeover': '#FAD7B8',
-    'Other': '#95A5A6'
+    const colorMap: { [key: string]: string } = {
+      'Natural Disaster': '#E63946',
+      'Biblical': '#1D3557',
+      'Monster(s)': '#43AA8B',
+      'Ecological Collapse': '#F4A261',
+      'Man-made Disaster': '#F47F83',
+      'Nukes!': '#4A6FA5',
+      'Apocalyptic': '#7BCBB5',
+      'Dystopian': '#F7C39B',
+      'Post-Apocalyptic': '#FAA5A8',
+      'Alien Invasion': '#7798C0',
+      'Pandemic': '#A5DCD0',
+      'Zombies': '#FAD7B8',
+      'AI Takeover': '#95A5A6',
+      'Evolved Apes': '#FF9F1C',
+      'Time Travel': '#2EC4B6',
+      'General Collapse': '#E71D36',
+      'Supernatural': '#011627',
+      'Fantasy': '#FDFFFC',
+      'Cosmic': '#B91372',
+      'Terrorism': '#31263E',
+      'Psychological': '#44A1A0',
+      'General causes': '#6B818C',
+      'unknown': '#5D576B',
+      'Unknown Cause': '#4EB5DB',
+    };
+    return colorMap[type] || '#95A5A6';
   };
-
-  return colorMap[type] || '#95A5A6';  // Default to gray if type not found
-};
   const categoryCount = disasterTypes.reduce((acc, type) => {
     acc[type] = filteredMovies.filter(m => m.disasterType === type).length;
     return acc;

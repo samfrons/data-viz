@@ -2749,6 +2749,15 @@
     "numberOfRatings": 6040,
     "plotSummary": "Astronauts aboard a space station witness a catastrophic event on Earth."
   },
+   {
+    "title":"Tornado",
+    "year": 1943,
+    "disasterType": "Natural Disaster",
+    "rating": 5.9,
+    "boxOffice": 0,
+    "numberOfRatings": 130,
+    "plotSummary": "Coalminer marries a traveling singer played by Nancy Kelly who has ambitions to climb socially and there is a tornado."
+  },
   {
     "title": 2067,
     "year": 2020,

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DisasterMovieSearch from './DisasterMovieSearch';
 import DisasterTypeChart from './DisasterTypeChart';
+import AboutProject from './AboutProject';
 
 interface Movie {
   title: string;
@@ -17,6 +18,12 @@ const DisasterMovieTimeline: React.FC = () => {
   const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
   const [disasterTypes, setDisasterTypes] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
+
+  const toggleAbout = () => {
+    setIsAboutOpen(!isAboutOpen);
+  };
+
 
   useEffect(() => {
     fetch('/movies.json')
@@ -155,10 +162,18 @@ const DisasterMovieTimeline: React.FC = () => {
 
   return (
     <div className="disaster-movie-timeline">
-      <header>
-        <h1>Disasters by the decade</h1>
-        <h2>According to Hollywood</h2>
+     <header className="main-header">
+        <div className="title-container">
+          <h1>Disasters by the decade</h1>
+          <h2>According to Hollywood</h2>
+        </div>
+        <button className={`about-button ${isAboutOpen ? 'open' : ''}`} onClick={toggleAbout}>
+          <span className="icon">{isAboutOpen ? '−' : '+'}</span>
+          <span className="text">About the Project</span>
+        </button>
       </header>
+        {isAboutOpen && <AboutProject isOpen={isAboutOpen} onClose={toggleAbout} />}
+
       <DisasterTypeChart movies={filteredMovies} />
       <DisasterMovieSearch
         movies={movies}

@@ -11,6 +11,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+     --background: #ffffff;
+  --foreground: #171717;
   }
 }
 
@@ -124,7 +126,7 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden; /* Changed from visible to hidden */
-  min-height: 275px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -234,6 +236,39 @@ button:hover {
 }
 
 
+.decade-legend {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: rgba(240, 240, 240, 0.5);
+  
+}
+
+.decade-legend-bar {
+  display: flex;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.decade-legend-segment {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: flex-grow 0.3s ease;
+}
+
+.decade-legend-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  
+}
+
 
 .movie-dot-container:hover .movie-info {
   display: block;
@@ -254,3 +289,73 @@ button:hover {
   margin-top: 10px;
   font-style: italic;
 }
+
+.decade-legend-segment {
+  position: relative;
+}
+
+.decade-legend-segment:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+
+/* Styles for the DisasterMovieSearch component */
+.disaster-movie-search {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.search-input, .search-select, .search-number {
+  flex: 1 1 200px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus, .search-select:focus, .search-number:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.search-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+.search-number {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .search-input, .search-select, .search-number {
+    flex: 1 1 100%;
+  }
+}
+

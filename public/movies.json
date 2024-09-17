@@ -7,7 +7,7 @@
       "boxOffice": 1000000,
       "numberOfRatings": 500,
       "plotSummary": "Set in the ancient Roman city of Pompeii, the film depicts the events leading up to the catastrophic eruption of Mount Vesuvius in 79 AD.",
-      "disasterType": "Volcano"
+      "disasterType": "Natural Disaster"
     },
     {
       "title": "Noah's Ark",
@@ -52,7 +52,7 @@
       "boxOffice": 750000,
       "numberOfRatings": 250,
       "plotSummary": "Set on a tropical island, the film depicts the chaos and destruction unleashed by a sudden volcanic eruption.",
-      "disasterType": "Volcano"
+      "disasterType": "Natural Disaster"
     },
     {
       "title": "The White Sister",
@@ -61,7 +61,7 @@
       "boxOffice": 1200000,
       "numberOfRatings": 350,
       "plotSummary": "A romantic drama that includes a volcanic eruption as a major plot point, set against the backdrop of World War I.",
-      "disasterType": "Volcano"
+      "disasterType": "Natural Disaster"
     }, 
 
     { "title": "Interstellar", "year": 2014, "disasterType": "Natural Disaster", "rating": 8.6, "boxOffice": 701700000, "numberOfRatings": 1700000, "plotSummary": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival." },
@@ -136,8 +136,8 @@
     { "title": "The Poseidon Adventure", "year": 1972, "disasterType": "Natural Disaster", "rating": 7.1, "boxOffice": 125000000, "numberOfRatings": 40000, "plotSummary": "Survivors try to escape a capsized ocean liner." },
     { "title": "The Quake", "year": 2018, "disasterType": "Natural Disaster", "rating": 6.2, "boxOffice": 0, "numberOfRatings": 10000, "plotSummary": "A geologist races against time to save his family when a massive earthquake strikes Oslo." },
     { "title": "The Rains Came", "year": 1939, "disasterType": "Natural Disaster", "rating": 6.5, "boxOffice": 0, "numberOfRatings": 1000, "plotSummary": "A small Indian town faces destruction from monsoon rains and an earthquake." },
-    { "title": "Raise the Titanic", "year": 1980, "disasterType": "Shipwreck", "rating": 5.1, "boxOffice": 7000000, "numberOfRatings": 5000, "plotSummary": "An underwater team attempts to raise the sunken RMS Titanic." },
-    { "title": "S.O.S. Titanic", "year": 1979, "disasterType": "Shipwreck", "rating": 6.0, "boxOffice": 0, "numberOfRatings": 1000, "plotSummary": "A dramatization of the Titanic disaster focusing on different passenger classes." },
+    { "title": "Raise the Titanic", "year": 1980, "disasterType": "Man-made Disaster", "rating": 5.1, "boxOffice": 7000000, "numberOfRatings": 5000, "plotSummary": "An underwater team attempts to raise the sunken RMS Titanic." },
+    { "title": "S.O.S. Titanic", "year": 1979, "disasterType": "Man-made Disaster", "rating": 6.0, "boxOffice": 0, "numberOfRatings": 1000, "plotSummary": "A dramatization of the Titanic disaster focusing on different passenger classes." },
     { "title": "San Andreas", "year": 2015, "disasterType": "Natural Disaster", "rating": 6.1, "boxOffice": 474800000, "numberOfRatings": 200000, "plotSummary": "A rescue helicopter pilot makes a dangerous journey across California to save his daughter after a massive earthquake." },
     { "title": "San Francisco", "year": 1936, "disasterType": "Natural Disaster", "rating": 7.2, "boxOffice": 0, "numberOfRatings": 10000, "plotSummary": "A saloonkeeper and a Barbary Coast kingpin vie for the affection of a beautiful singer, both caught up in the 1906 San Francisco earthquake." },
     { "title": "Seattle Superstorm", "year": 2012, "disasterType": "Natural Disaster", "rating": 3.5, "boxOffice": 0, "numberOfRatings": 1000, "plotSummary": "A mysterious storm system threatens to destroy Seattle." },
@@ -147,10 +147,10 @@
     { "title": "Tidal Wave", "year": 1973, "disasterType": "Natural Disaster", "rating": 5.0, "boxOffice": 0, "numberOfRatings": 500, "plotSummary": "A coastal town in Maine faces destruction from a massive tidal wave." },
     { "title": "Tidal Wave", "year": 2009, "disasterType": "Natural Disaster", "rating": 5.5, "boxOffice": 0, "numberOfRatings": 5000, "plotSummary": "A tsunami threatens the coast of South Korea." },
     { "title": "Tidal Wave: No Escape", "year": 1997, "disasterType": "Natural Disaster", "rating": 4.5, "boxOffice": 0, "numberOfRatings": 500, "plotSummary": "A scientist tries to save a coastal town from a man-made tidal wave." },
-    { "title": "Titanic", "year": 1953, "disasterType": "Shipwreck", "rating": 6.8, "boxOffice": 0, "numberOfRatings": 2000, "plotSummary": "Unhappily married and facing financial difficulties, a young woman falls for an American artist aboard the ill-fated RMS Titanic." },
-    { "title": "Titanic", "year": 1996, "disasterType": "Shipwreck", "rating": 5.9, "boxOffice": 0, "numberOfRatings": 5000, "plotSummary": "A two-part TV movie retelling the story of the RMS Titanic's ill-fated maiden voyage." },
-    { "title": "Titanic", "year": 1997, "disasterType": "Shipwreck", "rating": 7.9, "boxOffice": 2201647264, "numberOfRatings": 1100000, "plotSummary": "A fictionalized account of the sinking of the RMS Titanic, focusing on a romance between passengers from different social classes." },
-    { "title": "Titanic: The Legend Goes On", "year": 2000, "disasterType": "Shipwreck", "rating": 1.5, "boxOffice": 0, "numberOfRatings": 5000, "plotSummary": "An animated retelling of the Titanic disaster with anthropomorphic animals." },
+    { "title": "Titanic", "year": 1953, "disasterType": "Man-made Disaster", "rating": 6.8, "boxOffice": 0, "numberOfRatings": 2000, "plotSummary": "Unhappily married and facing financial difficulties, a young woman falls for an American artist aboard the ill-fated RMS Titanic." },
+    { "title": "Titanic", "year": 1996, "disasterType": "Man-made Disaster", "rating": 5.9, "boxOffice": 0, "numberOfRatings": 5000, "plotSummary": "A two-part TV movie retelling the story of the RMS Titanic's ill-fated maiden voyage." },
+    { "title": "Titanic", "year": 1997, "disasterType": "Man-made Disaster", "rating": 7.9, "boxOffice": 2201647264, "numberOfRatings": 1100000, "plotSummary": "A fictionalized account of the sinking of the RMS Titanic, focusing on a romance between passengers from different social classes." },
+    { "title": "Titanic: The Legend Goes On", "year": 2000, "disasterType": "Man-made Disaster", "rating": 1.5, "boxOffice": 0, "numberOfRatings": 5000, "plotSummary": "An animated retelling of the Titanic disaster with anthropomorphic animals." },
     { "title": "Tornado!", "year": 1996, "disasterType": "Natural Disaster", "rating": 5.0, "boxOffice": 0, "numberOfRatings": 1000, "plotSummary": "Storm chasers pursue a deadly tornado in Oklahoma." },
     { "title": "Tornado Warning", "year": 2002, "disasterType": "Natural Disaster", "rating": 4.0, "boxOffice": 0, "numberOfRatings": 500, "plotSummary": "A town faces destruction from a series of tornadoes." },
     { "title": "Twister", "year": 1996, "disasterType": "Natural Disaster", "rating": 6.4, "boxOffice": 494500000, "numberOfRatings": 180000, "plotSummary": "Storm chasers pursue the most powerful tornado ever recorded." },
@@ -161,10 +161,10 @@
     { "title": "Volcano: Fire on the Mountain", "year": 1997, "disasterType": "Natural Disaster", "rating": 4.5, "boxOffice": 0, "numberOfRatings": 500, "plotSummary": "A long-dormant volcano threatens to erupt in a ski resort town." },
     { "title": "The Wave", "year": 2015, "disasterType": "Natural Disaster", "rating": 6.7, "boxOffice": 0, "numberOfRatings": 30000, "plotSummary": "A geologist races against time to save his family and town from an impending tsunami in Norway." },
     { "title": "When Time Ran Out", "year": 1980, "disasterType": "Natural Disaster", "rating": 4.5, "boxOffice": 0, "numberOfRatings": 2000, "plotSummary": "Tourists and residents of a tropical island must escape an erupting volcano." },
-    { "title": "Airport", "year": 1970, "disasterType": "Airplane", "rating": 6.6, "boxOffice": 0, "numberOfRatings": 25000, "plotSummary": "A bomber on a plane threatens the lives of the passengers and crew during a snowstorm." },
-    { "title": "Airport 1975", "year": 1975, "disasterType": "Airplane", "rating": 5.7, "boxOffice": 0, "numberOfRatings": 15000, "plotSummary": "A flight attendant must pilot a 747 after it collides with a small plane." },
-    { "title": "Airport '77", "year": 1977, "disasterType": "Airplane", "rating": 5.6, "boxOffice": 0, "numberOfRatings": 10000, "plotSummary": "A 747 carrying valuable art crashes in the Bermuda Triangle." },
-    { "title": "The Concorde ... Airport '79", "year": 1979, "disasterType": "Airplane", "rating": 4.3, "boxOffice": 0, "numberOfRatings": 8000, "plotSummary": "Concorde pilots must save the passengers when the plane is attacked by a wealthy industrialist." },
+    { "title": "Airport", "year": 1970, "disasterType": "Man-made Disaster", "rating": 6.6, "boxOffice": 0, "numberOfRatings": 25000, "plotSummary": "A bomber on a plane threatens the lives of the passengers and crew during a snowstorm." },
+    { "title": "Airport 1975", "year": 1975, "disasterType": "Man-made Disaster", "rating": 5.7, "boxOffice": 0, "numberOfRatings": 15000, "plotSummary": "A flight attendant must pilot a 747 after it collides with a small plane." },
+    { "title": "Airport '77", "year": 1977, "disasterType": "Man-made Disaster", "rating": 5.6, "boxOffice": 0, "numberOfRatings": 10000, "plotSummary": "A 747 carrying valuable art crashes in the Bermuda Triangle." },
+    { "title": "The Concorde ... Airport '79", "year": 1979, "disasterType": "Man-made Disaster", "rating": 4.3, "boxOffice": 0, "numberOfRatings": 8000, "plotSummary": "Concorde pilots must save the passengers when the plane is attacked by a wealthy industrialist." },
    
   {
     "title": "The End of the World",
@@ -223,7 +223,7 @@
   {
     "title": "Captive Women",
     "year": 1952,
-    "disasterType": "Post-Apocalyptic",
+    "disasterType": "Nukes!",
     "rating": 5,
     "boxOffice": 0,
     "numberOfRatings": 160,
@@ -241,7 +241,7 @@
   {
     "title": "Day the World Ended",
     "year": 1955,
-    "disasterType": "Post-Apocalyptic",
+    "disasterType": "Nukes!",
     "rating": 5.4,
     "boxOffice": 0,
     "numberOfRatings": 2695,
@@ -250,7 +250,7 @@
   {
     "title": "World Without End",
     "year": 1977,
-    "disasterType": "Post-Apocalyptic",
+    "disasterType": "Nukes!",
     "rating": "0.0",
     "boxOffice": 0,
     "numberOfRatings": 2418,
@@ -304,7 +304,7 @@
   {
     "title": "The Time Travelers",
     "year": 1974,
-    "disasterType": "Time Travel",
+    "disasterType": "Post-Apocalyptic",
     "rating": "0.0",
     "boxOffice": 0,
     "numberOfRatings": 3277,
@@ -412,7 +412,7 @@
   {
     "title": "Beneath the Planet of the Apes",
     "year": 1970,
-    "disasterType": "Post-Apocalyptic",
+    "disasterType": "Evolved Apes",
     "rating": 6,
     "boxOffice": 0,
     "numberOfRatings": 54435,
@@ -547,7 +547,7 @@
   {
     "title": "Damnation Alley",
     "year": 1977,
-    "disasterType": "Post-Apocalyptic",
+    "disasterType": "Nukes!",
     "rating": 5.3,
     "boxOffice": 0,
     "numberOfRatings": "0.0",
@@ -727,7 +727,7 @@
   {
     "title": "Until the End of the World",
     "year": 1991,
-    "disasterType": "Natural Disaster",
+    "disasterType": "Nukes!",
     "rating": 6.8,
     "boxOffice": 0,
     "numberOfRatings": 11539,
@@ -808,7 +808,7 @@
   {
     "title": "Plughead Rewired: Circuitry Man II",
     "year": 1994,
-    "disasterType": "Technological Apocalypse",
+    "disasterType": "General Collapse",
     "rating": 3.5,
     "boxOffice": 0,
     "numberOfRatings": 481,
@@ -1114,7 +1114,7 @@
   {
     "title": "The Time Machine",
     "year": 2002,
-    "disasterType": "Societal Collapse",
+    "disasterType": "General Collapse",
     "rating": 6,
     "boxOffice": 0,
     "numberOfRatings": 131448,
@@ -1186,7 +1186,7 @@
   {
     "title": "Time of the Wolf",
     "year": 2003,
-    "disasterType": "Societal Collapse",
+    "disasterType": "General Collapse",
     "rating": 6.4,
     "boxOffice": 0,
     "numberOfRatings": 11657,
@@ -1546,7 +1546,7 @@
   {
     "title": "Pandorum",
     "year": 2009,
-    "disasterType": "Sci-Fi",
+    "disasterType": "Cosmic",
     "rating": 6.7,
     "boxOffice": 0,
     "numberOfRatings": 161110,
@@ -1960,7 +1960,7 @@
   {
     "title": "After the Dark",
     "year": 2013,
-    "disasterType": "Philosophical",
+    "disasterType": "Nukes!",
     "rating": 5.6,
     "boxOffice": 0,
     "numberOfRatings": 23781,
@@ -2041,11 +2041,11 @@
   {
     "title": "Forever's End",
     "year": 2013,
-    "disasterType": "unknown",
+    "disasterType": "Pandemic",
     "rating": 4.7,
     "boxOffice": 0,
     "numberOfRatings": 348,
-    "plotSummary": "unknown"
+    "plotSummary": " psychological thriller set six years after a pandemic has wiped out most of the human race, focusing on a young woman's struggle for survival and sanity."
   },
   {
     "title": "The World's End",
@@ -2059,16 +2059,16 @@
   {
     "title": "The Host",
     "year": "2013",
-    "disasterType": "Monster(s)",
+    "disasterType": "Alien Invasion",
     "rating": "0.0",
     "boxOffice": 0,
     "numberOfRatings": "0.0",
-    "plotSummary": "unknown"
+    "plotSummary": "In a world where most humans are controlled by alien parasites, a young woman fights to protect her mind, her loved ones, and the last remnants of free humanity."
   },
   {
     "title": "Goodbye World",
     "year": 2013,
-    "disasterType": "Technological Apocalypse",
+    "disasterType": "General Collapse",
     "rating": 5.4,
     "boxOffice": 0,
     "numberOfRatings": 7431,
@@ -2077,11 +2077,11 @@
   {
     "title": "Die Gstettensaga: The Rise of Echsenfriedl",
     "year": 2014,
-    "disasterType": "unknown",
+    "disasterType": "Post-Apocalyptic",
     "rating": 5.2,
     "boxOffice": 0,
     "numberOfRatings": 1447,
-    "plotSummary": "unknown"
+    "plotSummary": "In a bizarre post-apocalyptic world after the 'Wiki Wars,' two media guerrillas search for the legendary Echsenfriedl while navigating a landscape of absurd characters and surreal situations."
   },
   {
     "title": "Wyrmwood: Road of the Dead",
@@ -2203,11 +2203,11 @@
   {
     "title": "Crumbs",
     "year": 2015,
-    "disasterType": "unknown",
+    "disasterType": "Post-Apocalyptic",
     "rating": 5.9,
     "boxOffice": 0,
     "numberOfRatings": 777,
-    "plotSummary": "unknown"
+    "plotSummary": "In a surreal post-apocalyptic Ethiopia, a scrap collector embarks on a strange journey to board a dormant spaceship hovering above the land, hoping to find answers and a better future."
   },
   {
     "title": "Turbo Kid",
@@ -2230,11 +2230,11 @@
   {
     "title": "The End of the World and the Cat's Disappearance",
     "year": 2023,
-    "disasterType": "unknown",
+    "disasterType": "General Collapse",
     "rating": 7.2,
     "boxOffice": 0,
     "numberOfRatings": 55,
-    "plotSummary": "unknown"
+    "plotSummary": "A woman searches for her missing cat in Tokyo as the world faces an impending apocalypse, blending everyday concerns with looming global catastrophe."
   },
   {
     "title": "The Walking Deceased",
@@ -2275,7 +2275,7 @@
   {
     "title": "Into the Forest",
     "year": 2015,
-    "disasterType": "Societal Collapse",
+    "disasterType": "General Collapse",
     "rating": 5.8,
     "boxOffice": 0,
     "numberOfRatings": 22247,
@@ -2392,7 +2392,7 @@
   {
     "title": "Cell",
     "year": 2016,
-    "disasterType": "Technological Apocalypse",
+    "disasterType": "General Collapse",
     "rating": 4.4,
     "boxOffice": 0,
     "numberOfRatings": 31022,
@@ -3265,7 +3265,7 @@
   {
     "title": "The Day of the Triffids",
     "year": 2009,
-    "disasterType": "Science Fiction",
+    "disasterType": "Alien Invasion",
     "rating": 7,
     "boxOffice": 0,
     "numberOfRatings": 9072,

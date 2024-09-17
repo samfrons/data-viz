@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import DisasterMovieSearch from './DisasterMovieSearch';
 
 interface Movie {
   title: string;
@@ -12,6 +13,7 @@ interface Movie {
 
 const DisasterMovieTimeline: React.FC = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
+  const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
   const [disasterTypes, setDisasterTypes] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -20,6 +22,7 @@ const DisasterMovieTimeline: React.FC = () => {
       .then(response => response.json())
       .then(data => {
         setMovies(data.movies);
+        setFilteredMovies(data.movies);
         const types = Array.from(new Set(data.movies.map((m: Movie) => m.disasterType))) as string[];
         setDisasterTypes(types);
         setIsLoading(false);
@@ -34,9 +37,16 @@ const DisasterMovieTimeline: React.FC = () => {
     return <div className="loading">Loading...</div>;
   }
 
+  const handleFilterChange = (newFilteredMovies: Movie[]) => {
+    setFilteredMovies(newFilteredMovies);
+  };
+
   const minYear = 1920;
   const maxYear = Math.max(...movies.map(m => m.year));
-  const decades = Array.from({ length: Math.ceil((maxYear - minYear) / 10) }, (_, i) => minYear + i * 10);
+  const decades = Array.from(
+    { length: Math.ceil((maxYear - minYear) / 10) },
+    (_, i) => Math.floor(minYear / 10) * 10 + i * 10
+  );
 
   const getColorForDisasterType = (type: string) => {
     const hue = disasterTypes.indexOf(type) * (360 / disasterTypes.length);
@@ -44,27 +54,78 @@ const DisasterMovieTimeline: React.FC = () => {
   };
 
   const categoryCount = disasterTypes.reduce((acc, type) => {
-    acc[type] = movies.filter(m => m.disasterType === type).length;
+    acc[type] = filteredMovies.filter(m => m.disasterType === type).length;
     return acc;
   }, {} as Record<string, number>);
 
-  const sortedDisasterTypes = disasterTypes.sort((a, b) => categoryCount[b] - categoryCount[a]);
+  const otherThreshold = 10;
+  const mainCategories = Object.entries(categoryCount)
+    .filter(([, count]) => count >= otherThreshold)
+    .sort(([, a], [, b]) => b - a);
+  
+  const otherCount = Object.values(categoryCount)
+    .filter(count => count < otherThreshold)
+    .reduce((sum, count) => sum + count, 0);
+
+  const sortedDisasterTypes = [
+    ...mainCategories.map(([type]) => type),
+    ...(otherCount > 0 ? ['Other'] : [])
+  ];
 
   const formatRating = (rating: number | string) => {
     return typeof rating === 'number' ? rating.toFixed(1) : rating;
   };
 
   const getDecadeHeight = (decade: number) => {
-    const moviesInDecade = movies.filter(m => m.year >= decade && m.year < decade + 10);
+    const moviesInDecade = filteredMovies.filter(m => m.year >= decade && m.year < decade + 10);
     const moviesByYear = Array.from({ length: 10 }, (_, i) => {
       return moviesInDecade.filter(m => m.year === decade + i).length;
     });
     const maxMoviesInYear = Math.max(...moviesByYear);
     
-    const minHeight = 100; // Minimum height for decades with few movies
-    const maxHeight = 500; // Maximum height for decades with many movies
-    const heightPerMovie = 25; // Adjust this value to change the scaling
+    const minHeight = 100;
+    const maxHeight = 500;
+    const heightPerMovie = 25;
     return Math.min(Math.max(minHeight, maxMoviesInYear * heightPerMovie), maxHeight);
+  };
+
+  const getDecadeLegend = (decade: number) => {
+    const moviesInDecade = filteredMovies.filter(m => m.year >= decade && m.year < decade + 10);
+    const typeCounts = disasterTypes.reduce((acc, type) => {
+      acc[type] = moviesInDecade.filter(m => m.disasterType === type).length;
+      return acc;
+    }, {} as Record<string, number>);
+
+    const sortedTypes = Object.entries(typeCounts)
+      .sort(([, a], [, b]) => b - a)
+      .filter(([, count]) => count > 0);
+
+    const totalMovies = sortedTypes.reduce((sum, [, count]) => sum + count, 0);
+
+    return (
+      <div className="decade-legend">
+        <div className="decade-legend-bar">
+          {sortedTypes.map(([type, count]) => {
+            const percentage = (count / totalMovies) * 100;
+            return (
+              <div
+                key={type}
+                className="decade-legend-segment"
+                style={{
+                  backgroundColor: getColorForDisasterType(type),
+                  flexGrow: count,
+                }}
+                title={`${type}: ${count} movie${count !== 1 ? 's' : ''}`}
+              >
+                {percentage > 5 && (
+                  <span className="decade-legend-count">{count}</span>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -73,19 +134,24 @@ const DisasterMovieTimeline: React.FC = () => {
         <h1>Disasters by the decade</h1>
         <h2>According to Hollywood</h2>
       </header>
+      <DisasterMovieSearch
+        movies={movies}
+        disasterTypes={disasterTypes}
+        onFilterChange={handleFilterChange}
+      />
       <div className="disaster-breakdown">
-        <h3>Disaster Breakdown (Total: {movies.length})</h3>
+        <h3>Disaster Breakdown (Total: {filteredMovies.length})</h3>
         <div className="stacked-bar-chart">
           {sortedDisasterTypes.map(type => {
-            const count = categoryCount[type];
-            const percentage = (count / movies.length) * 100;
+            const count = type === 'Other' ? otherCount : categoryCount[type];
+            const percentage = (count / filteredMovies.length) * 100;
             return (
               <div
                 key={type}
                 className="bar-segment"
                 style={{
                   width: `${percentage}%`,
-                  backgroundColor: getColorForDisasterType(type)
+                  backgroundColor: type === 'Other' ? '#999' : getColorForDisasterType(type)
                 }}
                 title={`${type}: ${count} (${percentage.toFixed(1)}%)`}
               ></div>
@@ -97,10 +163,12 @@ const DisasterMovieTimeline: React.FC = () => {
             <div key={type} className="legend-item">
               <span 
                 className="color-box" 
-                style={{ backgroundColor: getColorForDisasterType(type) }}
+                style={{ backgroundColor: type === 'Other' ? '#999' : getColorForDisasterType(type) }}
               ></span>
               <span className="type-name">{type}</span>
-              <span className="type-count">({categoryCount[type]})</span>
+              <span className="type-count">
+                ({type === 'Other' ? otherCount : categoryCount[type]})
+              </span>
             </div>
           ))}
         </div>
@@ -114,7 +182,7 @@ const DisasterMovieTimeline: React.FC = () => {
                 <div key={year} className="year-column">
                   <div className="year-label">{year}</div>
                   <div className="movie-dots">
-                    {movies
+                    {filteredMovies
                       .filter(movie => movie.year === year)
                       .map((movie, index) => (
                         <div
@@ -143,6 +211,7 @@ const DisasterMovieTimeline: React.FC = () => {
                 </div>
               ))}
             </div>
+            {getDecadeLegend(decade)}
           </div>
         ))}
       </div>

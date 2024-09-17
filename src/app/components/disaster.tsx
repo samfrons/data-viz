@@ -49,10 +49,24 @@ const DisasterMovieTimeline: React.FC = () => {
   );
 
   const getColorForDisasterType = (type: string) => {
-    const hue = disasterTypes.indexOf(type) * (360 / disasterTypes.length);
-    return `hsl(${hue}, 70%, 50%)`;
+  const colorMap: { [key: string]: string } = {
+    'Natural Disaster': '#E63946',
+    'Post-Apocalyptic': '#1D3557',
+    'Zombies': '#43AA8B',
+    'Alien Invasion': '#F4A261',
+    'Pandemic': '#F47F83',
+    'Man-made Disaster': '#4A6FA5',
+    'Ecological Collapse': '#7BCBB5',
+    'Nukes!': '#F7C39B',
+    'Dystopian': '#FAA5A8',
+    'Biblical': '#7798C0',
+    'Apocalyptic': '#A5DCD0',
+    'AI Takeover': '#FAD7B8',
+    'Other': '#95A5A6'
   };
 
+  return colorMap[type] || '#95A5A6';  // Default to gray if type not found
+};
   const categoryCount = disasterTypes.reduce((acc, type) => {
     acc[type] = filteredMovies.filter(m => m.disasterType === type).length;
     return acc;
@@ -140,7 +154,7 @@ const DisasterMovieTimeline: React.FC = () => {
         onFilterChange={handleFilterChange}
       />
       <div className="disaster-breakdown">
-        <h3>Disaster Breakdown (Total: {filteredMovies.length})</h3>
+        <h3>Disaster Breakdown | Total: {filteredMovies.length}</h3>
         <div className="stacked-bar-chart">
           {sortedDisasterTypes.map(type => {
             const count = type === 'Other' ? otherCount : categoryCount[type];

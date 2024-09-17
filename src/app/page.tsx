@@ -10,7 +10,7 @@ import './globals.css';
 //import Mfc1 from './components/Mfc1';
 
 const DisasterMovieTimeline = dynamic(
-  () => import('./components/Disaster'),
+  () => import('./components/disaster'),
   { ssr: false }
 );
 

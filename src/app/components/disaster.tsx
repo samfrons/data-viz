@@ -42,7 +42,7 @@ const DisasterMovieTimeline: React.FC = () => {
     setFilteredMovies(newFilteredMovies);
   };
 
-  const minYear = 1920;
+  const minYear = 1910;
   const maxYear = Math.max(...movies.map(m => m.year));
   const decades = Array.from(
     { length: Math.ceil((maxYear - minYear) / 10) },

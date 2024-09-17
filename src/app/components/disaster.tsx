@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DisasterMovieSearch from './DisasterMovieSearch';
+import DisasterTypeChart from './DisasterTypeChart';
 
 interface Movie {
   title: string;
@@ -148,13 +149,14 @@ const DisasterMovieTimeline: React.FC = () => {
         <h1>Disasters by the decade</h1>
         <h2>According to Hollywood</h2>
       </header>
+      <DisasterTypeChart movies={filteredMovies} />
       <DisasterMovieSearch
         movies={movies}
         disasterTypes={disasterTypes}
         onFilterChange={handleFilterChange}
       />
       <div className="disaster-breakdown">
-        <h3>Disaster Breakdown | Total: {filteredMovies.length}</h3>
+        <h3>Disaster Breakdown | Total films: {filteredMovies.length}</h3>
         <div className="stacked-bar-chart">
           {sortedDisasterTypes.map(type => {
             const count = type === 'Other' ? otherCount : categoryCount[type];

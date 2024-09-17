@@ -94,8 +94,13 @@ h2 {
   font-family: SF Hollywood Hills;
 }
 
+body {
+      background-color: antiquewhite;
+}
+
 header {
   text-align: center;
+  color: darkgreen;
 }
 
 button {
@@ -122,7 +127,7 @@ button:hover {
 .disaster-breakdown {
   margin-top: 30px;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: transparent;
   border-radius: 0px;
   margin-bottom: 20px;
 }
@@ -219,7 +224,7 @@ button:hover {
 }
 
 .decade-label {
-  background-color: #f0f0f0;
+  background-color: #f0d9bb;
   padding: 10px;
   text-align: center;
   font-weight: bold;
@@ -236,7 +241,7 @@ button:hover {
 .year-column {
   flex: 0 0 10%; /* Fixed width for each year column */
   min-width: 30px;
-  border-right: 1px solid #eee;
+  border-right: 1px solid grey;
   display: flex;
   flex-direction: column;
 }
@@ -374,11 +379,11 @@ button:hover {
 
 /* Styles for the DisasterMovieSearch component */
 .disaster-movie-search {
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  border-radius: 0px;
+  padding: 0px 20px 0 20px;
+  margin-bottom: 0px;
+ 
 }
 
 .search-container {

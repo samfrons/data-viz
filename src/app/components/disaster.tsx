@@ -166,7 +166,7 @@ const DisasterMovieTimeline: React.FC = () => {
         onFilterChange={handleFilterChange}
       />
       <div className="disaster-breakdown">
-        <h3>Disaster Breakdown | Total films: {filteredMovies.length}</h3>
+        <h2>Disaster Breakdown | Total films: {filteredMovies.length}</h2>
         <div className="stacked-bar-chart">
           {sortedDisasterTypes.map(type => {
             const count = type === 'Other' ? otherCount : categoryCount[type];
